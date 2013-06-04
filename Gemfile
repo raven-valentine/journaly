@@ -38,7 +38,10 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 group :test do
+  gem 'capybara'
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+  gem 'launchy'
+  gem 'rspec'
 end
