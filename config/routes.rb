@@ -3,8 +3,7 @@ Journaly::Application.routes.draw do
   root :to => "home#index"
 
   resources :places
-
-
+  resources :trips #gives the 7 restful routes #see rake routes
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
