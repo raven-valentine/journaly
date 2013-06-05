@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130605114738) do
+ActiveRecord::Schema.define(:version => 20130605142249) do
 
   create_table "trips", :force => true do |t|
     t.string   "name"
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
     t.date     "start_date", :limit => 255
+    t.date     "end_date"
   end
 
 end

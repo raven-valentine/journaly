@@ -11,8 +11,12 @@ Given(/^I press "(.*?)"$/) do |create_trip_button|
   click_on(create_trip_button)
 end
 
-Then(/^I should see "(.*?)"$/) do |trip_name|
+Then(/^I should see the "(.*?)"$/) do |trip_name|
   page.should have_content(trip_name)
+end
+
+Then(/^I should see "(.*?)" and "(.*?)" and "(.*?)"$/) do |trip_name, start_date, end_date|
+  page.should have_content(trip_name, start_date, end_date)
 end
 
 Given(/^I fill in "(.*?)" with (\d+)$/) do |field_name, start_date|

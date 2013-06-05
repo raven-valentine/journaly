@@ -19,14 +19,16 @@
   Given a user is on the trip creation page
   And I fill in "trip_name" with "Jolly Boys Outing"
   And I press "Create Trip"
-  Then I should see "Jolly Boys Outing"
+  Then I should see the "Jolly Boys Outing"
 
   Scenario: Create a trip with a start date and end date
   Given a user is on the trip creation page
   And I fill in "trip_name" with "Jolly Boys Outing"
-  And I fill in "start_date1i)" with 2013
+  And I fill in "start_date(1i)" with 2013
   And I fill in "start_date(2i)" with 07
   And I fill in "start_date(3i)" with 04
-  And I fill in "end_date" with "August 7th"
+  And I fill in "end_date(1i)" with 2013
+  And I fill in "end_date(2i)" with 12
+  And I fill in "end_date(3i)" with 04
   And I press "Create Trip"
-  Then I should see "Jolly Boys Outing" and "July 4th" and "August 7th"
+  Then I should see "Jolly Boys Outing" and "2013-07-04" and "2013-12-04"
