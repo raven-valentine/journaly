@@ -1,3 +1,40 @@
 // Place all the styles related to the trips controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// ===== Trips/New ===== //
+
+.new-trip-modal {
+  width: 50%;
+  margin: 5% 25%;
+  background-color: rgba(0, 0, 0, 0.3);
+  header {
+    padding: 2.5%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  section {
+    padding: 2.5%;
+    width: 100%;
+    form {
+      width: 100%;
+    }
+    input, .calendar, .btn {
+      width: 100%;
+      float: left;
+    }
+    .calendar {
+      text-align: center;
+      width: 70%;
+      margin: 0 15%;
+      select {
+        width: 70%;
+        margin: 5px 15%;
+      }
+    }
+  }
+}
+
+.row-fluid {
+  outline: 1px solid red;
+}
