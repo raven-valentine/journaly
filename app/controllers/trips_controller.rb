@@ -9,7 +9,7 @@ class TripsController < ApplicationController
      puts @trip.inspect
      @trip.save
      puts @trip.inspect
-     redirect_to @trip, notice: 'Trip Saved'
+     redirect_to @trip
   end
 
   def show
@@ -17,3 +17,5 @@ class TripsController < ApplicationController
   end
 
 end
+
+

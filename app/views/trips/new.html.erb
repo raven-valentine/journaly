@@ -1,4 +1,5 @@
 <%= form_for @trip do |form| %>
-  <%= form.text_field :name %>
-  <%= form.submit "Create Trip" %>
+  <%= form.text_field :name, :placeholder => 'choose a name for your trip' %>
+  <%= form.date_select :start_date, :placeholder => 'write a start date' %>
+  <%= form.submit "Create Trip", :class => 'btn' %>
 <% end %>
