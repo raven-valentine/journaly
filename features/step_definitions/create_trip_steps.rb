@@ -1,5 +1,5 @@
-Given(/^a user is on the homepage$/) do
-  visit '/'
+Given(/^a user is on the trip creation page$/) do
+  visit new_trip_path
 end
 
 Given(/^I fill in "(.*?)" with "(.*?)"$/) do |field_name, trip_name|

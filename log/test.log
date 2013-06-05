@@ -237,3 +237,208 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 10:15:26 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+Started POST "/trip" for 127.0.0.1 at 2013-06-05 10:15:26 +0100
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:12:19 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:13:44 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:15:35 +0100
+Processing by TripsController#new as HTML
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:20:22 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 10ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:21:20 +0100
+Processing by TripsController#new as HTML
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:24:11 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 63ms (Views: 39.8ms | ActiveRecord: 0.8ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:24:11 +0100
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:26:12 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 54ms (Views: 39.9ms | ActiveRecord: 0.7ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:26:12 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "trip"=>{"name"=>"Jolly Boys Outing"}, "commit"=>"Create Trip"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:26:56 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 8.5ms | ActiveRecord: 0.7ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:26:56 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "trip"=>{"name"=>"Jolly Boys Outing"}, "commit"=>"Create Trip"}
+  Rendered trips/create.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:29:33 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 8.5ms | ActiveRecord: 0.8ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:29:33 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "trip"=>{"name"=>"Jolly Boys Outing"}, "commit"=>"Create Trip"}
+  Rendered trips/create.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:32:05 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 58ms (Views: 43.5ms | ActiveRecord: 0.7ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:32:05 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "trip"=>{"name"=>"Jolly Boys Outing"}, "commit"=>"Create Trip"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "trips" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 05 Jun 2013 10:32:05 UTC +00:00], ["name", "Jolly Boys Outing"], ["updated_at", Wed, 05 Jun 2013 10:32:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 9ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:32:42 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:32:42 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "trip"=>{"name"=>"Jolly Boys Outing"}, "commit"=>"Create Trip"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "trips" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 05 Jun 2013 10:32:42 UTC +00:00], ["name", "Jolly Boys Outing"], ["updated_at", Wed, 05 Jun 2013 10:32:42 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/trips/1
+Completed 302 Found in 6ms (ActiveRecord: 3.2ms)
+Started GET "/trips/1" for 127.0.0.1 at 2013-06-05 11:32:42 +0100
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:34:09 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:34:09 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "trip"=>{"name"=>"Jolly Boys Outing"}, "commit"=>"Create Trip"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "trips" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 05 Jun 2013 10:34:09 UTC +00:00], ["name", "Jolly Boys Outing"], ["updated_at", Wed, 05 Jun 2013 10:34:09 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/trips/1
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+Started GET "/trips/1" for 127.0.0.1 at 2013-06-05 11:34:09 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered trips/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:37:04 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:37:04 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "trip"=>{"name"=>"Jolly Boys Outing"}, "commit"=>"Create Trip"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "trips" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 05 Jun 2013 10:37:04 UTC +00:00], ["name", "Jolly Boys Outing"], ["updated_at", Wed, 05 Jun 2013 10:37:04 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/trips/1
+Completed 302 Found in 6ms (ActiveRecord: 2.9ms)
+Started GET "/trips/1" for 127.0.0.1 at 2013-06-05 11:37:04 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered trips/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 11:42:28 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 55ms (Views: 8.4ms | ActiveRecord: 0.8ms)
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 11:42:28 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "trip"=>{"name"=>"Jolly Boys Outing"}, "commit"=>"Create Trip"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "trips" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 05 Jun 2013 10:42:28 UTC +00:00], ["name", "Jolly Boys Outing"], ["updated_at", Wed, 05 Jun 2013 10:42:28 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/trips/1
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+Started GET "/trips/1" for 127.0.0.1 at 2013-06-05 11:42:28 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered trips/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.7ms)[0m  rollback transaction

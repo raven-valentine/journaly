@@ -16,7 +16,7 @@ Feature: A user can create a trip
   - none we can think of
 
   Scenario: Create a trip
-  Given a user is on the homepage
+  Given a user is on the trip creation page
   And I fill in "trip_name" with "Jolly Boys Outing"
   And I press "Create Trip"
   Then I should see "Jolly Boys Outing"
