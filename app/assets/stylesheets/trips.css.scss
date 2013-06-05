@@ -6,35 +6,48 @@
 // ===== Trips/New ===== //
 
 .new-trip-modal {
+  text-align: center;
   width: 50%;
-  margin: 5% 25%;
-  background-color: rgba(0, 0, 0, 0.3);
+  margin: 2% 25%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
   header {
+    h1 {
+    color: white;
+    }
     padding: 2.5%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(26, 188, 156, 1);
+    border-radius: 6px 6px 0 0;
   }
   section {
-    padding: 2.5%;
+    padding: 5%;
     width: 100%;
     form {
       width: 100%;
     }
-    input, .calendar, .btn {
+    input {
+      text-align: center;
       width: 100%;
-      float: left;
+      padding: 30px;
+      font-size: 24px;
+      line-height: 28px;
     }
     .calendar {
-      text-align: center;
-      width: 70%;
-      margin: 0 15%;
+      float: left;
+      width: 40%;
+      margin: 0 5%;
+      padding: 0;
+      h2 {
+        color: white;
+        font-size: 20px;
+      }
       select {
-        width: 70%;
-        margin: 5px 15%;
+        width: 100%;
+        margin: 5px 0;
       }
     }
+    .btn {
+      float: left;
+      }
   }
-}
-
-.row-fluid {
-  outline: 1px solid red;
 }
