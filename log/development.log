@@ -12811,3 +12811,787 @@ Served asset /trips.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:28:35 +0100
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:31:03 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 60ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:04 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "trip"=>{"name"=>"Banging Angelina", "start_date(1i)"=>"2013", "start_date(2i)"=>"8", "start_date(3i)"=>"26", "end_date(1i)"=>"2013", "end_date(2i)"=>"8", "end_date(3i)"=>"31"}, "commit"=>"Create trip"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 05 Jun 2013 18:31:41 UTC +00:00], ["end_date", Sat, 31 Aug 2013], ["name", "Banging Angelina"], ["start_date", Mon, 26 Aug 2013], ["updated_at", Wed, 05 Jun 2013 18:31:41 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/15
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/trips/15" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "15"]]
+  Rendered trips/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /flat-ui.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:31:41 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /flat-ui.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:32:03 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "trip"=>{"name"=>"Killing Brad", "start_date(1i)"=>"2013", "start_date(2i)"=>"8", "start_date(3i)"=>"24", "end_date(1i)"=>"2013", "end_date(2i)"=>"8", "end_date(3i)"=>"25"}, "commit"=>"Create trip"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 05 Jun 2013 18:32:23 UTC +00:00], ["end_date", Sun, 25 Aug 2013], ["name", "Killing Brad"], ["start_date", Sat, 24 Aug 2013], ["updated_at", Wed, 05 Jun 2013 18:32:23 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/16
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/trips/16" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "16"]]
+  Rendered trips/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:32:23 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "start_date" date(255), "end_date" date) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130605142249')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130605102242')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130605112901')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130605114738')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "start_date" date(255), "end_date" date) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130605142249')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130605102242')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130605112901')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130605114738')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "start_date" date(255), "end_date" date) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130605142249')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130605102242')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130605112901')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130605114738')
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 19:34:45 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:34:45 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:34:45 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:34:45 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:34:45 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:34:45 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:34:45 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "trip"=>{"name"=>"Banging Angelina", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"15", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"30"}, "commit"=>"Create Trip"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 05 Jun 2013 18:35:13 UTC +00:00], ["end_date", Sun, 30 Jun 2013], ["name", "Banging Angelina"], ["start_date", Sat, 15 Jun 2013], ["updated_at", Wed, 05 Jun 2013 18:35:13 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/17
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/trips/17" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "17"]]
+  Rendered trips/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:35:13 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 19:35:46 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:46 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:46 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:46 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:46 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:35:46 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:35:46 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "trip"=>{"name"=>"A baby with Angelina", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"5", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"6"}, "commit"=>"Create Trip"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 05 Jun 2013 18:36:03 UTC +00:00], ["end_date", Thu, 06 Jun 2013], ["name", "A baby with Angelina"], ["start_date", Wed, 05 Jun 2013], ["updated_at", Wed, 05 Jun 2013 18:36:03 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/18
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/trips/18" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "18"]]
+  Rendered trips/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:36:03 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/18" for 127.0.0.1 at 2013-06-05 19:38:14 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "18"]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" 
+  Rendered trips/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 22.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /flat-ui.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:38:15 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/18" for 127.0.0.1 at 2013-06-05 19:38:50 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "18"]]
+  [1m[35mTrip Load (0.3ms)[0m  SELECT "trips".* FROM "trips" 
+  Rendered trips/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:38:51 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/18" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "18"]]
+  [1m[35mTrip Load (0.3ms)[0m  SELECT "trips".* FROM "trips" 
+  Rendered trips/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /flat-ui.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:39:47 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-05 19:56:04 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:04 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:04 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:04 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:04 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:04 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-05 19:56:04 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "trip"=>{"name"=>"dd", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"5", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"5"}, "commit"=>"Create Trip"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 05 Jun 2013 18:56:06 UTC +00:00], ["end_date", Wed, 05 Jun 2013], ["name", "dd"], ["start_date", Wed, 05 Jun 2013], ["updated_at", Wed, 05 Jun 2013 18:56:06 UTC +00:00]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/19
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/trips/19" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "19"]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" [0m
+  Rendered trips/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:06 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/19" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "19"]]
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT "trips".* FROM "trips" [0m
+  Rendered trips/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /flat-ui.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 19:56:43 +0100
+Served asset /application.js - 304 Not Modified (0ms)
