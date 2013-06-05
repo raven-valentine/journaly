@@ -1844,3 +1844,131 @@ Served asset /home.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 13:19:44 +0100
 Served asset /application.css - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/new" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Processing by PlacesController#new as HTML
+  Rendered places/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Served asset /home.js - 304 Not Modified (84ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Served asset /places.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Served asset /places.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:01:54 +0100
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2013-06-05 16:02:00 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hDdBV0v//PXerQn4UdeWOU3oN2a6rkR77Voz4cIk+kE=", "place"=>{"place"=>"rgerg", "start_date"=>"ergerg", "end_date"=>"ergerg", "latitude"=>"ergerg", "longitude"=>"ergerg"}, "commit"=>"Save Place"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (33.6ms)[0m  INSERT INTO "places" ("created_at", "end_date", "latitude", "longitude", "place", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 05 Jun 2013 15:02:00 UTC +00:00], ["end_date", "ergerg"], ["latitude", "ergerg"], ["longitude", "ergerg"], ["place", "rgerg"], ["start_date", "ergerg"], ["updated_at", Wed, 05 Jun 2013 15:02:00 UTC +00:00]]
+  [1m[36m (6.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/5
+Completed 302 Found in 129ms (ActiveRecord: 45.2ms)
+
+
+Started GET "/places/5" for 127.0.0.1 at 2013-06-05 16:02:00 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered places/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:02:01 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-05 16:02:01 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:01 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:01 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:01 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:01 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:01 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:02:01 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2013-06-05 16:02:04 +0100
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:02:05 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-05 16:02:05 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:05 +0100
+Served asset /home.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:05 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:02:05 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:05 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-05 16:02:05 +0100
+Served asset /places.js - 304 Not Modified (0ms)
