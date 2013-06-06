@@ -1,3 +1,126 @@
 // Place all the styles related to the trips controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// ===== Trips/New ===== //
+
+.new-trip-modal {
+  text-align: center;
+  width: 50%;
+  margin: 2% 25%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  header {
+    h1 {
+    color: white;
+    }
+    padding: 2.5%;
+    background-color: rgba(26, 188, 156, 1);
+    border-radius: 6px 6px 0 0;
+  }
+  section {
+    padding: 5%;
+    width: 100%;
+    form {
+      width: 100%;
+    }
+    input {
+      text-align: center;
+      width: 100%;
+      padding: 30px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .calendar {
+      float: left;
+      width: 40%;
+      margin: 0 5%;
+      padding: 0;
+      h2 {
+        color: white;
+        font-size: 20px;
+      }
+      select {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+    .btn {
+      float: left;
+      }
+  }
+}
+
+// ===== Trips/New ===== //
+
+@media (max-width: 600px) {
+  .new-trip-modal {
+  width: 98%;
+  margin: 1% 1%;
+  section {
+    input {
+      font-size: 14px;
+    }
+  }
+  }
+}
+
+.new-trip-modal-result {
+  text-align: center;
+  width: 50%;
+  margin: 2% 25%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  header {
+    h1 {
+    color: white;
+    }
+    padding: 2.5%;
+    background-color: rgba(26, 188, 156, 1);
+    border-radius: 6px 6px 0 0;
+  }
+  section {
+    padding: 5%;
+    width: 100%;
+    background-color: rgba(230, 126, 34, 1);
+    form {
+      width: 100%;
+    }
+    input {
+      text-align: center;
+      width: 100%;
+      padding: 30px;
+      font-size: 24px;
+      line-height: 28px;
+      color: rgba(26, 188, 156, 1);
+    }
+    .calendar {
+      float: left;
+      width: 40%;
+      margin: 0 5%;
+      padding: 0;
+      h2 {
+        color: white;
+        font-size: 20px;
+      }
+      select {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+    .btn {
+      float: left;
+      }
+  }
+  .date-block {
+    h2 {
+      margin-bottom: 20px;
+    }
+    span {
+      background-color: rgba(241, 196, 15, 1);
+      padding: 6px;
+      border-radius: 6px;
+    }
+  }
+}

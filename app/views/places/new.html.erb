@@ -1,33 +1,31 @@
-<h1>New Place</h1>
+  <article class="new-trip-modal">
+    <header>
+      <h1>create a new place</h1>
+    </header>
+    <section class="clear-fix">
+      <%= form_for([@trip, @trip.places.build]) do |form| %>
+        <p><%= form.text_field :place, :placeholder => 'name your place', :id => id='searchTextField' %></p>
+        <p><%= form.text_field :start_date, :placeholder => 'when did you arrive here?' %></p>
+        <p><%= form.text_field :end_date, :placeholder => 'when did you leave?' %></p>
+        <p><%= form.text_field :latitude, :placeholder => 'enter the latitude' %></p>
+        <p><%= form.text_field :longitude, :placeholder => 'we need the longitude too' %></p>
+        <p><%= form.submit "Add a Place", :class => 'btn btn-large btn-block btn-primary' %></p>
+      <% end %>
+    </section>
+  </article>
 
-<%= form_for([@trip, @trip.places.build]) do |f| %>
-  <p>
-    <%= f.label :place %><br>
-    <%= f.text_field :place %>
-  </p>
+  <script type="text/javascript">
+  function initialize() {
+    var input = document.getElementById('searchTextField');
+    var autocomplete = new google.maps.places.Autocomplete(input);
 
-  <p>
-    <%= f.label :start_date %><br>
-    <%= f.text_field :start_date %>
-  </p>
-
-	<p>
-    <%= f.label :end_date %><br>
-    <%= f.text_field :end_date %>
-  </p>
-
-	<p>
-    <%= f.label :latitude %><br>
-    <%= f.text_field :latitude %>
-  </p>
-
-	<p>
-    <%= f.label :longitude %><br>
-    <%= f.text_field :longitude %>
-  </p>
-
-  <p>
-    <%= f.label :submit %>
-    <%= f.submit %>
-  </p>
-<% end %>
+    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+      var place = autocomplete.getPlace();
+      var longitude = place.geometry.location.jb;
+      var latitude = place.geometry.location.kb;
+      $('#place_latitude').val(latitude);
+      $('#place_longitude').val(longitude);
+    });
+  };
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>

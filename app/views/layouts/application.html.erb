@@ -4,6 +4,7 @@
   <title>Journaly</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
@@ -41,7 +42,9 @@
 </head>
 <body>
 
-<%= yield %>
+<section class="container-fluid">
+  <%= yield %>
+</section>
 
 </body>
 </html>

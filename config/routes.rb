@@ -11,6 +11,7 @@ Journaly::Application.routes.draw do
     match 'map' => 'map#index'
   end
 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
