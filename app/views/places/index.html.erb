@@ -1,0 +1,22 @@
+<h1>Listing all Places</h1>
+
+<table>
+  <tr>
+    <th>Place</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+
+  </tr>
+
+  <% @places.each do |place| %>
+    <tr>
+      <td><%= place.place %></td>
+      <td><%= place.start_date %></td>
+      <td><%= place.end_date %></td>
+      <td><%= place.latitude %></td>
+      <td><%= place.longitude %></td>
+    </tr>
+  <% end %>
+</table>
