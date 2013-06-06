@@ -1,13 +1,14 @@
 class PlacesController < ApplicationController
 
 	def new
+		@trip = Trip.find(params[:trip_id])
 	end
 
 	def create
-		@place = Place.new(params[:place])
+		@trip = Trip.find(params[:trip_id])
+		@place = @trip.places.create(params[:place])
 
-		@place.save
-		redirect_to @place
+		redirect_to trip_path(@trip)
 	end
 
 	def show
@@ -15,7 +16,7 @@ class PlacesController < ApplicationController
 	end
 
 	def index
-	  @places = Place.all
+	  @places = Trip.find(params[:trip_id]).places
 	end
 
 end

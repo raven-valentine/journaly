@@ -1,6 +1,6 @@
 <h1>New Place</h1>
 
-<%= form_for :place, url: places_path do |f| %>
+<%= form_for([@trip, @trip.places.build]) do |f| %>
   <p>
     <%= f.label :place %><br>
     <%= f.text_field :place %>
