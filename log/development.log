@@ -2169,3 +2169,72 @@ Served asset /home.js - 304 Not Modified (0ms)
 
 Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
 Served asset /underscore.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-06 09:39:25 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:25 +0100
+Served asset /underscore.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:25 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-06 09:39:25 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:25 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-06 09:39:25 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:25 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:25 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-06 09:39:51 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-06 09:39:51 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-06 09:39:51 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:51 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:51 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:51 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:51 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-06 09:39:51 +0100
+Served asset /application.js - 304 Not Modified (0ms)
