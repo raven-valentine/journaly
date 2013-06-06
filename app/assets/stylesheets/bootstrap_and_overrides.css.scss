@@ -11,6 +11,12 @@ body {
   background-size: cover;
 }
 
+body, .container-fluid {
+  @media (max-width: 600px) {
+  padding: 0;
+  }
+}
+
   /* apply a natural box layout model to all elements */
 * {
   -moz-box-sizing: border-box;
