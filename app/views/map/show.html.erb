@@ -12,9 +12,15 @@
   window.markersOnMap = [];
 
   function initialize() {
+
+    for (var i = markerData.length - 1; i >= 0; i--) {
+      var place = markerData[i];
+      var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
+      };
+
     var mapOptions = {
-      center: new google.maps.LatLng(48.856614, 2.3522219000000177 ),
-      zoom: 17,
+      center: new google.maps.LatLng(place.latitude, place.longitude ),
+      zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     window.map = new google.maps.Map(document.getElementById('map-canvas'),

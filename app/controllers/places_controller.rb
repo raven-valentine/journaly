@@ -11,9 +11,7 @@ class PlacesController < ApplicationController
 		redirect_to trip_path(@trip)
 	end
 
-	def show
-		@place = Place.find(params[:id])
-	end
+
 
 	def index
 	  @places = Trip.find(params[:trip_id]).places

@@ -10,7 +10,18 @@ class MapController < ApplicationController
 	end
 
 	def show
-		 @markerData = [{"name"=> "London, really", "longitude"=> 2.3722219000000177, "latitude"=> 48.856614 }];
+
+		@place = Trip.find(params[:id]).places
+		puts @place.inspect
+
+		@markerData = []
+		@place.each_index do |x|
+
+		 @markerData << {"name"=> @place[x].place, "longitude"=> @place[x].longitude, "latitude"=> @place[x].latitude}
+		 end
+
+		 puts @markerData
+
 		 @markerData = @markerData.to_json
 
 		 respond_to do |format|
