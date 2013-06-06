@@ -6,9 +6,7 @@ class TripsController < ApplicationController
 
   def create
      @trip = Trip.new(params[:trip])
-     puts @trip.inspect
      @trip.save
-     puts @trip.inspect
      redirect_to @trip
   end
 
