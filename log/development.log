@@ -591,3 +591,1581 @@ Connecting to database specified by database.yml
   [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
   [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-05 15:30:57 +0100
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2013-06-05 15:31:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Nicky/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-05 15:31:41 +0100
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-05 15:31:47 +0100
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2013-06-05 15:31:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Nicky/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/home" for 127.0.0.1 at 2013-06-05 15:32:22 +0100
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Nicky/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Nicky/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-05 15:32:35 +0100
+Served asset /rails.png - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-05 15:34:03 +0100
+Served asset /rails.png - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-05 15:34:17 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Compiled jquery.js  (3ms)  (pid 3499)
+Compiled jquery_ujs.js  (0ms)  (pid 3499)
+Compiled application.js  (16ms)  (pid 3499)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 15:34:17 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 15:34:17 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 15:34:17 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 15:34:17 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 15:34:17 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 15:34:17 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-05 15:34:37 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 15:34:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 15:34:37 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 15:34:37 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 15:34:37 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 15:34:37 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 15:34:37 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-05 15:50:46 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 15:50:46 +0100
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 15:50:46 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 15:50:46 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 15:50:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 15:50:46 +0100
+Served asset /jquery.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 15:50:46 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-06-05 15:51:08 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"keir and nickys awesome trip", "create_trip_button"=>""}
+WARNING: Can't verify CSRF token authenticity
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 15:51:08 +0100
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 15:51:08 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 15:51:08 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 15:51:08 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 15:51:08 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 15:51:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:07:59 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:07:59 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:07:59 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:07:59 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:07:59 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:07:59 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:07:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:08:03 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:08:03 +0100
+Served asset /application.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:08:03 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:08:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:08:03 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:08:03 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:08:03 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:10:38 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:10:38 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:10:38 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:10:38 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:10:38 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:10:38 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:10:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:15:01 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:15:01 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:15:01 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:15:01 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:15:01 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:15:01 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:15:01 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:15:31 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:15:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:15:31 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:15:31 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:15:31 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:15:31 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:15:31 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:16:09 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:16:09 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:16:09 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:16:09 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:16:09 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:16:09 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:16:09 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:16:42 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:16:42 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:16:42 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:16:42 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:16:42 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:16:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:16:42 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:17:04 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:17:04 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:17:04 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:17:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:17:04 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:17:04 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:17:04 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:17:30 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:17:30 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:17:30 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:17:30 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:17:30 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:17:30 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:17:30 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:19:39 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:19:39 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:19:39 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:19:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:19:39 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:19:39 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:19:39 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:20:10 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:20:10 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:20:10 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:20:10 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:20:10 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:20:10 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:20:10 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:20:25 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:20:25 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:20:25 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:20:25 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:20:25 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:20:25 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:20:25 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:21:02 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:21:02 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:21:02 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:21:02 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:21:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:21:02 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:21:02 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:21:23 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:21:23 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:21:23 +0100
+Served asset /home.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:21:23 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:21:23 +0100
+Served asset /home.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:21:23 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:21:23 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:22:39 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:22:39 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:22:39 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:22:39 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:22:39 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:22:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:22:39 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:24:19 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:24:19 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:24:19 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:24:19 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:24:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:24:19 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:24:19 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:28:27 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:28:27 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:28:27 +0100
+Served asset /home.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:28:27 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:28:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:28:27 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:28:27 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:29:39 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:29:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:29:39 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:29:39 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:29:39 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:29:39 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:29:39 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:34:27 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:34:27 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:34:27 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:34:27 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:34:27 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:34:27 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:34:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:34:55 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:34:55 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:34:55 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:34:55 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:34:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:34:55 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:34:55 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:35:19 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:35:19 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:35:19 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:35:19 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:35:19 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:35:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:35:19 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:39:34 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:39:34 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:39:34 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:39:34 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:39:34 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:39:34 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:39:34 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:44:53 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (1.0ms)
+Compiled home.css  (2ms)  (pid 3819)
+Compiled application.css  (4ms)  (pid 3819)
+Compiled jquery.js  (4ms)  (pid 3819)
+Compiled jquery_ujs.js  (0ms)  (pid 3819)
+Compiled home.js  (62ms)  (pid 3819)
+Compiled application.js  (98ms)  (pid 3819)
+Completed 200 OK in 132ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:44:54 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:44:54 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:44:54 +0100
+Served asset /jquery.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:44:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:44:54 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:44:54 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:50:11 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:50:12 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:50:12 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:50:12 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:50:12 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:50:12 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:50:12 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:52:55 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 16:52:56 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 16:52:56 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 16:52:56 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 16:52:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 16:52:56 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 16:52:56 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:25:20 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.9ms)
+Compiled home.css  (2ms)  (pid 3960)
+Compiled application.css  (4ms)  (pid 3960)
+Compiled jquery.js  (3ms)  (pid 3960)
+Compiled jquery_ujs.js  (0ms)  (pid 3960)
+Compiled home.js  (58ms)  (pid 3960)
+Compiled application.js  (95ms)  (pid 3960)
+Completed 200 OK in 127ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:25:20 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:25:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:25:20 +0100
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:25:20 +0100
+Served asset /jquery.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:25:20 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:25:20 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:25:56 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:25:57 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:25:57 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:25:57 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:25:57 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:25:57 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:25:57 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:26:33 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:26:33 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:26:33 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:26:33 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:26:33 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:26:33 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:26:33 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:27:04 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:27:04 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:27:04 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:27:04 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:27:04 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:27:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:27:04 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:28:24 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:28:25 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:28:25 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:28:25 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:28:25 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:28:25 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:28:25 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:33:32 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:33:32 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:33:32 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:33:32 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:33:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:33:32 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:33:32 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:34:01 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:34:01 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:34:01 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:01 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:01 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:01 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:01 +0100
+Served asset /jquery.js - 304 Not Modified (31ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:34:31 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Compiled underscore.js  (0ms)  (pid 3986)
+Compiled application.js  (5ms)  (pid 3986)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:31 +0100
+Served asset /underscore.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:34:31 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:31 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:34:31 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:31 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:34:31 +0100
+Served asset /application.js - 304 Not Modified (35ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:49:36 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.9ms)
+Compiled home.css  (2ms)  (pid 4038)
+Compiled application.css  (5ms)  (pid 4038)
+Compiled jquery.js  (3ms)  (pid 4038)
+Compiled jquery_ujs.js  (0ms)  (pid 4038)
+Compiled home.js  (78ms)  (pid 4038)
+Compiled underscore.js  (1ms)  (pid 4038)
+Compiled application.js  (97ms)  (pid 4038)
+Completed 200 OK in 156ms (Views: 155.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:49:37 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:49:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:49:37 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:49:37 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:49:37 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:49:37 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-05 17:49:37 +0100
+Served asset /underscore.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+Connecting to database specified by database.yml
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:56:26 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.9ms)
+Compiled home.css  (2ms)  (pid 4054)
+Compiled application.css  (5ms)  (pid 4054)
+Compiled jquery.js  (25ms)  (pid 4054)
+Compiled jquery_ujs.js  (0ms)  (pid 4054)
+Compiled home.js  (59ms)  (pid 4054)
+Compiled underscore.js  (1ms)  (pid 4054)
+Compiled application.js  (100ms)  (pid 4054)
+Completed 200 OK in 161ms (Views: 160.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:56:26 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:56:26 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:27 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:27 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:27 +0100
+Served asset /underscore.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:27 +0100
+Served asset /application.js - 304 Not Modified (33ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:56:41 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:56:41 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:56:41 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:41 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:41 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:41 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:41 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:41 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:56:52 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:56:52 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:52 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:52 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:52 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:52 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:56:52 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:56:52 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-05 17:58:57 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)

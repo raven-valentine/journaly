@@ -237,3 +237,414 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 15:57:12 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 15:57:12 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:01:08 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:01:08 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:01:08 +0100
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:02:56 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:02:56 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:02:56 +0100
+Processing by MapController#index as HTML
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:03:41 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:03:41 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:03:41 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:04:28 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:04:28 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:04:28 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:05:06 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:05:06 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:05:06 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:05:42 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:05:42 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:05:42 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:39:48 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:39:48 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:39:48 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:40:23 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:40:23 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:44:13 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:44:13 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:44:15 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 16:44:15 +0100
+Compiled home.css  (6ms)  (pid 3814)
+Compiled application.css  (9ms)  (pid 3814)
+Served asset /application.css - 200 OK (14ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 16:44:15 +0100
+Compiled jquery.js  (3ms)  (pid 3814)
+Compiled jquery_ujs.js  (0ms)  (pid 3814)
+Compiled home.js  (95ms)  (pid 3814)
+Compiled application.js  (113ms)  (pid 3814)
+Served asset /application.js - 200 OK (165ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:56:43 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:56:43 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:56:45 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 16:56:45 +0100
+Compiled home.css  (3ms)  (pid 3853)
+Compiled application.css  (6ms)  (pid 3853)
+Served asset /application.css - 200 OK (12ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 16:56:45 +0100
+Compiled jquery.js  (39ms)  (pid 3853)
+Compiled jquery_ujs.js  (0ms)  (pid 3853)
+Compiled home.js  (57ms)  (pid 3853)
+Compiled application.js  (108ms)  (pid 3853)
+Served asset /application.js - 200 OK (157ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 16:57:18 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 16:57:18 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 16:57:19 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 16:57:19 +0100
+Served asset /application.css - 200 OK (4ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 16:57:19 +0100
+Served asset /application.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 17:37:34 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 17:37:34 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:37:36 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 17:37:36 +0100
+Compiled home.css  (3ms)  (pid 4001)
+Compiled application.css  (6ms)  (pid 4001)
+Served asset /application.css - 200 OK (11ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 17:37:36 +0100
+Compiled jquery.js  (42ms)  (pid 4001)
+Compiled jquery_ujs.js  (0ms)  (pid 4001)
+Compiled home.js  (56ms)  (pid 4001)
+Compiled underscore.js  (0ms)  (pid 4001)
+Compiled application.js  (115ms)  (pid 4001)
+Served asset /application.js - 200 OK (163ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 17:38:39 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 17:38:39 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:38:41 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 17:38:41 +0100
+Served asset /application.css - 200 OK (4ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 17:38:41 +0100
+Served asset /application.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 17:39:09 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 17:39:09 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:39:10 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 17:39:10 +0100
+Served asset /application.css - 200 OK (4ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 17:39:10 +0100
+Served asset /application.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 17:39:49 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 17:39:49 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:39:51 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 17:39:51 +0100
+Served asset /application.css - 200 OK (4ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 17:39:51 +0100
+Served asset /application.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 17:49:00 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 17:49:00 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:49:02 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 17:49:02 +0100
+Served asset /application.css - 200 OK (4ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 17:49:02 +0100
+Served asset /application.js - 200 OK (6ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-06-05 17:51:00 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Started POST "/" for 127.0.0.1 at 2013-06-05 17:51:00 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"trip_name"=>"Jolly Boys Outing", "create_trip_button"=>""}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Started GET "/map" for 127.0.0.1 at 2013-06-05 17:51:02 +0100
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-06-05 17:51:02 +0100
+Compiled home.css  (3ms)  (pid 4042)
+Compiled application.css  (6ms)  (pid 4042)
+Served asset /application.css - 200 OK (11ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-06-05 17:51:02 +0100
+Compiled jquery.js  (42ms)  (pid 4042)
+Compiled jquery_ujs.js  (0ms)  (pid 4042)
+Compiled home.js  (60ms)  (pid 4042)
+Compiled underscore.js  (0ms)  (pid 4042)
+Compiled application.js  (117ms)  (pid 4042)
+Served asset /application.js - 200 OK (166ms)
