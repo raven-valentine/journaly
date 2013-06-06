@@ -1,3 +1,14 @@
-<p><%= @trip.name %></p>
-<p><%= @trip.start_date %></p>
-<p><%= @trip.end_date %></p>
+<article class="new-trip-modal-result">
+    <header>
+      <h1>Awesome!</h1>
+      <h2><%= @trip.name %> was created...</h2>
+    </header>
+    <section class="clear-fix date-block">
+      <h2>And you are starting on the <span><%= @trip.start_date %></span></h2>
+      <h2>and returning on the <span><%= @trip.end_date %></span></h2>
+      <!--h2>
+        <%= @trips.map{|trip| trip.name}.join(',') %>
+      </h2-->
+    </section>
+</article>
+
