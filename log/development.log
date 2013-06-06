@@ -15329,3 +15329,54 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-06 10:05:39 +0100
 Served asset /map_dummy.png - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-06 10:54:43 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 131ms (Views: 91.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /application.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /trips.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /flat-ui.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /trips.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-06 10:54:44 +0100
+Served asset /map_dummy.png - 304 Not Modified (5ms)
