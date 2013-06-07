@@ -6,8 +6,12 @@ class TripsController < ApplicationController
 
   def create
      @trip = Trip.new(params[:trip])
-     @trip.save
-     redirect_to @trip
+     if true
+       @trip.save
+       redirect_to @trip
+     else
+       puts "*-*" * 80
+     end
   end
 
   def show

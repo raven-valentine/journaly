@@ -1,0 +1,142 @@
+// Base Modal //
+
+.new-modal {
+  text-align: center;
+  width: 60%;
+  margin: 2% 20%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  @media (max-width: 800px) {
+    width: 80%;
+    max-width: 480px;
+    margin: 1% 10%;
+    section {
+      input {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    width: 98%;
+    margin: 1% 1%;
+    section {
+      input {
+        font-size: 14px;
+      }
+    }
+  }
+  header {
+    h1 {
+    color: white;
+    }
+    padding: 2.5%;
+    background-color: rgba(26, 188, 156, 1);
+    border-radius: 6px 6px 0 0;
+  }
+}
+
+.modal-result {
+  text-align: center;
+  width: 50%;
+  margin: 2% 25%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
+
+// Trips Modal //
+
+.new-modal {
+  section {
+    padding: 5%;
+    width: 100%;
+    form {
+      width: 100%;
+    }
+    input {
+      text-align: center;
+      width: 100%;
+      padding: 30px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .calendar {
+      float: left;
+      width: 40%;
+      margin: 0 5%;
+      padding: 0;
+      h2 {
+        color: white;
+        font-size: 20px;
+      }
+      select {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+    .btn {
+      float: left;
+      }
+  }
+}
+
+// ===== Trips/New ===== //
+
+.new-modal-result {
+  header {
+    h1 {
+    color: white;
+    }
+    padding: 2.5%;
+    background-color: rgba(26, 188, 156, 1);
+    border-radius: 6px 6px 0 0;
+  }
+  section {
+    padding: 5%;
+    width: 100%;
+    background-color: rgba(230, 126, 34, 1);
+    form {
+      width: 100%;
+    }
+    input {
+      text-align: center;
+      width: 100%;
+      padding: 30px;
+      font-size: 24px;
+      line-height: 28px;
+      color: rgba(26, 188, 156, 1);
+    }
+    .calendar {
+      float: left;
+      width: 40%;
+      margin: 0 5%;
+      padding: 0;
+      h2 {
+        color: white;
+        font-size: 20px;
+      }
+      select {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+    .btn {
+      float: left;
+      }
+  }
+  .date-block {
+    h2 {
+      margin-bottom: 20px;
+    }
+    span {
+      background-color: rgba(241, 196, 15, 1);
+      padding: 6px;
+      border-radius: 6px;
+    }
+  }
+}
+
+
+
+
+// Places Modals //
