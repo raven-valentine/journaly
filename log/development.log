@@ -26828,3 +26828,810 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-07 11:20:18 +0100
 Served asset /map_dummy.png - 304 Not Modified (2ms)
+
+
+Started POST "/trips/12/places" for 127.0.0.1 at 2013-06-07 11:46:25 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "place"=>{"place"=>"DFDS Seaways, Sluisplein, IJmuiden, The Netherlands", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"7", "latitude"=>"52.463191", "longitude"=>"4.586166000000048"}, "commit"=>"Add a Place", "trip_id"=>"12"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "12"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::MultiparameterAssignmentErrors (2 error(s) on assignment of multiparameter attributes):
+  app/controllers/places_controller.rb:13:in `create'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started POST "/trips/12/places" for 127.0.0.1 at 2013-06-07 11:46:43 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "place"=>{"place"=>"London, United Kingdom", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"7", "latitude"=>"51.51121389999999", "longitude"=>"-0.11982439999997041"}, "commit"=>"Add a Place", "trip_id"=>"12"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "12"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::MultiparameterAssignmentErrors (2 error(s) on assignment of multiparameter attributes):
+  app/controllers/places_controller.rb:13:in `create'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started GET "/trips/12/places/12" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"trip_id"=>"12", "id"=>"12"}
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", "12"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /flat-ui.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 11:47:25 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/10/places" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Processing by PlacesController#index as HTML
+  Parameters: {"trip_id"=>"10"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 10
+  Rendered places/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /flat-ui.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:12 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/10/places/new" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Processing by PlacesController#new as HTML
+  Parameters: {"trip_id"=>"10"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered places/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /flat-ui.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 11:48:20 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips/10/places" for 127.0.0.1 at 2013-06-07 11:48:32 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "place"=>{"place"=>"Paris, France", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"13", "latitude"=>"48.856614", "longitude"=>"2.3522219000000177"}, "commit"=>"Add a Place", "trip_id"=>"10"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::MultiparameterAssignmentErrors (2 error(s) on assignment of multiparameter attributes):
+  app/controllers/places_controller.rb:13:in `create'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "trip"=>{"name"=>"Hello", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"10"}, "commit"=>"Create Trip"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 07 Jun 2013 10:49:46 UTC +00:00], ["end_date", Mon, 10 Jun 2013], ["name", "Hello"], ["start_date", Fri, 07 Jun 2013], ["updated_at", Fri, 07 Jun 2013 10:49:46 UTC +00:00]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/48
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/trips/48" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "48"]]
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT "trips".* FROM "trips" [0m
+  Rendered trips/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /flat-ui.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-07 11:49:46 +0100
+Served asset /map_dummy.png - 304 Not Modified (1ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "trip"=>{"name"=>"Hello", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"10"}, "commit"=>"Create Trip"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Jun 2013 10:50:22 UTC +00:00], ["end_date", Mon, 10 Jun 2013], ["name", "Hello"], ["start_date", Fri, 07 Jun 2013], ["updated_at", Fri, 07 Jun 2013 10:50:22 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/trips/49
+Completed 302 Found in 14ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/trips/49" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "49"]]
+  [1m[35mTrip Load (0.3ms)[0m  SELECT "trips".* FROM "trips" 
+  Rendered trips/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 76ms (Views: 72.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /flat-ui.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 11:50:22 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/49/places/new" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Processing by PlacesController#new as HTML
+  Parameters: {"trip_id"=>"49"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "49"]]
+  Rendered places/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 88ms (Views: 77.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /flat-ui.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 11:51:13 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips/49/places" for 127.0.0.1 at 2013-06-07 11:51:25 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "place"=>{"place"=>"Paris, France", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"8", "end_date(3i)"=>"7", "latitude"=>"48.856614", "longitude"=>"2.3522219000000177"}, "commit"=>"Add a Place", "trip_id"=>"49"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "49"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::MultiparameterAssignmentErrors (2 error(s) on assignment of multiparameter attributes):
+  app/controllers/places_controller.rb:13:in `create'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/trips/49/places/new" for 127.0.0.1 at 2013-06-07 11:52:14 +0100
+Processing by PlacesController#new as HTML
+  Parameters: {"trip_id"=>"49"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "49"]]
+  Rendered places/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 88ms (Views: 76.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /flat-ui.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 11:52:15 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips/49/places" for 127.0.0.1 at 2013-06-07 11:52:19 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "place"=>{"place"=>"Lonon City Locks, London, United Kingdom", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"7", "latitude"=>"51.551148", "longitude"=>"0.0227989999999636"}, "commit"=>"Add a Place", "trip_id"=>"49"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "49"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::MultiparameterAssignmentErrors (2 error(s) on assignment of multiparameter attributes):
+  app/controllers/places_controller.rb:13:in `create'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started POST "/trips/49/places" for 127.0.0.1 at 2013-06-07 11:54:36 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "place"=>{"place"=>"Colmenar Viejo, Spain", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"7", "latitude"=>"40.6626481", "longitude"=>"-3.771045700000059"}, "commit"=>"Add a Place", "trip_id"=>"49"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "49"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 57ms
+
+ActiveRecord::MultiparameterAssignmentErrors (2 error(s) on assignment of multiparameter attributes):
+  app/controllers/places_controller.rb:13:in `create'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePlaces (20130605101707)
+Migrating to CreateTrips (20130605102242)
+Migrating to AddColumnToTrips (20130605112901)
+Migrating to RenameColumnDateFromTrips (20130605114738)
+Migrating to AddEndDateColumnToTrips (20130605142249)
+Migrating to LinkPlacesToTrips (20130606090657)
+Migrating to ChangeStartAndEndDateInPlaces (20130607105813)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "altered_places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "place" varchar(255), "start_date" varchar(255), "end_date" varchar(255), "latitude" varchar(255), "longitude" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "trip_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "places"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (1, '', 's2ssw', 's', 'xswsxds', 'cd', '2013-06-06 11:15:48.422905', '2013-06-06 11:15:48.422905', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (2, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:54:19.650855', '2013-06-06 11:54:19.650855', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (3, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:55:48.313006', '2013-06-06 11:55:48.313006', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (4, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:56:07.008595', '2013-06-06 11:56:07.008595', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (5, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:56:57.839213', '2013-06-06 11:56:57.839213', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (6, 'Testing ', 'Testing', 'Testing', 'Testing', 'Testing', '2013-06-06 12:00:15.636364', '2013-06-06 12:00:15.636364', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (7, 'Testing ', 'Testing', 'Testing', 'Testing', 'Testing', '2013-06-06 12:00:36.957157', '2013-06-06 12:00:36.957157', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (8, 'sdsd', 'sds', 'sd', 'sdsd', 'sdsd', '2013-06-06 12:01:26.001734', '2013-06-06 12:01:26.001734', 24)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (9, 't2', 't2', 't2', '2t', '2t', '2013-06-06 12:04:06.964430', '2013-06-06 12:04:06.964430', 24)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (10, 'Testin 2', 'Testin 2', 'Testin 2', 'Testin 2', 'Testin 2', '2013-06-06 12:06:13.899775', '2013-06-06 12:06:13.899775', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (11, 'fgfg', 'fgfg', 'fgfg', 'fgfg', 'fgfg', '2013-06-06 13:42:51.514447', '2013-06-06 13:42:51.514447', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (12, 'London, United Kingdom', '', '', '', '', '2013-06-06 14:34:41.873973', '2013-06-06 14:34:41.873973', 25)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (13, 'London, United Kingdom', '', '', '', '', '2013-06-06 14:57:07.557998', '2013-06-06 14:57:07.557998', 25)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (14, 'Oxford, United Kingdom', '', '', '-1.2577263000000585', '51.7520209', '2013-06-06 15:05:51.850415', '2013-06-06 15:05:51.850415', 25)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (15, 'fgfg', 'fgfg', 'fgfg', 'fgfg', 'fgfg', '2013-06-06 15:14:50.520716', '2013-06-06 15:14:50.520716', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (16, 'london', '', '', '', '', '2013-06-06 15:15:25.156689', '2013-06-06 15:15:25.156689', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (17, 'London, United Kingdom', '', '', '-0.11982439999997041', '51.51121389999999', '2013-06-06 15:18:04.271097', '2013-06-06 15:18:04.271097', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (18, '', '', '', '-0.11982439999997041', '51.51121389999999', '2013-06-06 15:18:14.795586', '2013-06-06 15:18:14.795586', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (19, 'Rio de Janeiro, Brazil', '', '', '-22.9035393', '-43.20958689999998', '2013-06-06 18:33:52.911486', '2013-06-06 18:33:52.911486', 45)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (20, 'Mumbai Suburban, Maharashtra, India', '', '', '19.1538231', '72.87517860000003', '2013-06-07 08:52:09.036331', '2013-06-07 08:52:09.036331', 12)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "places"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "place" varchar(255), "start_date" date(255), "end_date" varchar(255), "latitude" varchar(255), "longitude" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "trip_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_places"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (1, '', 's2ssw', 's', 'xswsxds', 'cd', '2013-06-06 11:15:48.422905', '2013-06-06 11:15:48.422905', 2)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (2, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:54:19.650855', '2013-06-06 11:54:19.650855', 2)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (3, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:55:48.313006', '2013-06-06 11:55:48.313006', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (4, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:56:07.008595', '2013-06-06 11:56:07.008595', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (5, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:56:57.839213', '2013-06-06 11:56:57.839213', 2)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (6, 'Testing ', 'Testing', 'Testing', 'Testing', 'Testing', '2013-06-06 12:00:15.636364', '2013-06-06 12:00:15.636364', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (7, 'Testing ', 'Testing', 'Testing', 'Testing', 'Testing', '2013-06-06 12:00:36.957157', '2013-06-06 12:00:36.957157', 2)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (8, 'sdsd', 'sds', 'sd', 'sdsd', 'sdsd', '2013-06-06 12:01:26.001734', '2013-06-06 12:01:26.001734', 24)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (9, 't2', 't2', 't2', '2t', '2t', '2013-06-06 12:04:06.964430', '2013-06-06 12:04:06.964430', 24)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (10, 'Testin 2', 'Testin 2', 'Testin 2', 'Testin 2', 'Testin 2', '2013-06-06 12:06:13.899775', '2013-06-06 12:06:13.899775', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (11, 'fgfg', 'fgfg', 'fgfg', 'fgfg', 'fgfg', '2013-06-06 13:42:51.514447', '2013-06-06 13:42:51.514447', 3)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (12, 'London, United Kingdom', '', '', '', '', '2013-06-06 14:34:41.873973', '2013-06-06 14:34:41.873973', 25)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (13, 'London, United Kingdom', '', '', '', '', '2013-06-06 14:57:07.557998', '2013-06-06 14:57:07.557998', 25)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (14, 'Oxford, United Kingdom', '', '', '-1.2577263000000585', '51.7520209', '2013-06-06 15:05:51.850415', '2013-06-06 15:05:51.850415', 25)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (15, 'fgfg', 'fgfg', 'fgfg', 'fgfg', 'fgfg', '2013-06-06 15:14:50.520716', '2013-06-06 15:14:50.520716', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (16, 'london', '', '', '', '', '2013-06-06 15:15:25.156689', '2013-06-06 15:15:25.156689', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (17, 'London, United Kingdom', '', '', '-0.11982439999997041', '51.51121389999999', '2013-06-06 15:18:04.271097', '2013-06-06 15:18:04.271097', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (18, '', '', '', '-0.11982439999997041', '51.51121389999999', '2013-06-06 15:18:14.795586', '2013-06-06 15:18:14.795586', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (19, 'Rio de Janeiro, Brazil', '', '', '-22.9035393', '-43.20958689999998', '2013-06-06 18:33:52.911486', '2013-06-06 18:33:52.911486', 45)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (20, 'Mumbai Suburban, Maharashtra, India', '', '', '19.1538231', '72.87517860000003', '2013-06-07 08:52:09.036331', '2013-06-07 08:52:09.036331', 12)
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_places"[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "altered_places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "place" varchar(255), "start_date" date(255), "end_date" varchar(255), "latitude" varchar(255), "longitude" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "trip_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "places"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (1, '', 's2ssw', 's', 'xswsxds', 'cd', '2013-06-06 11:15:48.422905', '2013-06-06 11:15:48.422905', 2)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (2, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:54:19.650855', '2013-06-06 11:54:19.650855', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (3, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:55:48.313006', '2013-06-06 11:55:48.313006', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (4, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:56:07.008595', '2013-06-06 11:56:07.008595', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (5, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:56:57.839213', '2013-06-06 11:56:57.839213', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (6, 'Testing ', 'Testing', 'Testing', 'Testing', 'Testing', '2013-06-06 12:00:15.636364', '2013-06-06 12:00:15.636364', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (7, 'Testing ', 'Testing', 'Testing', 'Testing', 'Testing', '2013-06-06 12:00:36.957157', '2013-06-06 12:00:36.957157', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (8, 'sdsd', 'sds', 'sd', 'sdsd', 'sdsd', '2013-06-06 12:01:26.001734', '2013-06-06 12:01:26.001734', 24)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (9, 't2', 't2', 't2', '2t', '2t', '2013-06-06 12:04:06.964430', '2013-06-06 12:04:06.964430', 24)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (10, 'Testin 2', 'Testin 2', 'Testin 2', 'Testin 2', 'Testin 2', '2013-06-06 12:06:13.899775', '2013-06-06 12:06:13.899775', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (11, 'fgfg', 'fgfg', 'fgfg', 'fgfg', 'fgfg', '2013-06-06 13:42:51.514447', '2013-06-06 13:42:51.514447', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (12, 'London, United Kingdom', '', '', '', '', '2013-06-06 14:34:41.873973', '2013-06-06 14:34:41.873973', 25)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (13, 'London, United Kingdom', '', '', '', '', '2013-06-06 14:57:07.557998', '2013-06-06 14:57:07.557998', 25)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (14, 'Oxford, United Kingdom', '', '', '-1.2577263000000585', '51.7520209', '2013-06-06 15:05:51.850415', '2013-06-06 15:05:51.850415', 25)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (15, 'fgfg', 'fgfg', 'fgfg', 'fgfg', 'fgfg', '2013-06-06 15:14:50.520716', '2013-06-06 15:14:50.520716', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (16, 'london', '', '', '', '', '2013-06-06 15:15:25.156689', '2013-06-06 15:15:25.156689', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (17, 'London, United Kingdom', '', '', '-0.11982439999997041', '51.51121389999999', '2013-06-06 15:18:04.271097', '2013-06-06 15:18:04.271097', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (18, '', '', '', '-0.11982439999997041', '51.51121389999999', '2013-06-06 15:18:14.795586', '2013-06-06 15:18:14.795586', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (19, 'Rio de Janeiro, Brazil', '', '', '-22.9035393', '-43.20958689999998', '2013-06-06 18:33:52.911486', '2013-06-06 18:33:52.911486', 45)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (20, 'Mumbai Suburban, Maharashtra, India', '', '', '19.1538231', '72.87517860000003', '2013-06-07 08:52:09.036331', '2013-06-07 08:52:09.036331', 12)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "places"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "place" varchar(255), "start_date" date(255), "end_date" date(255), "latitude" varchar(255), "longitude" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "trip_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "altered_places"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (1, '', 's2ssw', 's', 'xswsxds', 'cd', '2013-06-06 11:15:48.422905', '2013-06-06 11:15:48.422905', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (2, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:54:19.650855', '2013-06-06 11:54:19.650855', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (3, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:55:48.313006', '2013-06-06 11:55:48.313006', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (4, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:56:07.008595', '2013-06-06 11:56:07.008595', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (5, 'ddffg', 'fgfg', 'fgfdg', 'fgfg', 'fgfg', '2013-06-06 11:56:57.839213', '2013-06-06 11:56:57.839213', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (6, 'Testing ', 'Testing', 'Testing', 'Testing', 'Testing', '2013-06-06 12:00:15.636364', '2013-06-06 12:00:15.636364', 2)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (7, 'Testing ', 'Testing', 'Testing', 'Testing', 'Testing', '2013-06-06 12:00:36.957157', '2013-06-06 12:00:36.957157', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (8, 'sdsd', 'sds', 'sd', 'sdsd', 'sdsd', '2013-06-06 12:01:26.001734', '2013-06-06 12:01:26.001734', 24)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (9, 't2', 't2', 't2', '2t', '2t', '2013-06-06 12:04:06.964430', '2013-06-06 12:04:06.964430', 24)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (10, 'Testin 2', 'Testin 2', 'Testin 2', 'Testin 2', 'Testin 2', '2013-06-06 12:06:13.899775', '2013-06-06 12:06:13.899775', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (11, 'fgfg', 'fgfg', 'fgfg', 'fgfg', 'fgfg', '2013-06-06 13:42:51.514447', '2013-06-06 13:42:51.514447', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (12, 'London, United Kingdom', '', '', '', '', '2013-06-06 14:34:41.873973', '2013-06-06 14:34:41.873973', 25)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (13, 'London, United Kingdom', '', '', '', '', '2013-06-06 14:57:07.557998', '2013-06-06 14:57:07.557998', 25)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (14, 'Oxford, United Kingdom', '', '', '-1.2577263000000585', '51.7520209', '2013-06-06 15:05:51.850415', '2013-06-06 15:05:51.850415', 25)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (15, 'fgfg', 'fgfg', 'fgfg', 'fgfg', 'fgfg', '2013-06-06 15:14:50.520716', '2013-06-06 15:14:50.520716', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (16, 'london', '', '', '', '', '2013-06-06 15:15:25.156689', '2013-06-06 15:15:25.156689', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (17, 'London, United Kingdom', '', '', '-0.11982439999997041', '51.51121389999999', '2013-06-06 15:18:04.271097', '2013-06-06 15:18:04.271097', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (18, '', '', '', '-0.11982439999997041', '51.51121389999999', '2013-06-06 15:18:14.795586', '2013-06-06 15:18:14.795586', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (19, 'Rio de Janeiro, Brazil', '', '', '-22.9035393', '-43.20958689999998', '2013-06-06 18:33:52.911486', '2013-06-06 18:33:52.911486', 45)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","place","start_date","end_date","latitude","longitude","created_at","updated_at","trip_id") VALUES (20, 'Mumbai Suburban, Maharashtra, India', '', '', '19.1538231', '72.87517860000003', '2013-06-07 08:52:09.036331', '2013-06-07 08:52:09.036331', 12)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "altered_places"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130607105813')
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started POST "/trips/10/places" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "place"=>{"place"=>"Paris, France", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"13", "latitude"=>"48.856614", "longitude"=>"2.3522219000000177"}, "commit"=>"Add a Place", "trip_id"=>"10"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "places" ("created_at", "end_date", "latitude", "longitude", "place", "start_date", "trip_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Jun 2013 11:00:47 UTC +00:00], ["end_date", Thu, 13 Jun 2013], ["latitude", "48.856614"], ["longitude", "2.3522219000000177"], ["place", "Paris, France"], ["start_date", Fri, 07 Jun 2013], ["trip_id", 10], ["updated_at", Fri, 07 Jun 2013 11:00:47 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/10/places/21
+Completed 302 Found in 38ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/trips/10/places/21" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"trip_id"=>"10", "id"=>"21"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", "21"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /flat-ui.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-07 12:00:48 +0100
+Served asset /map_dummy.png - 304 Not Modified (2ms)
+
+
+Started POST "/trips/10/places" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kv8LtMWrFi2HRguSXUtp+YMBUasp4tXhgvOcxow/K7E=", "place"=>{"place"=>"Hello", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"7", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"13", "latitude"=>"48.856614", "longitude"=>"2.3522219000000177"}, "commit"=>"Add a Place", "trip_id"=>"10"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("created_at", "end_date", "latitude", "longitude", "place", "start_date", "trip_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Jun 2013 11:00:53 UTC +00:00], ["end_date", Thu, 13 Jun 2013], ["latitude", "48.856614"], ["longitude", "2.3522219000000177"], ["place", "Hello"], ["start_date", Fri, 07 Jun 2013], ["trip_id", 10], ["updated_at", Fri, 07 Jun 2013 11:00:53 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/10/places/22
+Completed 302 Found in 7ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/trips/10/places/22" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"trip_id"=>"10", "id"=>"22"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", "22"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /flat-ui.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 12:00:53 +0100
+Served asset /application.js - 304 Not Modified (0ms)

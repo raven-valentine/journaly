@@ -11,16 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130606090657) do
+ActiveRecord::Schema.define(:version => 20130607105813) do
 
   create_table "places", :force => true do |t|
     t.string   "place"
-    t.string   "start_date"
-    t.string   "end_date"
+    t.date     "start_date", :limit => 255
+    t.date     "end_date",   :limit => 255
     t.string   "latitude"
     t.string   "longitude"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.integer  "trip_id"
   end
 
