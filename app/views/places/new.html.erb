@@ -21,8 +21,8 @@
 
     google.maps.event.addListener(autocomplete, 'place_changed', function() {
       var place = autocomplete.getPlace();
-      var longitude = place.geometry.location.jb;
-      var latitude = place.geometry.location.kb;
+      var longitude = place.geometry.location.kb;
+      var latitude = place.geometry.location.jb;
       $('#place_latitude').val(latitude);
       $('#place_longitude').val(longitude);
     });
