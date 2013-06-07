@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Journaly</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Journaly</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
-<section class="container-fluid">
-  <%= yield %>
-</section>
+    <!-- App Stylesheets -->
+    <%= stylesheet_link_tag    "application", :media => "all" %>
 
-</body>
+    <!-- App JavaScript -->
+    <%= javascript_include_tag "application" %>
+
+   <!-- Script for Google Maps -->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeLJnNUGtgDxQkx-5wrQR7YeY4-jd5sLI&libraries=geometry,places,panoramio,drawing&sensor=true">
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <%= yield %>
+    <footer>
+      <nav>
+        <p>link_to </p>
+      </nav>
+    </footer>
+  </body>
 </html>
