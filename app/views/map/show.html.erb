@@ -6,6 +6,14 @@
   </header>
 </section>
 
+<nav class="floating-nav">
+  <header>
+    <h4>Add more</h4>
+  </header>
+  <%= link_to "+ Trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
+  <%= link_to "+ Place", new_trip_place_path(@trip), :class => "btn btn-primary btn-map" %>
+</nav>
+
 <script type='text/javascript'>
 
   var markerData = $.parseJSON($("#markerData").text())
@@ -24,6 +32,7 @@
       zoom: 10,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
+
     window.map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
