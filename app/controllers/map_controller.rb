@@ -10,6 +10,7 @@ class MapController < ApplicationController
 
 	def show
 		@trip = Trip.find(params[:id])
+
 		@place = Trip.find(params[:id]).places
 		@markerData = []
 		@place.each_index do |x|
