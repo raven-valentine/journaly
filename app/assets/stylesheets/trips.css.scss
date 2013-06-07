@@ -6,12 +6,12 @@
 // ===== Trips/New ===== //
 
 
-.trip-title {
+.trip-titles {
   position: absolute;
   top: 20;
   left: 20;
-  z-index: 200;
+  z-index: 1000000;
   width: 400px;
-  height: 200px;
-  background-color: #fff;
+  height: 100px;
+  border: 1px solid #000;
 }
