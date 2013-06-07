@@ -1,6 +1,5 @@
 
 @import "bootstrap";
-
 @import "bootstrap-responsive";
 
 body, html {
@@ -8,12 +7,6 @@ body, html {
   height: 100%;
 }
 
-body {
-  /*
-  background: url(map_dummy.png) no-repeat center center;
-  background-size: cover;
-  */
-}
 
 body, .container-fluid {
   @media (max-width: 600px) {

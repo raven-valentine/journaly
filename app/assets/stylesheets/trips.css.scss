@@ -4,3 +4,14 @@
 
 
 // ===== Trips/New ===== //
+
+
+.trip-title {
+  position: absolute;
+  top: 20;
+  left: 20;
+  z-index: 200;
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+}
