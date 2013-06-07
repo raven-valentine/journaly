@@ -1,5 +1,8 @@
 Journaly::Application.routes.draw do
 
+  resources :journal_entries
+
+
   root :to => "home#index"
 
   resources :trips do #gives the 7 restful routes #see rake routes
