@@ -7,11 +7,20 @@
 
 
 .trip-title {
-  position: absolute;
-  top: 20;
-  left: 20;
+  position: fixed;
+  margin: 20px 30%;
   z-index: 200;
-  width: 400px;
-  height: 200px;
-  background-color: #fff;
+  width: 40%;
+  header {
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    padding: 2% 10%;
+    text-align: center;
+    h1 {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
 }

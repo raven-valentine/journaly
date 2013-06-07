@@ -1,5 +1,11 @@
 <span style="display: none;" id='markerData'> <%= @markerData %></span>
 
+<section class="trip-title">
+  <header>
+    <h1><%= @trip.name %></h1>
+  </header>
+</section>
+
 <script type='text/javascript'>
 
   var markerData = $.parseJSON($("#markerData").text())

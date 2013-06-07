@@ -11,7 +11,6 @@ class PlacesController < ApplicationController
 	def create
 		@trip = Trip.find(params[:trip_id])
 		@place = @trip.places.create(params[:place])
-		# redirect_to :action => "show", :id => @place
 		redirect_to map_path(@trip)
 	end
 
