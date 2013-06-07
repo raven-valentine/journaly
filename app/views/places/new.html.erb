@@ -1,4 +1,4 @@
-  <article class="new-modal">
+  <article class="base-modal place-modal">
     <header>
       <h1>create a new place</h1>
     </header>
@@ -6,7 +6,7 @@
       <%= form_for([@trip, @trip.places.build]) do |form| %>
         <p><%= form.text_field :place, :placeholder => 'name your place', :id => id='searchTextField' %></p>
         <section class="calendar ">
-          <h2>when did you arrive here?</h2>
+          <h2>when did you arrive?</h2>
           <%= form.date_select :start_date %>
         </section>
         <section class="calendar">

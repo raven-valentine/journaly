@@ -1,5 +1,5 @@
 
-  <article class="new-modal">
+  <article class="base-modal trip-modal">
     <header>
       <h1>create your trip</h1>
     </header>
@@ -9,15 +9,22 @@
           <%= form.text_field :name, :placeholder => 'Firstly, choose a name for your trip', :class => 'entry-box span3' %>
         </div>
         <section class="calendar ">
-          <h2>now choose a start date</h2>
-          <%= form.date_select :start_date %>
+          <header>
+            <h2>now choose a start date</h2>
+          </header>
+          <section>
+            <%= form.date_select :start_date %>
+          </section>
         </section>
         <section class="calendar">
-          <h2>and choose an end date</h2>
-          <%= form.date_select :end_date %>
+          <header>
+            <h2>and choose an end date</h2>
+          </header>
+          <section>
+            <%= form.date_select :end_date %>
+          </section>
         </section>
-        </section>
-        <%= form.submit "Create Trip", :class => 'btn btn-large btn-block btn-primary' %>
+        <%= form.submit "Create Trip", :class => 'btn btn-large btn-block btn-info' %>
       <% end %>
     </section>
   </article>
