@@ -1,39 +1,14 @@
-<p><%= @trip.name %></p>
-<p><%= @trip.start_date %></p>
-<p><%= @trip.end_date %></p>
+<article class="base-modal trip-modal modal-result">
+    <header>
+      <h1>Awesome!</h1>
+      <h2><%= @trip.name %> was created...</h2>
+    </header>
+    <section class="clear-fix date-block">
+      <h2>And you are starting on the <span><%= @trip.start_date %></span></h2>
+      <h2>and returning on the <span><%= @trip.end_date %></span></h2>
+      <!--h2>
+        <%= @trips.map{|trip| trip.name}.join(',') %>
+      </h2-->
+    </section>
+</article>
 
-<hr>
-
-<h1>New Place</h1>
-
-<%= form_for :place, url: trip_places_path(@trip) do |f| %>
-  <p>
-    <%= f.label :place %><br>
-    <%= f.text_field :place %>
-  </p>
-
-  <p>
-    <%= f.label :start_date %><br>
-    <%= f.text_field :start_date %>
-  </p>
-
-	<p>
-    <%= f.label :end_date %><br>
-    <%= f.text_field :end_date %>
-  </p>
-
-	<p>
-    <%= f.label :latitude %><br>
-    <%= f.text_field :latitude %>
-  </p>
-
-	<p>
-    <%= f.label :longitude %><br>
-    <%= f.text_field :longitude %>
-  </p>
-
-  <p>
-    <%= f.label :submit %>
-    <%= f.submit %>
-  </p>
-<% end %>

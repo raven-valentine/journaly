@@ -1,3 +1,17 @@
 // Place all the styles related to the trips controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// ===== Trips/New ===== //
+
+
+.trip-title {
+  position: absolute;
+  top: 20;
+  left: 20;
+  z-index: 200;
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+}

@@ -5,15 +5,14 @@ class TripsController < ApplicationController
   end
 
   def create
-     @trip = Trip.new(params[:trip])
-     puts @trip.inspect
-     @trip.save
-     puts @trip.inspect
-     redirect_to @trip
+    @trip = Trip.new(params[:trip])
+    @trip.save
+    redirect_to @trip
   end
 
   def show
     @trip = Trip.find(params[:id])
+    @trips = Trip.all
   end
 
 end
