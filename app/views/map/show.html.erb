@@ -1,8 +1,9 @@
-<span style="display: none;" id='markerData'> <%= @markerData %></span>
-
 <script type='text/javascript'>
 
-  var markerData = $.parseJSON($("#markerData").text())
+
+
+  //var markerData = $.parseJSON($("#markerData").text())
+  var markerData = <%=raw @markerData %>;
 
   window.markersOnMap = [];
   var mapOptions = { zoom: 10, mapTypeId: google.maps.MapTypeId.ROADMAP };
