@@ -7,6 +7,11 @@ body, html {
   height: 100%;
 }
 
+body {
+  background: url(/map_dummy.png) no-repeat;
+  background-size: cover;
+}
+
 
 body, .container-fluid {
   @media (max-width: 600px) {

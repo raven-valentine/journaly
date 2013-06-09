@@ -107,125 +107,16 @@
 
 // ================ Test Modal CSS ================ //
 
-.test-modal {
-  position: fixed;
-  z-index: 200;
-  left: 15%;
-  top: 120px;
-  width: 70%;
   .place-bar {
-    width: 50%;
-    margin: 0 20%;
+    width: 100%;
+    margin: 0;
     float: right;
-    p {
-      float: left;
-      margin-right: 5px;
-    }
+    padding-top: 5px;
     #searchTextField {
       padding: 15px 5px;
-      width: 300px;
-    }
-    .btn {
-      padding: 8px;
+      width: 90%;
+      margin: 5px 5%;
     }
   }
-}
 
-// ================ DRAFT CODE needs to be moved/deleted ================ //
-
-.modal-result {
-  text-align: center;
-  width: 50%;
-  margin: 2% 25%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 6px;
-}
-
-
-// Trips Modal //
-
-.new-modal {
-  section {
-    padding: 5%;
-    width: 100%;
-    .calendar {
-      float: left;
-      width: 40%;
-      margin: 0 5%;
-      padding: 0 0 5% 0;
-      h2 {
-        color: white;
-        font-size: 20px;
-      }
-      select {
-        width: 100%;
-        margin: 5px 0;
-      }
-    }
-    .btn {
-      float: center;
-      width: 20%;
-      }
-  }
-}
-
-// ===== Trips/New ===== //
-
-.new-modal-result {
-  header {
-    h1 {
-    color: white;
-    }
-    padding: 2.5%;
-    background-color: rgba(26, 188, 156, 1);
-    border-radius: 6px 6px 0 0;
-  }
-  section {
-    padding: 5%;
-    width: 100%;
-    background-color: rgba(230, 126, 34, 1);
-    form {
-      width: 100%;
-    }
-    input {
-      text-align: center;
-      width: 100%;
-      padding: 30px;
-      font-size: 24px;
-      line-height: 28px;
-      color: rgba(26, 188, 156, 1);
-    }
-    .calendar {
-      float: left;
-      width: 40%;
-      margin: 0 5%;
-      padding: 0;
-      h2 {
-        color: white;
-        font-size: 20px;
-      }
-      select {
-        width: 100%;
-        margin: 5px 0;
-      }
-    }
-    .btn {
-      float: left;
-      }
-  }
-  .date-block {
-    h2 {
-      margin-bottom: 20px;
-    }
-    span {
-      background-color: rgba(241, 196, 15, 1);
-      padding: 6px;
-      border-radius: 6px;
-    }
-  }
-}
-
-
-
-
-// Places Modals //
+// ================ Put DRAFT CODE that needs to be moved/deleted/tested under here ================ //

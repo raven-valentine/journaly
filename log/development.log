@@ -34641,3 +34641,2417 @@ Migrating to ChangeStartAndEndDateInPlaces (20130607105813)
   [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (40.0ms)
+  Rendered map/show.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 228ms (Views: 149.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /application.css - 304 Not Modified (62ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /home.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /places.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /modal.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /maps.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /trips.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /flat-ui.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /trips.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:34:06 +0100
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (7.1ms)
+  Rendered map/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 93ms (Views: 70.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /flat-ui.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:06 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (6.5ms)
+  Rendered places/new.html.erb (37.9ms)
+  Rendered map/show.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 85ms (Views: 82.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /flat-ui.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:20 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (6.2ms)
+  Rendered map/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /flat-ui.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:28 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (8.0ms)
+  Rendered map/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 53ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /application.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /flat-ui.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:37:58 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:39:03 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+ERROR: compiling _app_views_places_new_html_erb___2837173114339544277_70193641580960 RAISED /Users/mattevans/makers/journaly/app/views/places/new.html.erb:23: syntax error, unexpected ','
+...@trip.places.build]) do |form|, :class => place-bar );@outpu...
+...                               ^
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:23: syntax error, unexpected ')', expecting keyword_end
+...o |form|, :class => place-bar );@output_buffer.safe_concat('
+...                               ^
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:59: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:61: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_places_new_html_erb___2837173114339544277_70193641580960(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "places/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('  <!--article class="base-modal place-modal">
+    <header>
+      <h1>create a new place</h1>
+    </header>
+    <section class="clear-fix">
+      ');@output_buffer.append=  form_for([@trip, @trip.places.build]) do |form| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <p>');@output_buffer.append= ( form.text_field :place, :placeholder => 'name your place', :id => id='searchTextField' );@output_buffer.safe_concat('</p>
+        <section class="calendar ">
+          <h2>when did you arrive?</h2>
+          ');@output_buffer.append= ( form.date_select :start_date );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </section>
+        <section class="calendar">
+          <h2>when did you leave?</h2>
+          ');@output_buffer.append= ( form.date_select :end_date );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </section>
+        <p>');@output_buffer.append= ( form.hidden_field :latitude, :placeholder => 'enter the latitude' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :longitude, :placeholder => 'we need the longitude too' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.submit "Add a Place", :class => 'btn btn-large btn-block btn-primary' );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </section>
+  </article-->
+
+  ');@output_buffer.append= ( form_for([@trip, @trip.places.build]) do |form|, :class => place-bar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <p>');@output_buffer.append= ( form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :latitude, :placeholder => 'enter the latitude' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :longitude, :placeholder => 'we need the longitude too' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.submit "Add", :class => 'btn btn-block btn-primary' );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('
+  <!-- article class="test-modal">
+    <section class="clear-fix place-bar">
+        ');@output_buffer.append=  form_for([@trip, @trip.places.build]) do |form| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <p>');@output_buffer.append= ( form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :latitude, :placeholder => 'enter the latitude' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :longitude, :placeholder => 'we need the longitude too' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.submit "Add", :class => 'btn btn-block btn-primary' );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </section>
+  </article-->
+
+  <script type="text/javascript">
+  function initialize() {
+    var input = document.getElementById(\'searchTextField\');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+
+    google.maps.event.addListener(autocomplete, \'place_changed\', function() {
+      var place = autocomplete.getPlace();
+      var longitude = place.geometry.location.kb;
+      var latitude = place.geometry.location.jb;
+      $(\'#place_latitude\').val(latitude);
+      $(\'#place_longitude\').val(longitude);
+    });
+  };
+  google.maps.event.addDomListener(window, \'load\', initialize);
+  </script>
+
+
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/helpers/rendering_helper.rb:24:in `render'
+/Users/mattevans/makers/journaly/app/views/map/show.html.erb:8:in `_app_views_map_show_html_erb___1961681273555784592_70193640441860'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:145:in `block in render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/Users/mattevans/makers/journaly/app/controllers/map_controller.rb:20:in `show'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__2077157645604080419__process_action__3629862290959684635__callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__1202363859041615964__call__209718238759061753__callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered places/new.html.erb (4.5ms)
+  Rendered map/show.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (/Users/mattevans/makers/journaly/app/views/places/new.html.erb:23: syntax error, unexpected ','
+...@trip.places.build]) do |form|, :class => place-bar );@outpu...
+...                               ^
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:23: syntax error, unexpected ')', expecting keyword_end
+...o |form|, :class => place-bar );@output_buffer.safe_concat('
+...                               ^
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:59: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:61: syntax error, unexpected keyword_end, expecting ')'):
+    20:     </section>
+    21:   </article-->
+    22: 
+    23:   <%= form_for([@trip, @trip.places.build]) do |form|, :class => place-bar %>
+    24:         <p><%= form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' %></p>
+    25:         <p><%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %></p>
+    26:         <p><%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %></p>
+  app/views/map/show.html.erb:8:in `_app_views_map_show_html_erb___1961681273555784592_70193640441860'
+  app/controllers/map_controller.rb:20:in `show'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:39:15 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+ERROR: compiling _app_views_places_new_html_erb___2837173114339544277_70193642465720 RAISED /Users/mattevans/makers/journaly/app/views/places/new.html.erb:23: syntax error, unexpected ','
+...@trip.places.build]) do |form|, :class => 'place-bar' );@out...
+...                               ^
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:23: syntax error, unexpected ')', expecting keyword_end
+...|form|, :class => 'place-bar' );@output_buffer.safe_concat('
+...                               ^
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:59: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:61: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_places_new_html_erb___2837173114339544277_70193642465720(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "places/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('  <!--article class="base-modal place-modal">
+    <header>
+      <h1>create a new place</h1>
+    </header>
+    <section class="clear-fix">
+      ');@output_buffer.append=  form_for([@trip, @trip.places.build]) do |form| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <p>');@output_buffer.append= ( form.text_field :place, :placeholder => 'name your place', :id => id='searchTextField' );@output_buffer.safe_concat('</p>
+        <section class="calendar ">
+          <h2>when did you arrive?</h2>
+          ');@output_buffer.append= ( form.date_select :start_date );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </section>
+        <section class="calendar">
+          <h2>when did you leave?</h2>
+          ');@output_buffer.append= ( form.date_select :end_date );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </section>
+        <p>');@output_buffer.append= ( form.hidden_field :latitude, :placeholder => 'enter the latitude' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :longitude, :placeholder => 'we need the longitude too' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.submit "Add a Place", :class => 'btn btn-large btn-block btn-primary' );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </section>
+  </article-->
+
+  ');@output_buffer.append= ( form_for([@trip, @trip.places.build]) do |form|, :class => 'place-bar' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <p>');@output_buffer.append= ( form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :latitude, :placeholder => 'enter the latitude' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :longitude, :placeholder => 'we need the longitude too' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.submit "Add", :class => 'btn btn-block btn-primary' );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('
+  <!-- article class="test-modal">
+    <section class="clear-fix place-bar">
+        ');@output_buffer.append=  form_for([@trip, @trip.places.build]) do |form| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <p>');@output_buffer.append= ( form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :latitude, :placeholder => 'enter the latitude' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.hidden_field :longitude, :placeholder => 'we need the longitude too' );@output_buffer.safe_concat('</p>
+        <p>');@output_buffer.append= ( form.submit "Add", :class => 'btn btn-block btn-primary' );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </section>
+  </article-->
+
+  <script type="text/javascript">
+  function initialize() {
+    var input = document.getElementById(\'searchTextField\');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+
+    google.maps.event.addListener(autocomplete, \'place_changed\', function() {
+      var place = autocomplete.getPlace();
+      var longitude = place.geometry.location.kb;
+      var latitude = place.geometry.location.jb;
+      $(\'#place_latitude\').val(latitude);
+      $(\'#place_longitude\').val(longitude);
+    });
+  };
+  google.maps.event.addDomListener(window, \'load\', initialize);
+  </script>
+
+
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/helpers/rendering_helper.rb:24:in `render'
+/Users/mattevans/makers/journaly/app/views/map/show.html.erb:8:in `_app_views_map_show_html_erb___1961681273555784592_70193640441860'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:145:in `block in render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/Users/mattevans/makers/journaly/app/controllers/map_controller.rb:20:in `show'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__2077157645604080419__process_action__3629862290959684635__callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__1202363859041615964__call__209718238759061753__callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered places/new.html.erb (1.2ms)
+  Rendered map/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/Users/mattevans/makers/journaly/app/views/places/new.html.erb:23: syntax error, unexpected ','
+...@trip.places.build]) do |form|, :class => 'place-bar' );@out...
+...                               ^
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:23: syntax error, unexpected ')', expecting keyword_end
+...|form|, :class => 'place-bar' );@output_buffer.safe_concat('
+...                               ^
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:59: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/mattevans/makers/journaly/app/views/places/new.html.erb:61: syntax error, unexpected keyword_end, expecting ')'):
+    20:     </section>
+    21:   </article-->
+    22: 
+    23:   <%= form_for([@trip, @trip.places.build]) do |form|, :class => 'place-bar' %>
+    24:         <p><%= form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' %></p>
+    25:         <p><%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %></p>
+    26:         <p><%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %></p>
+  app/views/map/show.html.erb:8:in `_app_views_map_show_html_erb___1961681273555784592_70193640441860'
+  app/controllers/map_controller.rb:20:in `show'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (47.0ms)
+  Rendered map/show.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 111ms (Views: 106.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /flat-ui.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:39:54 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (8.3ms)
+  Rendered map/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /application.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /flat-ui.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:40:40 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:42:14 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (6.2ms)
+  Rendered map/show.html.erb within layouts/application (7.9ms)
+Compiled modal.css  (30ms)  (pid 87477)
+Compiled application.css  (3ms)  (pid 87477)
+Completed 200 OK in 133ms (Views: 129.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /application.css - 304 Not Modified (61ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /modal.css - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /flat-ui.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:15 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (10.2ms)
+  Rendered map/show.html.erb within layouts/application (12.3ms)
+Compiled modal.css  (26ms)  (pid 87477)
+Compiled application.css  (4ms)  (pid 87477)
+Completed 200 OK in 188ms (Views: 182.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /modal.css - 200 OK (6ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /flat-ui.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:42:45 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (40.1ms)
+  Rendered map/show.html.erb within layouts/application (41.4ms)
+Compiled modal.css  (21ms)  (pid 87477)
+Compiled application.css  (3ms)  (pid 87477)
+Completed 200 OK in 151ms (Views: 147.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /modal.css - 200 OK (6ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /flat-ui.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:01 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (6.3ms)
+  Rendered map/show.html.erb within layouts/application (7.6ms)
+Compiled modal.css  (26ms)  (pid 87477)
+Compiled application.css  (3ms)  (pid 87477)
+Completed 200 OK in 122ms (Views: 119.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /modal.css - 200 OK (6ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /application.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /flat-ui.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:43:18 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (9.5ms)
+  Rendered map/show.html.erb within layouts/application (11.7ms)
+Compiled modal.css  (30ms)  (pid 87477)
+Compiled application.css  (3ms)  (pid 87477)
+Completed 200 OK in 143ms (Views: 137.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /modal.css - 200 OK (6ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /flat-ui.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:05 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (11.7ms)
+  Rendered map/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 57ms (Views: 52.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /application.css - 304 Not Modified (53ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /flat-ui.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:44:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (9.2ms)
+  Rendered map/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /flat-ui.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:05 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:45:12 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (7.5ms)
+  Rendered map/show.html.erb within layouts/application (9.5ms)
+Compiled modal.css  (22ms)  (pid 87477)
+Compiled application.css  (3ms)  (pid 87477)
+Completed 200 OK in 123ms (Views: 118.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /modal.css - 200 OK (7ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /application.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /flat-ui.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:45:13 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (6.7ms)
+  Rendered map/show.html.erb within layouts/application (8.2ms)
+Compiled modal.css  (50ms)  (pid 87477)
+Compiled application.css  (4ms)  (pid 87477)
+Completed 200 OK in 123ms (Views: 119.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /application.css - 304 Not Modified (62ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /modal.css - 200 OK (4ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /flat-ui.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:03 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (9.5ms)
+  Rendered map/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 77ms (Views: 73.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /flat-ui.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:17 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (6.7ms)
+  Rendered map/show.html.erb within layouts/application (8.0ms)
+Compiled modal.css  (20ms)  (pid 87477)
+Compiled application.css  (3ms)  (pid 87477)
+Completed 200 OK in 157ms (Views: 152.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /modal.css - 200 OK (8ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /flat-ui.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:30 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 58[0m
+  Rendered places/new.html.erb (6.7ms)
+  Rendered map/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 81ms (Views: 76.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /flat-ui.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:38 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/58" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "58"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 58
+  Rendered places/new.html.erb (7.4ms)
+  Rendered map/show.html.erb within layouts/application (8.7ms)
+Compiled modal.css  (20ms)  (pid 87477)
+Compiled application.css  (3ms)  (pid 87477)
+Completed 200 OK in 151ms (Views: 148.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /application.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /modal.css - 200 OK (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /flat-ui.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-07 20:46:44 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 132ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /maps.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /places.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /modal.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /trips.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /flat-ui.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /home.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /trips.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /underscore.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 08:58:05 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-09 08:59:12 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 101ms (Views: 47.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /flat-ui.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 08:59:13 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHivmcfUAF0jZX8lTb4lHwBGTkps1l0wt9xuLGSD+L8=", "trip"=>{"name"=>"Bournemouth", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"9", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"9"}, "commit"=>"Create Trip"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 09 Jun 2013 08:00:34 UTC +00:00], ["end_date", Sun, 09 Jun 2013], ["name", "Bournemouth"], ["start_date", Sun, 09 Jun 2013], ["updated_at", Sun, 09 Jun 2013 08:00:34 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/map/59
+Completed 302 Found in 13ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/map/59" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[35mTrip Load (0.5ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "59"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "59"]]
+  [1m[35mPlace Load (0.7ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 59
+  Rendered places/new.html.erb (54.6ms)
+  Rendered map/show.html.erb within layouts/application (57.6ms)
+Completed 200 OK in 126ms (Views: 99.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /flat-ui.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 09:00:34 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/59" for 127.0.0.1 at 2013-06-09 09:02:26 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "59"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "59"]]
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 59[0m
+  Rendered places/new.html.erb (5.9ms)
+  Rendered map/show.html.erb within layouts/application (7.0ms)
+Compiled bootstrap_and_overrides.css  (646ms)  (pid 283)
+Compiled application.css  (3ms)  (pid 283)
+Completed 200 OK in 751ms (Views: 748.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /application.css - 304 Not Modified (51ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /bootstrap_and_overrides.css - 200 OK (7ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /flat-ui.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/map_dummy.png" for 127.0.0.1 at 2013-06-09 09:02:27 +0100
+Served asset /images/map_dummy.png - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/map_dummy.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/map/59" for 127.0.0.1 at 2013-06-09 09:02:48 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[35mTrip Load (0.3ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "59"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "59"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 59
+  Rendered places/new.html.erb (8.9ms)
+  Rendered map/show.html.erb within layouts/application (10.6ms)
+Compiled bootstrap_and_overrides.css  (586ms)  (pid 283)
+Compiled application.css  (3ms)  (pid 283)
+Completed 200 OK in 728ms (Views: 722.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /application.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /bootstrap_and_overrides.css - 200 OK (41ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /flat-ui.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/map_dummy.png" for 127.0.0.1 at 2013-06-09 09:02:49 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/map_dummy.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/map/59" for 127.0.0.1 at 2013-06-09 09:03:10 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "59"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "59"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 59[0m
+  Rendered places/new.html.erb (12.4ms)
+  Rendered map/show.html.erb within layouts/application (14.4ms)
+Compiled bootstrap_and_overrides.css  (638ms)  (pid 283)
+Compiled application.css  (3ms)  (pid 283)
+Completed 200 OK in 752ms (Views: 747.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /bootstrap_and_overrides.css - 200 OK (6ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /maps.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /application.css - 304 Not Modified (70ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /flat-ui.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map_dummy.png" for 127.0.0.1 at 2013-06-09 09:03:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/map_dummy.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mattevans/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mattevans/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)

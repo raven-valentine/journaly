@@ -4,11 +4,10 @@
   <header>
     <h1><%= @trip.name %></h1>
     <%= link_to "start a new Trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
-    <a class = "btn btn-primary btn-map show_hide"> add another Place</a>
+    <a class = "btn btn-primary btn-map show_hide"> + Place</a>
+    <%= render :template => "places/new" %>
   </header>
 </section>
-
-<%= render :template => "places/new" %>
 
 <!--nav class="floating-nav">
   <header>
