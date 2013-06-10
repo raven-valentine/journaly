@@ -96,8 +96,38 @@
 }
 
 .place-modal {
+  position: fixed;
+  margin: 20px 30%;
+  z-index: 200;
+
   header {
     background-color: rgba(188, 110, 26, 1.0);
+  }
+}
+
+// ================ Test Modal CSS ================ //
+
+.test-modal {
+  position: fixed;
+  z-index: 200;
+  left: 15%;
+  top: 120px;
+  width: 70%;
+  .place-bar {
+    width: 50%;
+    margin: 0 20%;
+    float: right;
+    p {
+      float: left;
+      margin-right: 5px;
+    }
+    #searchTextField {
+      padding: 15px 5px;
+      width: 300px;
+    }
+    .btn {
+      padding: 8px;
+    }
   }
 }
 
