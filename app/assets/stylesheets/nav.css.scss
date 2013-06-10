@@ -25,6 +25,7 @@
 }
 
 .place-box, .trip-box {
+  z-index: 200;
   // Layout //
   width: 40%;
   margin: 5% 30%;
