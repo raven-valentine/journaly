@@ -20,12 +20,12 @@
     </section>
   </article-->
 
-  <section class="clear-fix place-bar">
+  <section class="clear-fix place-box">
     <%= form_for([@trip, @trip.places.build]) do |form| %>
-      <%= form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' %>
+      <%= form.text_field :place, :placeholder => 'add another place', :id => id='searchTextField' %>
       <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
       <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
-      <%= form.submit "go", :class => 'btn btn-large btn-block btn-primary' %>
+      <%= form.submit "+ add ", :class => 'btn btn-large btn-primary' %>
     <% end %>
   </section>
 
@@ -55,5 +55,3 @@
   };
   google.maps.event.addDomListener(window, 'load', initialize);
   </script>
-
-
