@@ -11,15 +11,43 @@
   z-index: 200;
   width: 40%;
   header {
-    width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 6px;
-    padding: 2% 10%;
+    padding: 10px 10%;
     text-align: center;
     h1 {
       color: #fff;
       font-size: 20px;
     }
+  }
+}
+
+.floating-nav {
+  text-align: center;
+  position: fixed;
+  right: 0px;
+  top: 5%;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px 0 0 6px;
+  header {
+    padding: 5px 0;
+    background-color: #fff;
+    border-radius: 6px 0 0 0px;
+    margin-bottom: 10px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .btn-map {
+    width: 60%;
+    margin: 0 20% 10px;
   }
 }

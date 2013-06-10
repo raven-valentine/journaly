@@ -7,7 +7,7 @@ class TripsController < ApplicationController
   def create
     @trip = Trip.new(params[:trip])
     @trip.save
-    redirect_to @trip
+    redirect_to map_path(@trip)
   end
 
   def show
