@@ -40,19 +40,23 @@ function initialize() {
 
   window.markersOnMap = [];
   var mapOptions = {
-    center: new google.maps.LatLng(-34.397, 150.644),
     zoom: 10,
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
 
-  addMarker = function(map, latLong, name) {
+  addMarker = function(map, latLong, place) {
     var marker = new google.maps.Marker({
         position: latLong,
         map: map,
-        title: name
+        title: place.name,
+        url: "../trips/"+place.tripId+"/places/"+place.placeId
       });
     markersOnMap.push(name);
+    google.maps.event.addListener(marker, 'click', function(){
+      window.location.href = this.url;
+    });
     return marker;
+
   };
 
   latLangList = function() {
@@ -83,7 +87,7 @@ function initialize() {
     for (var i = markerData.length - 1; i >= 0; i--) {
       var place = markerData[i];
       var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
-      var marker = addMarker(map, placeLatLong, place.name);
+      var marker = addMarker(map, placeLatLong, place);
     };
   };
   google.maps.event.addDomListener(window, 'load', initialize);

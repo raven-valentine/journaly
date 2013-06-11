@@ -10,11 +10,11 @@ class MapController < ApplicationController
 
 	def show
 		@trip = Trip.find(params[:id])
-
+		@tripId = params[:id]
 		@place = Trip.find(params[:id]).places
 		@markerData = []
-		@place.each_index do |x|
-			@markerData << {"name"=> @place[x].place, "longitude"=> @place[x].longitude, "latitude"=> @place[x].latitude}
+		@place.each_index do |placeId|
+			@markerData << {"name"=> @place[placeId].place, "longitude"=> @place[placeId].longitude, "latitude"=> @place[placeId].latitude, "tripId"=> @tripId, "placeId"=> @place[placeId].id}
 		end
 		@markerData = @markerData.to_json
 		respond_to do |format|
