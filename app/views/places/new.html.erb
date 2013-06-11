@@ -1,50 +1,26 @@
-  <!--article class="base-modal place-modal">
-    <header>
-      <h1>create a new place</h1>
-    </header>
-    <section class="clear-fix">
-      <%= form_for([@trip, @trip.places.build]) do |form| %>
-        <p><%= form.text_field :place, :placeholder => 'name your place', :id => id='searchTextField' %></p>
-        <section class="calendar ">
-          <h2>when did you arrive?</h2>
-          <%= form.date_select :start_date %>
-        </section>
-        <section class="calendar">
-          <h2>when did you leave?</h2>
-          <%= form.date_select :end_date %>
-        </section>
-        <p><%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %></p>
-        <p><%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %></p>
-        <p><%= form.submit "Add a Place", :class => 'btn btn-large btn-block btn-primary' %></p>
-      <% end %>
-    </section>
-  </article-->
 
+  <article class="base-modal place-modal">
 
-  <article class="test-modal">
     <section class="clear-fix place-bar">
         <%= form_for([@trip, @trip.places.build]) do |form| %>
-        <p><%= form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' %></p>
-        <p><%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %></p>
-        <p><%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %></p>
-        <p><%= form.submit "Add", :class => 'btn btn-block btn-primary' %></p>
+        <label for="from">Add Place:</label>
+        <%= form.text_field :place, :placeholder => 'add a place...', :id => id='searchTextField' %>
+        <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
+        <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
+        <%= form.hidden_field :start_date %>
+        <%= form.hidden_field :end_date %>
+        <%= form.submit "add", :class => 'btn btn-block btn-primary' %>
       <% end %>
         <section class="clear-fix ">
-          <label for="from">From this date:</label>
-          <input type="text" id="from" name="from" placeholder="from date"/>
-          <label for="to">To this date:</label>
-          <input type="text" id="to" name="to" placeholder="to date"/>
+          <label for="from">Arrival date:</label>
+          <input type="text" id="from" name="from" placeholder="Arrival date"/>
+          <label for="to">Departure date:</label>
+          <input type="text" id="to" name="to" placeholder="Departure date"/>
           <div id="datepicker"></div>
-          <p>test</p>
-          <p><%= @trip.name %></p>
-          <p><%= @trip.start_date  %></p>
-          <p><%= @trip.end_date  %></p>
-          <p id="year"></p>
-          <p id="month"></p>
-          <p id="day"></p>
         </section>
     </section>
   </article>
+
 
 <script>
 var start_date= "<%=raw @trip.start_date  %>";
@@ -70,7 +46,9 @@ var end_day=end_date.slice(8,10);
           maxDate: new Date(end_year, end_month, end_day),
           onClose: function( selectedDate ) {
             $( "#to" ).datepicker( "option", "minDate", selectedDate );
+          $('#place_start_date').val(selectedDate);
           }
+
         });
         $( "#to" ).datepicker({
           defaultDate: "+1w",
@@ -80,11 +58,14 @@ var end_day=end_date.slice(8,10);
           maxDate: new Date(end_year, end_month, end_day),
           onClose: function( selectedDate ) {
             $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+          $('#place_end_date').val(selectedDate);
           }
+
         });
       });
   </script>
 
+<!-- Google API Script -->
   <script type="text/javascript">
   function initialize() {
     var input = document.getElementById('searchTextField');
@@ -100,5 +81,3 @@ var end_day=end_date.slice(8,10);
   };
   google.maps.event.addDomListener(window, 'load', initialize);
   </script>
-
-
