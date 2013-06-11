@@ -1,5 +1,5 @@
 
-  <article class="base-modal trip-modal">
+  <!-- article class="base-modal trip-modal">
     <header>
       <h1>create your trip</h1>
     </header>
@@ -25,6 +25,15 @@
           </section>
         </section>
         <%= form.submit "Create Trip", :class => 'btn btn-large btn-block btn-info' %>
+      <% end %>
+    </section>
+  </article-->
+
+  <article class="base-modal trip-modal">
+    <section class="clear-fix trip-bar">
+        <%= form_for @trip do |form| %>
+        <%= form.text_field :name, :placeholder => 'create a trip...' %>
+        <%= form.submit "create", :class => 'btn btn-block btn-info' %>
       <% end %>
     </section>
   </article>

@@ -4,33 +4,27 @@
   <header>
     <h1><%= @trip.name %></h1>
     <%= link_to "+trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
-    <a class = "btn btn-primary btn-map show_hide"> +place</a>
+    <a class = "btn btn-primary btn-map show_hide_place"> +place</a>
   </header>
 </section>
 
+<%= render :template => "trips/new" %>
 <%= render :template => "places/new" %>
-
-<!--nav class="floating-nav">
-  <header>
-    <h4>Add more</h4>
-  </header>
-  <%= link_to "+ Trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
-  <%= link_to "+ Place", new_trip_place_path(@trip), :class => "btn btn-primary btn-map" %>
-</nav-->
 
 <script type="text/javascript">
 
 $(document).ready(function(){
-
-      $(".place-bar").hide();
-      $(".show_hide").show();
-
-      $('.show_hide').click(function(){
+    $(".place-bar").hide();
+    $(".trip-bar").hide();
+    $(".show_hide_trip").show();
+    $(".show_hide_place").show();
+    $('.show_hide_place').click(function(){
       $(".place-bar").slideToggle();
-
       });
-
-    });
+    $('.show_hide_trip').click(function(){
+      $(".trip-bar").slideToggle();
+      });
+  });
 </script>
 
 

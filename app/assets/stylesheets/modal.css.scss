@@ -33,9 +33,16 @@
 }
 
 
-.place-modal {
+.place-modal, .trip-modal {
   position: fixed;
   width: 60%;
-  margin: 140px 20%;
   z-index: 200;
+}
+
+.place-modal {
+  margin: 200px 20%;
+}
+
+.trip-modal {
+  margin: 100px 20%;
 }
