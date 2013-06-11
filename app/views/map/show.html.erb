@@ -27,7 +27,6 @@ $(document).ready(function(){
   });
 </script>
 
-
 <script type='text/javascript'>
   var markerData = <%=raw @markerData %>;
 
@@ -43,8 +42,11 @@ $(document).ready(function(){
         position: latLong,
         map: map,
         title: name
+        url: "../trips/"+place.tripId+"/places/"+place.placeId
       });
     markersOnMap.push(name);
+    google.maps.event.addListener(marker, 'click', function(){
+        window.location.href = this.url;
     return marker;
   };
 
@@ -60,7 +62,6 @@ $(document).ready(function(){
 
   calculateMapZoomLevel = function(map) {
     var LatLngList = latLangList();
-
     //  Create a new viewpoint bound
     var bounds = new google.maps.LatLngBounds();
     //  Go through each...
@@ -71,21 +72,8 @@ $(document).ready(function(){
     //  Fit these bounds to the map
     map.fitBounds (bounds);
   };
-
-  addPlacesToMap = function(map) {
-    for (var i = markerData.length - 1; i >= 0; i--) {
-      var place = markerData[i];
-      var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
-      var marker = addMarker(map, placeLatLong, place.name);
-    };
-  };
-
-  function initialize() {
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    addPlacesToMap(map);
-    calculateMapZoomLevel(map);
-  };
   google.maps.event.addDomListener(window, 'load', initialize);
+
 </script>
 
 <div id="map-canvas" style="width: 100%; height: 100%">
