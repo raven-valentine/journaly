@@ -1,7 +1,8 @@
 <section>
 	<%= form_for ([@trip, @place, @journal_entry]) do |form| %>
 	<%= form.text_field :title, :placeholder => 'journal entry title' %>
-	<%= form.
+	<%= form.text_area :post, :placeholder => 'journal entry' %>
+	<%= form.submit "Submit Journal Entry" %>
 	<% end %>
 </section>
 
