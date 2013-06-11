@@ -1,122 +1,47 @@
 // Base Modal //
 
 .base-modal {
-  text-align: center;
   width: 60%;
   margin: 2% 20%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 6px;
   @media (max-width: 800px) {
-    width: 80%;
-    margin: 1% 10%;
-    section {
-      input {
-        font-size: 14px;
-      }
-    }
+    background-color: rgba(0, 0, 0, 1.0);
   }
-  @media (max-width: 480px) {
-    width: 98%;
-    margin: 1% 1%;
-    section {
-      input {
-        font-size: 14px;
-      }
-    }
-  }
-  header {
-    padding: 2.5%;
-    border-radius: 6px 6px 0 0;
-    h1 {
-    color: white;
-    }
-  }
-  form {
-    width: 100%;
-  }
-  input[type="text"] {
-    text-align: center;
-    width: 100%;
-    padding: 30px;
-    font-size: 20px;
-    line-height: 28px;
+  form, input {
+    margin: 0;
   }
   section {
-    width: 96%;
-    margin: 2%;
-    @media (min-width: 1100px) {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 4px solid white;
+    width: 100%;
+    input[type="text"] {
+      text-align: left;
       width: 80%;
-      margin: 2% 10%;
+      padding: 30px;
+      font-size: 20px;
+      line-height: 28px;
+      border: none;
     }
-    .calendar {
-      width: 100%;
-      margin: 2% 0%;
-      @media (max-width: 680px) {
-        width: 80%;
-        margin: 2% 10%;
-      }
-      header {
-        padding: 1%;
-        background-color: rgba(255, 255, 255, 0.0);
-        font-size: 16px;
-        h2 {
-          color: rgba(255, 255, 255, 1.0);
-        }
-      }
-      section {
-        width: 80%;
-        margin: 0 10%;
-      }
-      [id*="i"] {
-        height: 40px;
-        background-color: rgba(26, 188, 156, 1);
-        color: rgba(255, 255, 255, 1.0)
-      }
-      [id*="1i"] {
-        float: right;
-        width: 30%;
-      }
-      [id*="2i"] {
-        float: center;
-        width: 40%;
-      }
-      [id*="3i"] {
-        float: left;
-        width: 20%;
-      }
+    .btn {
+      float: right;
+      padding: 16px;
+      font-size: 20px;
+      line-height: 28px;
+      margin: 0;
     }
   }
 }
 
-
-.trip-modal {
-  header {
-    background-color: rgba(26, 188, 156, 1);
-  }
+.place-modal, .trip-modal {
+  position: fixed;
+  width: 60%;
+  z-index: 200;
 }
 
 .place-modal {
-  position: fixed;
-  margin: 20px 30%;
-  z-index: 200;
-
-  header {
-    background-color: rgba(188, 110, 26, 1.0);
-  }
+  margin: 200px 20%;
 }
 
-// ================ Test Modal CSS ================ //
-
-  .place-bar {
-    width: 100%;
-    margin: 0;
-    float: right;
-    padding-top: 5px;
-    #searchTextField {
-      padding: 15px 5px;
-      width: 90%;
-      margin: 5px 5%;
-    }
-  }
-
-// ================ Put DRAFT CODE that needs to be moved/deleted/tested under here ================ //
+.trip-modal {
+  margin: 100px 20%;
+}

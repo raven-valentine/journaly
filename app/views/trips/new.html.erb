@@ -1,10 +1,8 @@
-  <section class="clear-fix trip-box">
-    <%= form_for @trip do |form| %>
-      <%= form.text_field :name, :placeholder => 'start another trip', :id => id='searchTextField' %>
-      <%= form.hidden_field :start_date %>
-      <%= form.hidden_field :end_date %>
-      <%= form.submit "create", :class => 'btn btn-large btn-block btn-info' %>
-    <% end %>
-  </section>
-
- <!-- This does not need any .js to work -->
+  <article class="base-modal trip-modal">
+    <section class="clear-fix trip-bar">
+        <%= form_for @trip do |form| %>
+        <%= form.text_field :name, :placeholder => 'create a trip...' %>
+        <%= form.submit "create", :class => 'btn btn-block btn-info' %>
+      <% end %>
+    </section>
+  </article>

@@ -1,11 +1,13 @@
 Journaly::Application.routes.draw do
 
-  root :to => "home#index"
-
+  root :to => "map#show", :id => 1
 
   resources :trips do #gives the 7 restful routes #see rake routes
-    resources :places
+    resources :places do
+      resources :journal_entries
+    end
   end
+
 
 
   resources :map do
