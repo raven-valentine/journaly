@@ -20,6 +20,7 @@
     </section>
   </article-->
 
+
   <article class="test-modal">
     <section class="clear-fix place-bar">
         <%= form_for([@trip, @trip.places.build]) do |form| %>
@@ -34,17 +35,39 @@
           <label for="to">To this date:</label>
           <input type="text" id="to" name="to" placeholder="to date"/>
           <div id="datepicker"></div>
+          <p>test</p>
+          <p><%= @trip.name %></p>
+          <p><%= @trip.start_date  %></p>
+          <p><%= @trip.end_date  %></p>
+          <p id="year"></p>
+          <p id="month"></p>
+          <p id="day"></p>
         </section>
     </section>
   </article>
 
-    <script>
+<script>
+var start_date= "<%=raw @trip.start_date  %>";
+var start_year=start_date.slice(0,4);
+var start_month=start_date.slice(5,7);
+var start_day=start_date.slice(8,10);
+
+var end_date= "<%=raw @trip.end_date  %>";
+var end_year=end_date.slice(0,4);
+var end_month=end_date.slice(5,7);
+var end_day=end_date.slice(8,10);
+</script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
       $(function() {
         $( "#from" ).datepicker({
           defaultDate: "+1w",
           changeMonth: true,
           numberOfMonths: 1,
-          minDate:
+          minDate: new Date(start_year, start_month, start_day),
+          maxDate: new Date(end_year, end_month, end_day),
           onClose: function( selectedDate ) {
             $( "#to" ).datepicker( "option", "minDate", selectedDate );
           }
@@ -53,12 +76,14 @@
           defaultDate: "+1w",
           changeMonth: true,
           numberOfMonths: 1,
+          minDate: new Date(start_year, start_month, start_day),
+          maxDate: new Date(end_year, end_month, end_day),
           onClose: function( selectedDate ) {
             $( "#from" ).datepicker( "option", "maxDate", selectedDate );
           }
         });
       });
-      </script>
+  </script>
 
   <script type="text/javascript">
   function initialize() {
