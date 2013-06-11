@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(:version => 20130610102317) do
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
     t.date     "start_date", :limit => 255
-    t.date     "end_date"
+    t.date     "end_date",
   end
 
 end
