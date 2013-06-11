@@ -28,15 +28,37 @@
         <p><%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %></p>
         <p><%= form.submit "Add", :class => 'btn btn-block btn-primary' %></p>
       <% end %>
-      <div id="datepicker"></div>
+        <section class="clear-fix ">
+          <label for="from">From this date:</label>
+          <input type="text" id="from" name="from" placeholder="from date"/>
+          <label for="to">To this date:</label>
+          <input type="text" id="to" name="to" placeholder="to date"/>
+          <div id="datepicker"></div>
+        </section>
     </section>
   </article>
 
-  <script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
+    <script>
+      $(function() {
+        $( "#from" ).datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 1,
+          minDate:
+          onClose: function( selectedDate ) {
+            $( "#to" ).datepicker( "option", "minDate", selectedDate );
+          }
+        });
+        $( "#to" ).datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 1,
+          onClose: function( selectedDate ) {
+            $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+          }
+        });
+      });
+      </script>
 
   <script type="text/javascript">
   function initialize() {

@@ -13,7 +13,7 @@
             <h2>now choose a start date</h2>
           </header>
           <section>
-            <%= form.date_select :start_date %>
+            <%= form.date_select :start_date, :order => [:day, :month, :year] %>
           </section>
         </section>
         <section class="calendar">
@@ -21,7 +21,7 @@
             <h2>and choose an end date</h2>
           </header>
           <section>
-            <%= form.date_select :end_date %>
+            <%= form.date_select :end_date, :order => [:day, :month, :year] %>
           </section>
         </section>
         <%= form.submit "Create Trip", :class => 'btn btn-large btn-block btn-info' %>
