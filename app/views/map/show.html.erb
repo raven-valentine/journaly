@@ -1,3 +1,41 @@
+<span style="display: none;" id='markerData'> <%= @markerData %></span>
+
+<section class="trip-title">
+  <header>
+    <h1><%= @trip.name %></h1>
+    <%= link_to "start a new Trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
+    <a class = "btn btn-primary btn-map show_hide"> add another Place</a>
+  </header>
+</section>
+
+<%= render :template => "places/new" %>
+
+<!--nav class="floating-nav">
+  <header>
+    <h4>Add more</h4>
+  </header>
+  <%= link_to "+ Trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
+  <%= link_to "+ Place", new_trip_place_path(@trip), :class => "btn btn-primary btn-map" %>
+</nav-->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+      $(".place-bar").hide();
+      $(".show_hide").show();
+
+      $('.show_hide').click(function(){
+      $(".place-bar").slideToggle();
+
+      });
+
+    });
+
+</script>
+
+
+
 <script type='text/javascript'>
   var markerData = <%=raw @markerData %>;
 
@@ -54,4 +92,11 @@
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
-<div id="map-canvas" style="width: 100%; height: 100%"></div>
+
+
+<div id="map-canvas" style="width: 100%; height: 100%">
+</div>
+
+<section class="trip-titles">
+  <h3>Places visited during the <%= @trip.name %> trip</h3>
+</section>

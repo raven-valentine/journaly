@@ -11,10 +11,11 @@ class PlacesController < ApplicationController
 	def create
 		@trip = Trip.find(params[:trip_id])
 		@place = @trip.places.create(params[:place])
-		redirect_to :action => "show", :id => @place
+		redirect_to map_path(@trip)
 	end
 
 	def show
+		@trip = Trip.find(params[:trip_id])
 		@place = Place.find(params[:id])
 		@places = Place.all
 	end

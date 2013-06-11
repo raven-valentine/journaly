@@ -1,15 +1,32 @@
-  <article class="new-trip-modal">
+  <!--article class="base-modal place-modal">
     <header>
       <h1>create a new place</h1>
     </header>
     <section class="clear-fix">
       <%= form_for([@trip, @trip.places.build]) do |form| %>
         <p><%= form.text_field :place, :placeholder => 'name your place', :id => id='searchTextField' %></p>
-        <p><%= form.text_field :start_date, :placeholder => 'when did you arrive here?' %></p>
-        <p><%= form.text_field :end_date, :placeholder => 'when did you leave?' %></p>
-        <p><%= form.text_field :latitude, :placeholder => 'enter the latitude' %></p>
-        <p><%= form.text_field :longitude, :placeholder => 'we need the longitude too' %></p>
+        <section class="calendar ">
+          <h2>when did you arrive?</h2>
+          <%= form.date_select :start_date %>
+        </section>
+        <section class="calendar">
+          <h2>when did you leave?</h2>
+          <%= form.date_select :end_date %>
+        </section>
+        <p><%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %></p>
+        <p><%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %></p>
         <p><%= form.submit "Add a Place", :class => 'btn btn-large btn-block btn-primary' %></p>
+      <% end %>
+    </section>
+  </article-->
+
+  <article class="test-modal">
+    <section class="clear-fix place-bar">
+        <%= form_for([@trip, @trip.places.build]) do |form| %>
+        <p><%= form.text_field :place, :placeholder => 'Add another place', :id => id='searchTextField' %></p>
+        <p><%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %></p>
+        <p><%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %></p>
+        <p><%= form.submit "Add", :class => 'btn btn-block btn-primary' %></p>
       <% end %>
     </section>
   </article>
@@ -29,3 +46,5 @@
   };
   google.maps.event.addDomListener(window, 'load', initialize);
   </script>
+
+

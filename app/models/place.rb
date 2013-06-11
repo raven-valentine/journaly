@@ -3,3 +3,4 @@ class Place < ActiveRecord::Base
   has_many :journal_entries
   belongs_to :trip
 end
+

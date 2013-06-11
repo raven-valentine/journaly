@@ -5,9 +5,9 @@ class TripsController < ApplicationController
   end
 
   def create
-     @trip = Trip.new(params[:trip])
-     @trip.save
-     redirect_to @trip
+    @trip = Trip.new(params[:trip])
+    @trip.save
+    redirect_to map_path(@trip)
   end
 
   def show
