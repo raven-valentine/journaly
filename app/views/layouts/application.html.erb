@@ -11,12 +11,15 @@
     <!-- App JavaScript -->
     <%= javascript_include_tag "application" %>
 
-   <!-- Script for Google Maps -->
+   <!-- Script for Google Maps  Note: you cannot develop without an internet connection -->
     <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeLJnNUGtgDxQkx-5wrQR7YeY4-jd5sLI&libraries=geometry,places,panoramio,drawing&sensor=true">
     </script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
+    <!-- We need to have this saved locally for dev purposes -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   </head>
   <body>
     <%= yield %>

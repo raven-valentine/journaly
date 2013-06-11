@@ -3,53 +3,60 @@
 <section class="trip-title">
   <header>
     <h1><%= @trip.name %></h1>
-    <%= link_to "start a new Trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
-    <a class = "btn btn-primary btn-map show_hide"> add another Place</a>
+    <%= link_to "+trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
+    <a class = "btn btn-primary btn-map show_hide_place"> +place</a>
   </header>
 </section>
 
+<%= render :template => "trips/new" %>
 <%= render :template => "places/new" %>
-
-<!--nav class="floating-nav">
-  <header>
-    <h4>Add more</h4>
-  </header>
-  <%= link_to "+ Trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
-  <%= link_to "+ Place", new_trip_place_path(@trip), :class => "btn btn-primary btn-map" %>
-</nav-->
 
 <script type="text/javascript">
 
 $(document).ready(function(){
-
-      $(".place-bar").hide();
-      $(".show_hide").show();
-
-      $('.show_hide').click(function(){
+    $(".place-bar").hide();
+    $(".trip-bar").hide();
+    $(".show_hide_trip").show();
+    $(".show_hide_place").show();
+    $('.show_hide_place').click(function(){
       $(".place-bar").slideToggle();
-
       });
-
-    });
-
+    $('.show_hide_trip').click(function(){
+      $(".trip-bar").slideToggle();
+      });
+  });
 </script>
 
 
-
 <script type='text/javascript'>
+
+function initialize() {
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    addPlacesToMap(map);
+    calculateMapZoomLevel(map);
+  };
+
   var markerData = <%=raw @markerData %>;
 
   window.markersOnMap = [];
-  var mapOptions = { zoom: 10, mapTypeId: google.maps.MapTypeId.ROADMAP };
+  var mapOptions = {
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  };
 
-  addMarker = function(map, latLong, name) {
+  addMarker = function(map, latLong, place) {
     var marker = new google.maps.Marker({
         position: latLong,
         map: map,
-        title: name
+        title: place.name,
+        url: "../trips/"+place.tripId+"/places/"+place.placeId
       });
     markersOnMap.push(name);
+    google.maps.event.addListener(marker, 'click', function(){
+      window.location.href = this.url;
+    });
     return marker;
+
   };
 
   latLangList = function() {
@@ -64,7 +71,7 @@ $(document).ready(function(){
 
   calculateMapZoomLevel = function(map) {
     var LatLngList = latLangList();
-    
+
     //  Create a new viewpoint bound
     var bounds = new google.maps.LatLngBounds();
     //  Go through each...
@@ -73,30 +80,18 @@ $(document).ready(function(){
       bounds.extend (LatLngList[i]);
     }
     //  Fit these bounds to the map
-    map.fitBounds (bounds);    
+    map.fitBounds (bounds);
   };
 
   addPlacesToMap = function(map) {
     for (var i = markerData.length - 1; i >= 0; i--) {
       var place = markerData[i];
       var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
-      var marker = addMarker(map, placeLatLong, place.name);
+      var marker = addMarker(map, placeLatLong, place);
     };
-  };
-
-  function initialize() {
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    addPlacesToMap(map);
-    calculateMapZoomLevel(map);
   };
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
-
-
 <div id="map-canvas" style="width: 100%; height: 100%">
 </div>
-
-<section class="trip-titles">
-  <h3>Places visited during the <%= @trip.name %> trip</h3>
-</section>

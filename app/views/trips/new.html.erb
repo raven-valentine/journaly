@@ -1,30 +1,15 @@
-
   <article class="base-modal trip-modal">
-    <header>
-      <h1>create your trip</h1>
-    </header>
-    <section class="clear-fix">
-      <%= form_for @trip do |form| %>
-        <div class="control-group success">
-          <%= form.text_field :name, :placeholder => 'Firstly, choose a name for your trip', :class => 'entry-box span3' %>
-        </div>
-        <section class="calendar ">
-          <header>
-            <h2>now choose a start date</h2>
-          </header>
-          <section>
-            <%= form.date_select :start_date %>
-          </section>
-        </section>
-        <section class="calendar">
-          <header>
-            <h2>and choose an end date</h2>
-          </header>
-          <section>
-            <%= form.date_select :end_date %>
-          </section>
-        </section>
-        <%= form.submit "Create Trip", :class => 'btn btn-large btn-block btn-info' %>
+    <section class="clear-fix trip-bar">
+        <%= form_for @trip do |form| %>
+        <label for="from">Add Trip Name:</label>
+        <%= form.text_field :name, :placeholder => 'create a trip...' %>
+        <p> Start Date </p>
+				<%= form.date_select :start_date %>
+				<p> End Date </p>
+				<%= form.date_select :end_date %>
+        <%= form.submit "create", :class => 'btn btn-block btn-info' %>
+
+
       <% end %>
     </section>
   </article>
