@@ -15,7 +15,6 @@ class MapController < ApplicationController
 		@markerData = []
 		@place.each_index do |x|
 			@markerData << {"name"=> @place[x].place, "longitude"=> @place[x].longitude, "latitude"=> @place[x].latitude, "placeId"=> @place[x].id, "tripId"=> @tripId}
-				puts @place[x].id
 		end
 		@markerData = @markerData.to_json
 		respond_to do |format|

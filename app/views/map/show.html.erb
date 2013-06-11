@@ -68,6 +68,7 @@ $(document).ready(function(){
         title: place.name,
         url: "../trips/"+tripId+"/places/"+place.placeId
 
+
       });
 
       var infowindow = new google.maps.InfoWindow({
@@ -75,7 +76,7 @@ $(document).ready(function(){
       });
       markersOnMap.push(place.name);
       google.maps.event.addListener(marker, 'click', function(){
-          window.location.href = marker.url;
+          window.location.href = marker.title;
       });
     };
 
