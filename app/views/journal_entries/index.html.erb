@@ -1,7 +1,15 @@
-<h1>Listing journal_entries</h1>
+<h1>Journal</h1>
+<br />
 
+  
+    <% @journal_entries.each do |entry| %>
+      <p><strong><%= entry.title %></strong></p>
+      <p>
+      <%= entry.post %></p>
+      <br />
+      <br />
+      <% end %>
 
-    <%= @journal_entries %>
        
 
  

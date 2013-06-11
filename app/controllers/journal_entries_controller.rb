@@ -6,8 +6,8 @@ class JournalEntriesController < ApplicationController
   end
 
   def show
-  	@place = Place.find(params[:id])
-    @journal_entries = @place.journal_entries.all
+  	@place = Place.find(params[:place_id])
+    @journal_entry = @place.journal_entries.find(params[:id])
   end
 
   def new
@@ -18,7 +18,7 @@ class JournalEntriesController < ApplicationController
 
   def create 
   	@trip = Trip.find(params[:trip_id])
- 	@place = @trip.places.find(params[:place_id])
+  	@place = @trip.places.find(params[:place_id])
  	@journal_entry = @place.journal_entries.create(params[:journal_entry])
  	redirect_to trip_place_journal_entry_path(@trip, @place, @journal_entry)
   end
