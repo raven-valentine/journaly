@@ -28,8 +28,15 @@
         <p><%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %></p>
         <p><%= form.submit "Add", :class => 'btn btn-block btn-primary' %></p>
       <% end %>
+      <div id="datepicker"></div>
     </section>
   </article>
+
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
 
   <script type="text/javascript">
   function initialize() {
