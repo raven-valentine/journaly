@@ -28,35 +28,6 @@ $(document).ready(function(){
 </script>
 
 
-<<<<<<< HEAD
-<script type='text/javascript'>
-  var markerData = $.parseJSON($("#markerData").text())
-  window.markersOnMap = [];
-  function initialize() {
-    for (var i = markerData.length - 1; i >= 0; i--) {
-      var place = markerData[i];
-      var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
-      };
-    var mapOptions = {
-      center: new google.maps.LatLng(place.latitude, place.longitude ),
-      zoom: 10,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    window.map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
-
-    for (var i = markerData.length - 1; i >= 0; i--) {
-      var place = markerData[i];
-      var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
-      var marker = new google.maps.Marker({
-        position: placeLatLong,
-        map: window.map,
-        title: place.name
-      });
-      var infowindow = new google.maps.InfoWindow({
-        content: place.name
-=======
-
 <script type='text/javascript'>
   var markerData = <%=raw @markerData %>;
 
@@ -68,7 +39,6 @@ $(document).ready(function(){
         position: latLong,
         map: map,
         title: name
->>>>>>> ecomba/master
       });
     markersOnMap.push(name);
     return marker;
@@ -86,7 +56,7 @@ $(document).ready(function(){
 
   calculateMapZoomLevel = function(map) {
     var LatLngList = latLangList();
-    
+
     //  Create a new viewpoint bound
     var bounds = new google.maps.LatLngBounds();
     //  Go through each...
@@ -95,7 +65,7 @@ $(document).ready(function(){
       bounds.extend (LatLngList[i]);
     }
     //  Fit these bounds to the map
-    map.fitBounds (bounds);    
+    map.fitBounds (bounds);
   };
 
   addPlacesToMap = function(map) {
