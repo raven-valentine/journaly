@@ -1,8 +1,15 @@
   <article class="base-modal trip-modal">
     <section class="clear-fix trip-bar">
         <%= form_for @trip do |form| %>
+        <label for="from">Add Trip Name:</label>
         <%= form.text_field :name, :placeholder => 'create a trip...' %>
+        <p> Start Date </p>
+				<%= form.date_select :start_date %>
+				<p> End Date </p>
+				<%= form.date_select :end_date %>
         <%= form.submit "create", :class => 'btn btn-block btn-info' %>
+
+
       <% end %>
     </section>
   </article>

@@ -44820,3 +44820,3493 @@ Served asset /underscore.js - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 11:31:10 +0100
 Served asset /application.js - 304 Not Modified (0ms)
 >>>>>>> remedy_homepage
+Connecting to database specified by database.yml
+
+
+Started GET "/map/66" for 127.0.0.1 at 2013-06-11 12:03:18 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"66"}
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "66"]]
+Completed 404 Not Found in 38ms
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with id=66):
+  app/controllers/map_controller.rb:12:in `show'
+
+
+  Rendered /Users/MacAir/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/MacAir/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /Users/MacAir/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-11 12:03:23 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (3.9ms)
+Compiled bootstrap_and_overrides.css  (1683ms)  (pid 2989)
+Compiled modal.css  (29ms)  (pid 2989)
+Compiled trips.css  (14ms)  (pid 2989)
+Compiled nav.css  (15ms)  (pid 2989)
+Compiled application.css  (31ms)  (pid 2989)
+Compiled google_autocomplete.js  (0ms)  (pid 2989)
+Compiled google_maps_api.js  (0ms)  (pid 2989)
+Compiled jquery-ui.js  (18ms)  (pid 2989)
+Compiled jquery_slideToggle_script.js  (10ms)  (pid 2989)
+Compiled application.js  (134ms)  (pid 2989)
+Completed 200 OK in 2548ms (Views: 2490.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2013-06-11 12:03:25 +0100
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 188ms (Views: 187.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /bootstrap_and_overrides.css - 200 OK (22ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /journal_entries.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /nav.css - 200 OK (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /application.css - 304 Not Modified (122ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /maps.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /trips.css - 200 OK (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /scaffolds.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /modal.css - 200 OK (8ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /flat-ui.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /places.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /google_autocomplete.js - 200 OK (3ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /google_maps_api.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /jquery-ui.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /jquery_slideToggle_script.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /journal_entries.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /trips.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /underscore.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:26 +0100
+Served asset /application.js - 304 Not Modified (45ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>1}
+  [1m[35mTrip Load (11.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 1
+  Rendered trips/new.html.erb (1.8ms)
+  Rendered places/new.html.erb (76.6ms)
+  Rendered map/show.html.erb within layouts/map (82.7ms)
+Completed 200 OK in 266ms (Views: 202.2ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /flat-ui.css - 304 Not Modified (87ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /google_maps_api.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:51 +0100
+Served asset /underscore.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:52 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:52 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:52 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:52 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.1" for 127.0.0.1 at 2013-06-11 12:03:56 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 154ms (Views: 153.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:56 +0100
+Served asset /maps.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:56 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:56 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /application.css - 304 Not Modified (80ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /flat-ui.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /journal_entries.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:03:57 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "trip"=>{"name"=>"new trip"}, "commit"=>"create"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 11 Jun 2013 11:04:03 UTC +00:00], ["end_date", nil], ["name", "new trip"], ["start_date", nil], ["updated_at", Tue, 11 Jun 2013 11:04:03 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/map/61
+Completed 302 Found in 17ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/map/61" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "61"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "61"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 61
+  Rendered trips/new.html.erb (1.9ms)
+  Rendered places/new.html.erb (9.0ms)
+  Rendered map/show.html.erb within layouts/map (13.7ms)
+Completed 200 OK in 252ms (Views: 243.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Served asset /journal_entries.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:03 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /flat-ui.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /underscore.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:04:04 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.1" for 127.0.0.1 at 2013-06-11 12:06:43 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 195ms (Views: 194.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /application.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /journal_entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /flat-ui.css - 304 Not Modified (95ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:06:44 +0100
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/trips/new.1" for 127.0.0.1 at 2013-06-11 12:07:26 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 122ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:26 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:26 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:26 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:26 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:26 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:26 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /application.css - 304 Not Modified (98ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /flat-ui.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:27 +0100
+Served asset /underscore.js - 304 Not Modified (4ms)
+
+
+Started GET "/trips/new.1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 180ms (Views: 178.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /maps.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /application.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /flat-ui.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:47 +0100
+Served asset /places.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /underscore.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:48 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-11 12:07:55 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "trip"=>{"name"=>"new trip", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"11", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"17"}, "commit"=>"create"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 11 Jun 2013 11:07:55 UTC +00:00], ["end_date", Mon, 17 Jun 2013], ["name", "new trip"], ["start_date", Tue, 11 Jun 2013], ["updated_at", Tue, 11 Jun 2013 11:07:55 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/map/62
+Completed 302 Found in 9ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/map/62" for 127.0.0.1 at 2013-06-11 12:07:55 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"62"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "62"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "62"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 62
+  Rendered trips/new.html.erb (19.5ms)
+  Rendered places/new.html.erb (12.8ms)
+  Rendered map/show.html.erb within layouts/map (37.6ms)
+Completed 200 OK in 355ms (Views: 350.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /maps.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /journal_entries.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /flat-ui.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /application.css - 304 Not Modified (82ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:07:56 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/62" for 127.0.0.1 at 2013-06-11 12:08:41 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"62"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "62"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "62"]]
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 62[0m
+  Rendered trips/new.html.erb (9.9ms)
+  Rendered places/new.html.erb (4.6ms)
+  Rendered map/show.html.erb within layouts/map (19.9ms)
+Completed 200 OK in 154ms (Views: 147.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:41 +0100
+Served asset /application.css - 304 Not Modified (144ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:41 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:41 +0100
+Served asset /journal_entries.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:41 +0100
+Served asset /maps.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:41 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /flat-ui.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:08:42 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 234ms (Views: 233.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /journal_entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /maps.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /flat-ui.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:01 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-11 12:09:05 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "trip"=>{"name"=>"", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"11", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"11"}, "commit"=>"create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 11 Jun 2013 11:09:05 UTC +00:00], ["end_date", Tue, 11 Jun 2013], ["name", ""], ["start_date", Tue, 11 Jun 2013], ["updated_at", Tue, 11 Jun 2013 11:09:05 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/map/63
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/map/63" for 127.0.0.1 at 2013-06-11 12:09:05 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"63"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "63"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "63"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 63[0m
+  Rendered trips/new.html.erb (17.9ms)
+  Rendered places/new.html.erb (2.9ms)
+  Rendered map/show.html.erb within layouts/map (26.5ms)
+Completed 200 OK in 338ms (Views: 333.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /flat-ui.css - 304 Not Modified (100ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:06 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "trip"=>{"name"=>"keir's trip", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"11", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"19"}, "commit"=>"create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 11 Jun 2013 11:09:20 UTC +00:00], ["end_date", Wed, 19 Jun 2013], ["name", "keir's trip"], ["start_date", Tue, 11 Jun 2013], ["updated_at", Tue, 11 Jun 2013 11:09:20 UTC +00:00]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/map/64
+Completed 302 Found in 11ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/map/64" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "64"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 64[0m
+  Rendered trips/new.html.erb (16.5ms)
+  Rendered places/new.html.erb (14.6ms)
+  Rendered map/show.html.erb within layouts/map (34.4ms)
+Completed 200 OK in 263ms (Views: 236.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /modal.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /maps.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:20 +0100
+Served asset /flat-ui.css - 304 Not Modified (70ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:21 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips/64/places" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "place"=>{"place"=>"Paris, France", "latitude"=>"48.856614", "longitude"=>"2.3522219000000177"}, "commit"=>"add", "trip_id"=>"64"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "64"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "places" ("created_at", "end_date", "latitude", "longitude", "place", "start_date", "trip_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 11 Jun 2013 11:09:49 UTC +00:00], ["end_date", nil], ["latitude", "48.856614"], ["longitude", "2.3522219000000177"], ["place", "Paris, France"], ["start_date", nil], ["trip_id", 64], ["updated_at", Tue, 11 Jun 2013 11:09:49 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/map/64
+Completed 302 Found in 17ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/map/64" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[35mTrip Load (0.3ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "64"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 64
+  Rendered trips/new.html.erb (11.1ms)
+  Rendered places/new.html.erb (4.2ms)
+  Rendered map/show.html.erb within layouts/map (19.5ms)
+Completed 200 OK in 238ms (Views: 216.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /flat-ui.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:49 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:50 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:50 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:50 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:50 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:50 +0100
+Served asset /underscore.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:09:50 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips/64/places" for 127.0.0.1 at 2013-06-11 12:10:05 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "place"=>{"place"=>"Brussels, Belgium", "latitude"=>"50.8503396", "longitude"=>"4.351710300000036"}, "commit"=>"add", "trip_id"=>"64"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "places" ("created_at", "end_date", "latitude", "longitude", "place", "start_date", "trip_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 11 Jun 2013 11:10:05 UTC +00:00], ["end_date", nil], ["latitude", "50.8503396"], ["longitude", "4.351710300000036"], ["place", "Brussels, Belgium"], ["start_date", nil], ["trip_id", 64], ["updated_at", Tue, 11 Jun 2013 11:10:05 UTC +00:00]]
+  [1m[35m (5.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/map/64
+Completed 302 Found in 13ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/map/64" for 127.0.0.1 at 2013-06-11 12:10:05 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "64"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 64[0m
+  Rendered trips/new.html.erb (33.8ms)
+  Rendered places/new.html.erb (111.2ms)
+  Rendered map/show.html.erb within layouts/map (150.9ms)
+Completed 200 OK in 277ms (Views: 273.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /maps.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /journal_entries.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /flat-ui.css - 304 Not Modified (87ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /journal_entries.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:06 +0100
+Served asset /underscore.js - 304 Not Modified (2ms)
+
+
+Started GET "/trips/new.64" for 127.0.0.1 at 2013-06-11 12:10:31 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 171ms (Views: 170.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /application.css - 304 Not Modified (113ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /journal_entries.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /maps.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /flat-ui.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /journal_entries.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:10:32 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.64" for 127.0.0.1 at 2013-06-11 12:12:50 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 290ms (Views: 289.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /flat-ui.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /journal_entries.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:12:51 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/map/64" for 127.0.0.1 at 2013-06-11 12:13:46 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "64"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 64
+  Rendered trips/new.html.erb (7.7ms)
+  Rendered places/new.html.erb (7.6ms)
+  Rendered map/show.html.erb within layouts/map (25.2ms)
+Completed 200 OK in 260ms (Views: 254.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /flat-ui.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /application.css - 304 Not Modified (66ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:13:47 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/64" for 127.0.0.1 at 2013-06-11 12:14:15 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "64"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 64[0m
+  Rendered trips/new.html.erb (7.5ms)
+  Rendered places/new.html.erb (4.8ms)
+  Rendered map/show.html.erb within layouts/map (15.7ms)
+Completed 200 OK in 140ms (Views: 134.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /maps.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /journal_entries.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /application.css - 304 Not Modified (80ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /flat-ui.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:16 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/map/64" for 127.0.0.1 at 2013-06-11 12:14:36 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "64"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 64
+  Rendered trips/new.html.erb (7.3ms)
+  Rendered places/new.html.erb (5.1ms)
+  Rendered map/show.html.erb within layouts/map (26.6ms)
+Completed 200 OK in 203ms (Views: 197.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:36 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:36 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:36 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:36 +0100
+Served asset /maps.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:36 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /flat-ui.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /journal_entries.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /underscore.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:37 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.64" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 243ms (Views: 242.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /maps.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /flat-ui.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:46 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:14:47 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.64" for 127.0.0.1 at 2013-06-11 12:15:01 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 121ms (Views: 120.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /flat-ui.css - 304 Not Modified (80ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:02 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.64" for 127.0.0.1 at 2013-06-11 12:15:32 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 126ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /application.css - 304 Not Modified (115ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /journal_entries.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /flat-ui.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:15:33 +0100
+Served asset /journal_entries.js - 304 Not Modified (2ms)
+
+
+Started GET "/trips/new.64" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 182ms (Views: 181.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /maps.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /journal_entries.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /flat-ui.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:00 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.64" for 127.0.0.1 at 2013-06-11 12:16:53 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 181ms (Views: 180.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /maps.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /trips.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /journal_entries.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /flat-ui.css - 304 Not Modified (79ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /journal_entries.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:16:54 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2013-06-11 12:17:02 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "trip"=>{"name"=>"new trip", "start_date(1i)"=>"2013", "start_date(2i)"=>"6", "start_date(3i)"=>"11", "end_date(1i)"=>"2013", "end_date(2i)"=>"6", "end_date(3i)"=>"17"}, "commit"=>"create"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "trips" ("created_at", "end_date", "name", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 11 Jun 2013 11:17:02 UTC +00:00], ["end_date", Mon, 17 Jun 2013], ["name", "new trip"], ["start_date", Tue, 11 Jun 2013], ["updated_at", Tue, 11 Jun 2013 11:17:02 UTC +00:00]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/map/65
+Completed 302 Found in 13ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/map/65" for 127.0.0.1 at 2013-06-11 12:17:02 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "65"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "65"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 65
+  Rendered trips/new.html.erb (11.2ms)
+  Rendered places/new.html.erb (3.5ms)
+  Rendered map/show.html.erb within layouts/map (18.5ms)
+Completed 200 OK in 175ms (Views: 168.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /journal_entries.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /application.css - 304 Not Modified (142ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /flat-ui.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /journal_entries.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:03 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/trips/65/places" for 127.0.0.1 at 2013-06-11 12:17:13 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "place"=>{"place"=>"London, United Kingdom", "latitude"=>"51.51121389999999", "longitude"=>"-0.11982439999997041"}, "commit"=>"add", "trip_id"=>"65"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "65"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "places" ("created_at", "end_date", "latitude", "longitude", "place", "start_date", "trip_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 11 Jun 2013 11:17:13 UTC +00:00], ["end_date", nil], ["latitude", "51.51121389999999"], ["longitude", "-0.11982439999997041"], ["place", "London, United Kingdom"], ["start_date", nil], ["trip_id", 65], ["updated_at", Tue, 11 Jun 2013 11:17:13 UTC +00:00]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/map/65
+Completed 302 Found in 10ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/map/65" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "65"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "65"]]
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 65[0m
+  Rendered trips/new.html.erb (9.0ms)
+  Rendered places/new.html.erb (3.2ms)
+  Rendered map/show.html.erb within layouts/map (33.7ms)
+Completed 200 OK in 357ms (Views: 352.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /journal_entries.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /flat-ui.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /journal_entries.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:14 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:17:15 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/65" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "65"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "65"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 65
+  Rendered trips/new.html.erb (7.3ms)
+  Rendered places/new.html.erb (5.1ms)
+  Rendered map/show.html.erb within layouts/map (18.4ms)
+Completed 200 OK in 204ms (Views: 192.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /journal_entries.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /nav.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /flat-ui.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /application.css - 304 Not Modified (87ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:59 +0100
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:59 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:59 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:59 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:59 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:18:59 +0100
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/map/65" for 127.0.0.1 at 2013-06-11 12:22:35 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "65"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "65"]]
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 65[0m
+  Rendered trips/new.html.erb (9.0ms)
+  Rendered places/new.html.erb (5.0ms)
+  Rendered map/show.html.erb within layouts/map (18.0ms)
+Completed 200 OK in 134ms (Views: 129.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/map/65" for 127.0.0.1 at 2013-06-11 12:22:36 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "65"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "65"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 65
+  Rendered trips/new.html.erb (8.1ms)
+  Rendered places/new.html.erb (2.7ms)
+  Rendered map/show.html.erb within layouts/map (13.9ms)
+Completed 200 OK in 226ms (Views: 220.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /flat-ui.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:22:37 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/map/65" for 127.0.0.1 at 2013-06-11 12:23:23 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "65"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "65"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 65[0m
+  Rendered trips/new.html.erb (6.7ms)
+  Rendered places/new.html.erb (5.4ms)
+  Rendered map/show.html.erb within layouts/map (15.2ms)
+Completed 200 OK in 130ms (Views: 125.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /journal_entries.css - 304 Not Modified (187ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /modal.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /journal_entries.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /underscore.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:23:24 +0100
+Served asset /flat-ui.css - 304 Not Modified (10ms)
+
+
+Started POST "/trips/65/places" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtWEz2+cPEBG/XvnC80pyWYOmLciajHB/FkRaZY9CAc=", "place"=>{"place"=>"Paris, TX", "latitude"=>"33.6609389", "longitude"=>"-95.55551300000002", "start_date"=>"07/16/2013", "end_date"=>"07/17/2013"}, "commit"=>"add", "trip_id"=>"65"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "65"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "places" ("created_at", "end_date", "latitude", "longitude", "place", "start_date", "trip_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 11 Jun 2013 11:24:27 UTC +00:00], ["end_date", nil], ["latitude", "33.6609389"], ["longitude", "-95.55551300000002"], ["place", "Paris, TX"], ["start_date", nil], ["trip_id", 65], ["updated_at", Tue, 11 Jun 2013 11:24:27 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/map/65
+Completed 302 Found in 13ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/map/65" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", "65"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "65"]]
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 65
+  Rendered trips/new.html.erb (21.3ms)
+  Rendered places/new.html.erb (6.8ms)
+  Rendered map/show.html.erb within layouts/map (35.6ms)
+Completed 200 OK in 421ms (Views: 408.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /maps.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /flat-ui.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /nav.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /application.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:28 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/map/65/places" for 127.0.0.1 at 2013-06-11 12:24:32 +0100
+
+ActionController::RoutingError (No route matches [GET] "/map/65/places"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/MacAir/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/MacAir/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/MacAir/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/MacAir/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/trips/64" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35mTrip Load (1.7ms)[0m  SELECT "trips".* FROM "trips" 
+  Rendered trips/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 185ms (Views: 173.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Served asset /journal_entries.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Served asset /maps.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:44 +0100
+Served asset /flat-ui.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /journal_entries.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:45 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/trips/64/places" for 127.0.0.1 at 2013-06-11 12:24:49 +0100
+Processing by PlacesController#index as HTML
+  Parameters: {"trip_id"=>"64"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", "64"]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 64
+  Rendered places/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 128ms (Views: 124.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /flat-ui.css - 304 Not Modified (88ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_autocomplete.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /google_autocomplete.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/google_maps_api.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /google_maps_api.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /trips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_slideToggle_script.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /jquery_slideToggle_script.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.js?body=1" for 127.0.0.1 at 2013-06-11 12:24:50 +0100
+Served asset /journal_entries.js - 304 Not Modified (0ms)
