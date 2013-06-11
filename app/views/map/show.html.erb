@@ -60,25 +60,22 @@ $(document).ready(function(){
     for (var i = markerData.length - 1; i >= 0; i--) {
       var place = markerData[i];
       var tripId = place.tripId;
-
+      var placeId = place.placeId;
       var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
       var marker = new google.maps.Marker({
         position: placeLatLong,
         map: window.map,
         title: place.name,
-        url: "../trips/"+tripId+"/places/"+place.placeId
-
-
+        url: "../trips/"+tripId+"/places/"+placeId
       });
 
-      var infowindow = new google.maps.InfoWindow({
-        content: place.name
+
+      google.maps.event.addListener(marker, 'click', function(){
+        window.location.href = this.url;
       });
       markersOnMap.push(place.name);
-      google.maps.event.addListener(marker, 'click', function(){
-          window.location.href = marker.title;
-      });
     };
+
 
     var LatLngList = new Array
     //  Create a new viewpoint bound
