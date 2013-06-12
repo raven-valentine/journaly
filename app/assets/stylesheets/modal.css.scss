@@ -99,8 +99,21 @@ section.journal_entry {
   border: 2px solid #A3A3C2;
 }
 
-.journal_post_title {
+  section.journal_post_title {
   text-align: center;
+
+}
+
+h2 {
+  color: rgba(46, 204, 113,1.0)
+}
+
+section.journal_post_content {
+  border: 2px solid rgba(46, 204, 113,1.0);
+  margin-bottom: 1px;
+  margin-top:20px;
+  min-height: 300px;
+  padding: 10px;
 }
 
 /* Something Else */
