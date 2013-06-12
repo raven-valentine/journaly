@@ -36,6 +36,7 @@
   position: fixed;
   width: 60%;
   z-index: 200;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .place-modal {
@@ -44,6 +45,12 @@
 
 .trip-modal {
   margin: 100px 20%;
+}
+
+.trip-bar {
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
   header {
     text-align: center;
     background-color: #5dade2;
@@ -53,12 +60,6 @@
       margin: 0;
     }
   }
-}
-
-.trip-bar {
-  border: 4px solid rgba(255, 255, 255, 0.9);
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.9);
   section {
     border: none;
   }

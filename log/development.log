@@ -4427,3 +4427,449 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-12 08:34:42 +0100
 Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.1" for 127.0.0.1 at 2013-06-12 08:52:45 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:45 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:45 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instagram.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:45 +0100
+Served asset /instagram.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:45 +0100
+Served asset /journal_entries.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:45 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:45 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.js?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /instagram.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-12 08:52:46 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /instagram.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /places.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /flat-ui.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.js?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /instagram.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-12 08:53:19 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>1}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 1
+  Rendered trips/new.html.erb (2.9ms)
+  Rendered places/new.html.erb (2.8ms)
+  Rendered map/show.html.erb within layouts/map (7.6ms)
+Compiled modal.css  (16ms)  (pid 4034)
+Compiled application.css  (4ms)  (pid 4034)
+Completed 200 OK in 156ms (Views: 151.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /application.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /instagram.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /modal.css - 200 OK (1ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-12 08:54:07 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>1}
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."trip_id" = 1[0m
+  Rendered trips/new.html.erb (2.1ms)
+  Rendered places/new.html.erb (3.5ms)
+  Rendered map/show.html.erb within layouts/map (8.4ms)
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instagram.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /instagram.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.js?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /instagram.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-12 08:54:45 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Processing by MapController#show as HTML
+  Parameters: {"id"=>1}
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."trip_id" = 1
+  Rendered trips/new.html.erb (7.1ms)
+  Rendered places/new.html.erb (2.3ms)
+  Rendered map/show.html.erb within layouts/map (12.9ms)
+Compiled modal.css  (19ms)  (pid 4034)
+Compiled application.css  (6ms)  (pid 4034)
+Completed 200 OK in 171ms (Views: 166.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /application.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /instagram.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /journal_entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /modal.css - 200 OK (5ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /flat-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /instagram.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:10 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-12 09:08:11 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)
+
+
+Started GET "/trips/new.1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Processing by TripsController#new as 
+  Rendered trips/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 45ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modal.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /modal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /instagram.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/journal_entries.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /journal_entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /trips.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flat-ui.css?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /flat-ui.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instagram.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /instagram.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/map_dummy.png" for 127.0.0.1 at 2013-06-12 09:08:12 +0100
+Served asset /map_dummy.png - 304 Not Modified (0ms)

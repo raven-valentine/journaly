@@ -1,8 +1,8 @@
   <article class="base-modal trip-modal">
-    <header>
-      <h2>Create a Trip</h2>
-    </header>
     <section class="clear-fix trip-bar">
+      <header>
+        <h2>Create a Trip</h2>
+      </header>
         <%= form_for @trip do |form| %>
         <%= form.text_field :name, :placeholder => '...create a trip' %>
 				<%= form.hidden_field :start_date %>
