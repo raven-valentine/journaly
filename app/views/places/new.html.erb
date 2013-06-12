@@ -3,8 +3,9 @@
 
     <section class="clear-fix place-bar">
         <%= form_for([@trip, @trip.places.build]) do |form| %>
-        <label for="from">Add Place:</label>
-        <%= form.text_field :place, :placeholder => 'add a place...', :id => id='searchTextField' %>
+        <%= collection_select(:place, :previous_place_id, @trip.places.all, :id, :place) %>
+        <%= form.label :place, 'Travelling to' %>
+        <%= form.text_field :place, :placeholder => 'Travelling to', :id => id='searchTextField' %>
         <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
         <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
         <%= form.hidden_field :start_date %>
