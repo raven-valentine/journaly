@@ -53,6 +53,11 @@
 form#new_journal_entry {
   width: 100%;
   text-align: center;
+  color: solid white;
+}
+
+section.journal_entry {
+  background-color: #ffffff;
 }
 
 #journal_entry_title {
@@ -64,6 +69,7 @@ form#new_journal_entry {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  display: block;
 }
 
 #journal_entry_title:hover {
