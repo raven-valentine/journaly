@@ -22,8 +22,4 @@ class JournalEntriesController < ApplicationController
  	@journal_entry = @place.journal_entries.create(params[:journal_entry])
  	redirect_to trip_place_journal_entry_path(@trip, @place, @journal_entry)
   end
-
-
-
-
 end
