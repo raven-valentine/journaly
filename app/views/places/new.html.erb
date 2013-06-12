@@ -7,7 +7,7 @@
         <%= form.text_field :place, :placeholder => 'add a place...', :id => id='searchTextField' %>
         <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
         <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
-        <%= form.hidden_field :start_date %>
+        <%= form.text_field :start_date %>
         <%= form.hidden_field :end_date %>
         <%= form.submit "add", :class => 'btn btn-block btn-primary' %>
       <% end %>
@@ -33,6 +33,10 @@ var end_year=end_date.slice(0,4);
 var end_month=end_date.slice(5,7);
 var end_day=end_date.slice(8,10);
 </script>
+
+
+
+<!-- These need to be moved out of the view into vendor folders or at the very least the head of the document -->
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>

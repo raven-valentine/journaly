@@ -1,15 +1,46 @@
   <article class="base-modal trip-modal">
     <section class="clear-fix trip-bar">
         <%= form_for @trip do |form| %>
-        <label for="from">Add Trip Name:</label>
-        <%= form.text_field :name, :placeholder => 'create a trip...' %>
-        <p> Start Date </p>
-				<%= form.date_select :start_date %>
-				<p> End Date </p>
-				<%= form.date_select :end_date %>
+        <%= form.text_field :name, :placeholder => '...create a trip' %>
+				<%= form.hidden_field :start_date %>
+				<%= form.hidden_field :end_date %>
         <%= form.submit "create", :class => 'btn btn-block btn-info' %>
-
-
       <% end %>
+      <section class="clear-fix ">
+          <input type="text" id="from" name="from" placeholder="...give it a start date"/>
+          <input type="text" id="to" name="to" placeholder="...and an end date"/>
+          <div id="datepicker"></div>
+        </section>
     </section>
   </article>
+
+<!-- Need to take the jQuery and CSS into the vendor folder -->
+
+<script>
+  $(function() {
+    $( "#from" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      minDate: new Date(start_year, start_month, start_day),
+      maxDate: new Date(end_year, end_month, end_day),
+      onClose: function( selectedDate ) {
+        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+      $('#trip_start_date').val(selectedDate);
+      }
+    });
+
+    $( "#to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      minDate: new Date(start_year, start_month, start_day),
+      maxDate: new Date(end_year, end_month, end_day),
+      onClose: function( selectedDate ) {
+        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+      $('#trip_end_date').val(selectedDate);
+      }
+    });
+
+  }); // end of function
+  </script>
