@@ -94,6 +94,18 @@ section.journal_entry {
   float: center;
 }
 
+section.journal_post  {
+  background-color: #ffffff;
+}
+
+section.journal_post:hover {
+  border:2px solid #2fe2bf;
+}
+
+.journal_post_header {
+  font-color: #ffffff;
+}
+
 .trip-bar {
   border: 4px solid rgba(255, 255, 255, 0.9);
   border-radius: 4px;

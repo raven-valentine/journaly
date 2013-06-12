@@ -1,14 +1,17 @@
-<article>
-    <header>
+<article class="base-modal modal-result">
+    <header class="journal_post_header">
       <h1>Awesome!</h1>
       <h2>a journal entry was created...</h2>
     </header>
-<section>
-    <article>
-    <h1><%= @journal_entry.title %></h1>
+
+    <section class="journal_post">
+    	<section class="journal_post_title">
+    		<h1><%= @journal_entry.title %></h1>
+    	</section>
+    	<section class="journal_post_content">
     <p><%= @journal_entry.post %></p>
-    </article>
-</section>
+    	</section>
+    </section>
 </article>
 
 
