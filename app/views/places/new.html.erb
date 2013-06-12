@@ -9,7 +9,7 @@
         <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
         <%= form.hidden_field :start_date %>
         <%= form.hidden_field :end_date %>
-        <%= form.submit "add", :class => 'btn btn-block btn-primary' %>
+        <%= form.submit "add", :class => 'btn btn-block btn-primary', :id => 'add'%>
       <% end %>
         <section class="clear-fix ">
           <label for="from">Arrival date:</label>
@@ -35,10 +35,6 @@ var end_day=end_date.slice(8,10);
 </script>
 
 
-<!-- These need to be moved out of the view into vendor folders or at the very least the head of the document -->
-
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script>
       $(function() {
         $( "#from" ).datepicker({
@@ -47,9 +43,11 @@ var end_day=end_date.slice(8,10);
           numberOfMonths: 1,
           minDate: new Date(start_year, start_month, start_day),
           maxDate: new Date(end_year, end_month, end_day),
+
           onClose: function( selectedDate ) {
             $( "#to" ).datepicker( "option", "minDate", selectedDate );
-          $('#place_start_date').val(selectedDate);
+            var sdate = $("#from" ).datepicker("getDate");
+            $('#place_start_date').val(sdate);
           }
 
         });
@@ -59,9 +57,11 @@ var end_day=end_date.slice(8,10);
           numberOfMonths: 1,
           minDate: new Date(start_year, start_month, start_day),
           maxDate: new Date(end_year, end_month, end_day),
+
           onClose: function( selectedDate ) {
             $( "#from" ).datepicker( "option", "maxDate", selectedDate );
-          $('#place_end_date').val(selectedDate);
+            var edate = $("#to" ).datepicker("getDate");
+            $('#place_end_date').val(edate);
           }
 
         });
