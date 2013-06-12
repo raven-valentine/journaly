@@ -3,7 +3,20 @@
 
     <section class="clear-fix place-bar">
         <%= form_for([@trip, @trip.places.build]) do |form| %>
-        <%= collection_select(:place, :previous_place_id, @trip.places.all, :id, :place) %>
+        <%- if @trip.places.length > 1 %> 
+          <%= form.label :previous_place_id, 'Travelling from' %>
+          <select name='place[previous_place_id]'>
+            <% @trip.places.each do |place| %>
+            
+              <%- if @trip.places[-2].place == place.place %>
+                <option selected = "selected" value="<%=place.id %>"><%= place.place %></option>
+                <% else %>
+                <option value="<%=place.id %>"><%= place.place %></option>
+              <%end%>
+            <%end%>
+          </select>
+        <% end %>
+        
         <%= form.label :place, 'Travelling to' %>
         <%= form.text_field :place, :placeholder => 'Travelling to', :id => id='searchTextField' %>
         <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
