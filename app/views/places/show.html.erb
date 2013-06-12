@@ -1,19 +1,26 @@
-<article class="base-modal place-modal modal-result">
-    <header>
-      <h1>Boom Boom</h1>
-      <h2><%= @place.place %> was added...</h2>
-    </header>
-    <section class="clear-fix date-block">
-      <h2>You arrived on <span><%= @place.start_date %></span></h2>
-      <h2>you left on <span><%= @place.end_date %></span></h2>
-      <h3>Oh, and if you want to know the coordinates, here they are!!</h3>
-      <ul class="unstyled">
-        <li>Latitude is: <span><%= @place.latitude %></span></li>
-        <li>Longitude is: <span><%= @place.longitude %></span></li>
-      </ul>
-    </section>
-</article>
+<section class="media-page">
 
-<section class="trip-title">
-  <h3>Places visited during the <%= @trip.name %> trip</h3>
+  <header class="media-page-header">
+    <section class="media-details">
+      <%= @trip.name %>
+      <%= @place.place %>
+    </section>
+
+    <nav>
+      <a class="btn btn-primary">Add Journal Entry</a>
+    </nav>
+  </header>
+
+
+
+
+
+  <section class="media-page-body">
+    <article class="square-tile">
+      <%= render :template => "journal_entries/new" %>
+    </article>
+    <article class="square-tile">
+      <%= render :template => "journal_entries/show" %>
+    </article>
+  </section>
 </section>
