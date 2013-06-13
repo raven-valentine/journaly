@@ -6,6 +6,7 @@
     <%= link_to "+trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
     <a class = "btn btn-primary btn-map show_hide_place"> +place</a>
   </header>
+    <a class = "btn btn-primary btn-map lines">add lines</a>
 </section>
 
 <%= render :template => "trips/new" %>
@@ -30,10 +31,41 @@ $(document).ready(function(){
 
 <script type='text/javascript'>
 
+ $('.lines').click(function(){
+    addLinesToMap(window.map);
+  });
+
+   addLinesToMap = function(map) {
+    var lineCoordinates = [];
+    for (var i = markerData.length - 1; i >= 0; i--) {
+      var place = markerData[i];
+      var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
+      
+      lineCoordinates.push(placeLatLong);
+      console.log(lineCoordinates);
+    };
+
+      var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 1,
+      scale: 4
+      };
+
+      var line = new google.maps.Polyline({
+      path: lineCoordinates,
+      strokeColor: "#FF0000",
+      strokeOpacity: 1.0,
+      strokeWeight: 2
+      });
+
+      line.setMap(window.map);
+      
+    };
+
 function initialize() {
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    addPlacesToMap(map);
-    calculateMapZoomLevel(map);
+    window.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    addPlacesToMap(window.map);
+    calculateMapZoomLevel(window.map);
   };
 
   var markerData = <%=raw @markerData %>;
