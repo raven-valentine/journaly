@@ -8,6 +8,9 @@ Journaly::Application.routes.draw do
     end
   end
 
+  match 'instagram/show' => "instagram#show"
+  match 'instagram/link' => "instagram#link"
+
 
 
   resources :map do
