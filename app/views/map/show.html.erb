@@ -110,10 +110,11 @@ var polyLines = [];
       };
 
     polyLines = []
+    var color = "#0027F0"
     for (var i = group.length - 1; i >= 0; i--) {
       var line = new google.maps.Polyline({
       path: group[i],
-      strokeColor: "#FF0000",
+      strokeColor: color,
       strokeOpacity: 1.0,
       strokeWeight: 1.5,
       icons: [{
@@ -122,7 +123,20 @@ var polyLines = [];
           offset: '100%',
         }],
       });
-
+      switch (color) {
+        case "#0027F0":
+               color = "#009938";
+               break;
+        case "#009938":
+               color = "#FF0000";
+               break;
+        case "#FF0000":
+               color = "#000000";
+               break;
+        case "#000000":
+               color = "#0027F0";
+               break;
+        };
       line.setMap(window.map);
       polyLines.push(line);
     };
