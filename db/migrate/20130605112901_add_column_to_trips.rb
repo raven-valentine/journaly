@@ -1,5 +1,5 @@
 class AddColumnToTrips < ActiveRecord::Migration
   def change
-    add_column :trips, :date, :string
+    add_column :trips, :start_date, :date
   end
 end

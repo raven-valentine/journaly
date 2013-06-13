@@ -1,13 +1,12 @@
-<article>
-    <header>
-      <h1>Journal</h1>
-    </header>
-
-    <article>
-    <h1><%= @journal_entry.title %></h1>
+<article class="base-modal">
+  <section class="journal_post">
+    	<section class="journal_post_title">
+    		<h2 class="journal_post_title"><%= @journal_entry.title %></h2>
+    	</section>
+    	<section class="journal_post_content">
     <p><%= @journal_entry.post %></p>
-    </article>
-
+    	</section>
+    </section>
 </article>
 
 
