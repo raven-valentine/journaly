@@ -3,13 +3,27 @@
 
     <section class="clear-fix place-bar">
         <%= form_for([@trip, @trip.places.build]) do |form| %>
-        <label for="from">Add Place:</label>
-        <%= form.text_field :place, :placeholder => 'add a place...', :id => id='searchTextField' %>
+        <%- if @trip.places.length > 1 %> 
+          <%= form.label :previous_place_id, 'Travelling from' %>
+          <select name='place[previous_place_id]'>
+            <% @trip.places.each do |place| %>
+            
+              <%- if @trip.places[-2].place == place.place %>
+                <option selected = "selected" value="<%=place.id %>"><%= place.place %></option>
+                <% else %>
+                <option value="<%=place.id %>"><%= place.place %></option>
+              <%end%>
+            <%end%>
+          </select>
+        <% end %>
+        
+        <%= form.label :place, 'Travelling to' %>
+        <%= form.text_field :place, :placeholder => 'Travelling to', :id => id='searchTextField' %>
         <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
         <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
         <%= form.hidden_field :start_date %>
         <%= form.hidden_field :end_date %>
-        <%= form.submit "add", :class => 'btn btn-block btn-primary' %>
+        <%= form.submit "add", :class => 'btn btn-block btn-primary', :id => 'add'%>
       <% end %>
         <section class="clear-fix ">
           <label for="from">Arrival date:</label>
@@ -35,10 +49,6 @@ var end_day=end_date.slice(8,10);
 </script>
 
 
-<!-- These need to be moved out of the view into vendor folders or at the very least the head of the document -->
-
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script>
       $(function() {
         $( "#from" ).datepicker({
@@ -47,9 +57,11 @@ var end_day=end_date.slice(8,10);
           numberOfMonths: 1,
           minDate: new Date(start_year, start_month, start_day),
           maxDate: new Date(end_year, end_month, end_day),
+
           onClose: function( selectedDate ) {
             $( "#to" ).datepicker( "option", "minDate", selectedDate );
-          $('#place_start_date').val(selectedDate);
+            var sdate = $("#from" ).datepicker("getDate");
+            $('#place_start_date').val(sdate);
           }
 
         });
@@ -59,9 +71,11 @@ var end_day=end_date.slice(8,10);
           numberOfMonths: 1,
           minDate: new Date(start_year, start_month, start_day),
           maxDate: new Date(end_year, end_month, end_day),
+
           onClose: function( selectedDate ) {
             $( "#from" ).datepicker( "option", "maxDate", selectedDate );
-          $('#place_end_date').val(selectedDate);
+            var edate = $("#to" ).datepicker("getDate");
+            $('#place_end_date').val(edate);
           }
 
         });
