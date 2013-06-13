@@ -1,4 +1,4 @@
-<span style="display: none;" id='markerData'> <%= @markerData %></span>
+  <span style="display: none;" id='markerData'> <%= @markerData %></span>
 
 <section class="trip-title">
   <header>
@@ -6,7 +6,8 @@
     <%= link_to "+trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
     <a class = "btn btn-primary btn-map show_hide_place"> +place</a>
   </header>
-    <a class = "btn btn-primary btn-map lines">add lines</a>
+    <a class = "btn btn-primary btn-map lines" id="add-lines">add lines</a>
+    <a class = "btn btn-alert btn-map" id="remove-lines">remove lines</a>
 </section>
 
 <%= render :template => "trips/new" %>
@@ -17,6 +18,8 @@
 $(document).ready(function(){
     $(".place-bar").hide();
     $(".trip-bar").hide();
+    $("#remove-lines").hide();
+    $("#add-lines").show();
     $(".show_hide_trip").show();
     $(".show_hide_place").show();
     $('.show_hide_place').click(function(){
@@ -25,25 +28,76 @@ $(document).ready(function(){
     $('.show_hide_trip').click(function(){
       $(".trip-bar").slideToggle();
       });
+    $('#add-lines').click(function(){
+      $("#add-lines").toggle();
+      $("#remove-lines").toggle();
+      })
+    $('#remove-lines').click(function(){
+      $("#add-lines").toggle();
+      $("#remove-lines").toggle();
+      });;
   });
 </script>
 
 
 <script type='text/javascript'>
+var polyLines = [];
 
- $('.lines').click(function(){
+ $('#remove-lines').click(function(){
+    for (var i = polyLines.length - 1; i >= 0; i--) {
+      polyLines[i].setMap(null);
+        };
+  });
+
+
+ $('#add-lines').click(function(){
     addLinesToMap(window.map);
   });
 
    addLinesToMap = function(map) {
     var lineCoordinates = [];
+    var startPoints = [];
+    var connectedPoints = [];
+    var group=[];
+
     for (var i = markerData.length - 1; i >= 0; i--) {
       var place = markerData[i];
+        if(place.previous_place_id == null)
+          startPoints.push(place);
+        else
+          connectedPoints.push(place);
       var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
-      
       lineCoordinates.push(placeLatLong);
-      console.log(lineCoordinates);
     };
+    console.log(connectedPoints)
+    console.log(startPoints)
+
+
+    for (var i = (startPoints.length - 1); i >= 0; i--) {
+        var arrayConnectedPlaces =[];
+        var place = startPoints[i];
+        console.log(place);
+
+        arrayConnectedPlaces.push(new google.maps.LatLng(place.latitude, place.longitude));
+
+          if (place.next_place_id !== null)
+            {
+              for (var j = connectedPoints.length-1; j >= 0; j--) {
+                currentPlace = connectedPoints[j];
+                if(currentPlace.placeId == place.next_place_id)
+                  {
+                  arrayConnectedPlaces.push(new google.maps.LatLng(currentPlace.latitude, currentPlace.longitude));
+                  place = currentPlace;
+                  console.log(currentPlace);
+                  };
+              };
+            };
+
+        group.push(arrayConnectedPlaces.slice(0));
+    };
+
+
+  lineCoordinates.push(placeLatLong);
 
       var lineSymbol = {
       path: 'M 0,-1 0,1',
@@ -51,15 +105,28 @@ $(document).ready(function(){
       scale: 4
       };
 
+      var lineSymbol = {
+        path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
+      };
+
+    polyLines = []
+    for (var i = group.length - 1; i >= 0; i--) {
       var line = new google.maps.Polyline({
-      path: lineCoordinates,
+      path: group[i],
       strokeColor: "#FF0000",
       strokeOpacity: 1.0,
-      strokeWeight: 2
+      strokeWeight: 1.5,
+      icons: [{
+          icon: lineSymbol,
+          repeat: '150px',
+          offset: '100%',
+        }],
       });
 
       line.setMap(window.map);
-      
+      polyLines.push(line);
+    };
+
     };
 
 function initialize() {
