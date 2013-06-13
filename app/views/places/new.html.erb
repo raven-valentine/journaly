@@ -4,25 +4,34 @@
     <section class="clear-fix place-bar">
         <%= form_for([@trip, @trip.places.build]) do |form| %>
         <%- if @trip.places.length > 1 %> 
+
           <%= form.label :previous_place_id, 'Travelling from' %>
-          <select name='place[previous_place_id]'>
-            <% @trip.places.each do |place| %>
-            
-              <%- if @trip.places[-2].place == place.place %>
-                <option selected = "selected" value="<%=place.id %>"><%= place.place %></option>
-                <% else %>
-                <option value="<%=place.id %>"><%= place.place %></option>
+            <select id="prev_place" name='place[previous_place_id]'>
+              
+              <% @trip.places.each do |place| %>
+                <%- if place.next_place_id == nil %>
+                  <%- if @trip.places[-2].place == place.place %>
+                    <option selected = "selected" value="<%=place.id %>"><%= place.place %></option>
+                    <% else %>
+                    <option value="<%= place.id %>"><%= place.place %></option>
+                  <%end%>
+                <%end%>
               <%end%>
-            <%end%>
-          </select>
+            </select>
+
         <% end %>
-        
+        <script type="text/javascript">
+            $('#prev_place').change(function() {
+              $('#place_previous_place_id').val($('#prev_place').val());
+            });
+        </script>
         <%= form.label :place, 'Travelling to' %>
         <%= form.text_field :place, :placeholder => 'Travelling to', :id => id='searchTextField' %>
         <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
         <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
         <%= form.hidden_field :start_date %>
         <%= form.hidden_field :end_date %>
+        <%= form.hidden_field :previous_place_id %>
         <%= form.submit "add", :class => 'btn btn-block btn-primary' %>
       <% end %>
         <section class="clear-fix ">
@@ -94,6 +103,7 @@ var end_day=end_date.slice(8,10);
       var latitude = place.geometry.location.jb;
       $('#place_latitude').val(latitude);
       $('#place_longitude').val(longitude);
+      $('#place_previous_place_id').val($('#prev_place').val());
     });
   };
   google.maps.event.addDomListener(window, 'load', initialize);
