@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130610102317) do
+ActiveRecord::Schema.define(:version => 20130612141130) do
 
   create_table "journal_entries", :force => true do |t|
     t.string   "title"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20130610102317) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "trip_id"
+    t.integer  "previous_place_id"
+    t.integer  "next_place_id"
   end
 
   create_table "trips", :force => true do |t|
