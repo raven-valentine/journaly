@@ -23,12 +23,12 @@ ActiveRecord::Schema.define(:version => 20130610102317) do
 
   create_table "places", :force => true do |t|
     t.string   "place"
-    t.date     "start_date", :limit => 255
-    t.date     "end_date",   :limit => 255
+    t.date     "start_date"
+    t.date     "end_date"
     t.string   "latitude"
     t.string   "longitude"
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "trip_id"
   end
 
