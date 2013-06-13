@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(:version => 20130612141130) do
     t.date     "end_date"
     t.string   "latitude"
     t.string   "longitude"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
     t.integer  "trip_id"
     t.integer  "previous_place_id"
     t.integer  "next_place_id"
