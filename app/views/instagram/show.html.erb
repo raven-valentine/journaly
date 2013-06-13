@@ -2,5 +2,6 @@
 
 <span>
 
-  <%= Instagram.user_recent_media(777) %>
+  <%- search = Instagram.media_search("37.7808851","-122.3948632") %>
+  <img src="<%= search.first.images.standard_resolution.url %>" />
 </span>
