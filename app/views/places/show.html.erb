@@ -6,8 +6,8 @@
     </section>
 
     <nav>
-      <a class="btn btn-primary add-entry">Journal Entry</a>
-      <a class="btn btn-info view-entries">View Entries</a>
+      <a class="btn btn-primary add-entry">Add Journal Entry</a>
+      <a class="btn btn-info add-photo">Add Photos</a>
     </nav>
   </header>
 
@@ -15,7 +15,7 @@
     <article class="add-entry-template">
       <%= render :template => "journal_entries/new" %>
     </article>
-    <article class="view-entries-template">
+    <article class="journal-entries-template">
       <%= render :template => "journal_entries/show" %>
     </article>
   </section>
@@ -27,15 +27,6 @@ $(document).ready(function(){
     $(".add-entry-template").hide();
     $('.add-entry').click(function(){
       $(".add-entry-template").slideToggle();
-      });
-  });
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-    $(".view-entries-template").hide();
-    $('.view-entries').click(function(){
-      $(".view-entries-template").slideToggle();
       });
   });
 </script>
