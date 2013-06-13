@@ -18,7 +18,8 @@ class PlacesController < ApplicationController
 		@trip = Trip.find(params[:trip_id])
 		@place = Place.find(params[:id])
 		@places = Place.all
-		@journal_entry = @place.journal_entries.build
+		@journal_entries = @place.journal_entries.build
+		@journal_entry = JournalEntry.find(params[:id])
 	end
 
 end

@@ -8,30 +8,60 @@
     width: 100%;
     position: fixed;
     top: 0;
-    height: 40px;
     outline: 1px dotted red;
+    background-color: rgba(0, 0, 0, 0.75);
+
 
     .media-details {
       outline: 1px dotted blue;
+      width: 50%;
+      float: left;
+      padding: 8px;
 
+
+       h1 {
+        line-height: 16px;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+      }
     }
 
     nav {
       outline: 1px dotted green;
-      height: 40px;
       width: 50%;
-      float: right;
+      float: left;
+      padding: 5px;
+
+      .btn {
+        float: left;
+        font-size: 12px;
+        width: 49%;
+      }
+
+      .btn-info {
+        margin-left: 2%;
+
+      }
+
+
     }
   } /* end of media-page-header */
 
 
   .media-page-body {
     padding-top: 40px;
-    .square-tile {
-      width: 50%;
-      float: left;
-    } /* end of square-tile */
 
+    .add-entry-template {
+      position: fixed;
+      width: 50%;
+      margin: 5% 25%;
+    }
+    .view-entries-template {
+      position: fixed;
+      width: 60%;
+      margin: 5% 20%;
+    }
   } /*end of media-page-body */
 
 

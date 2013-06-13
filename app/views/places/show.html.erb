@@ -2,25 +2,40 @@
 
   <header class="media-page-header">
     <section class="media-details">
-      <%= @trip.name %>
-      <%= @place.place %>
+      <h1><%= @trip.name %> - <%= @place.place %></h1>
     </section>
 
     <nav>
-      <a class="btn btn-primary">Add Journal Entry</a>
+      <a class="btn btn-primary add-entry">Journal Entry</a>
+      <a class="btn btn-info view-entries">View Entries</a>
     </nav>
   </header>
 
-
-
-
-
   <section class="media-page-body">
-    <article class="square-tile">
+    <article class="add-entry-template">
       <%= render :template => "journal_entries/new" %>
     </article>
-    <article class="square-tile">
+    <article class="view-entries-template">
       <%= render :template => "journal_entries/show" %>
     </article>
   </section>
 </section>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".add-entry-template").hide();
+    $('.add-entry').click(function(){
+      $(".add-entry-template").slideToggle();
+      });
+  });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".view-entries-template").hide();
+    $('.view-entries').click(function(){
+      $(".view-entries-template").slideToggle();
+      });
+  });
+</script>
