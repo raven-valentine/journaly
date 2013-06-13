@@ -34,9 +34,9 @@ ActiveRecord::Schema.define(:version => 20130610102317) do
 
   create_table "trips", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
-    t.date     "start_date", :limit => 255
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.date     "start_date"
     t.date     "end_date"
   end
 
