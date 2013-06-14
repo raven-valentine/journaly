@@ -1,45 +1,42 @@
 /* styling for journal entry form */
 
-form#new_journal_entry {
-  width: 100%;
-  text-align: center;
-  color: solid white;
+
+#new_journal_entry {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+
+  #journal_entry_title {
+    width: 96%;
+    margin: 2%;
+  }
+
+  #journal_entry_post {
+    margin: 2%;
+    width: 96%;
+  }
+
+  .btn-block {
+    width: 96%;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 12px;
+  }
 }
 
-section.journal_entry {
-  background-color: #ffffff;
-}
+.journal_post {
+    float: left;
+    width: 46%;
+    margin: 1%;
+    border-radius: 5px;
 
-#journal_entry_title {
-  width: 100%;
-  border: 2px solid #dce4ec;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: block;
-}
+    border: dashed white 2px;
 
-#journal_entry_title:hover {
-  border:2px solid #2fe2bf
-}
+  .journal_post_title {
 
-#journal_entry_post {
-  width: 100%;
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 20px;
-  text-indent: 20px;
-}
+  }
 
-#journal_entry_post:hover {
-  border:2px solid #2fe2bf
-}
+  .journal_post_content {
 
-#new_journal_entry input[type="submit"] {
-  margin-bottom:20px;
-  float: center;
+  }
+
 }
