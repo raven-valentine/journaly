@@ -21,6 +21,7 @@ class MapController < ApplicationController
 			format.html
 			format.json {render json: @markerData}
 		end
+		puts @trip.places.inspect
 	end
 
 end
