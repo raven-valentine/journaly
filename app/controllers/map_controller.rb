@@ -14,7 +14,7 @@ class MapController < ApplicationController
 		@place = Trip.find(params[:id]).places
 		@markerData = []
 		@place.each_index do |placeId|
-			@markerData << {"name"=> @place[placeId].place, "longitude"=> @place[placeId].longitude, "latitude"=> @place[placeId].latitude, "tripId"=> @tripId, "placeId"=> @place[placeId].id}
+			@markerData << {"name"=> @place[placeId].place, "longitude"=> @place[placeId].longitude, "latitude"=> @place[placeId].latitude, "tripId"=> @tripId, "placeId"=> @place[placeId].id, "previous_place_id"=> @place[placeId].previous_place_id, "next_place_id"=> @place[placeId].next_place_id}
 		end
 		@markerData = @markerData.to_json
 		respond_to do |format|
