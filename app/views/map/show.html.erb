@@ -82,7 +82,7 @@ var polyLines = [];
 
           if (place.next_place_id !== null)
             {
-              for (var j = connectedPoints.length-1; j >= 0; j--) {
+              for (var j = 0 ; j <= connectedPoints.length-1; j++) {
                 currentPlace = connectedPoints[j];
                 if(currentPlace.placeId == place.next_place_id)
                   {
