@@ -10,6 +10,7 @@
     <a class = "btn btn-alert btn-map" id="remove-lines">remove lines</a>
 </section>
 
+
 <%= render :template => "trips/new" %>
 <%= render :template => "places/new" %>
 
@@ -73,9 +74,9 @@ var polyLines = [];
     console.log(startPoints)
 
 
-    for (var i = (startPoints.length - 1); i >= 0; i--) {
+    for (var k = (startPoints.length - 1); k >= 0; k--) {
         var arrayConnectedPlaces =[];
-        var place = startPoints[i];
+        var place = startPoints[k];
         console.log(place);
 
         arrayConnectedPlaces.push(new google.maps.LatLng(place.latitude, place.longitude));
@@ -111,9 +112,9 @@ var polyLines = [];
 
     polyLines = []
     var color = "#0027F0"
-    for (var i = group.length - 1; i >= 0; i--) {
+    for (var x = group.length - 1; x >= 0; x--) {
       var line = new google.maps.Polyline({
-      path: group[i],
+      path: group[x],
       strokeColor: color,
       strokeOpacity: 1.0,
       strokeWeight: 1.5,
@@ -123,6 +124,7 @@ var polyLines = [];
           offset: '100%',
         }],
       });
+      line.setMap(window.map);
       switch (color) {
         case "#0027F0":
                color = "#009938";
@@ -137,11 +139,24 @@ var polyLines = [];
                color = "#0027F0";
                break;
         };
-      line.setMap(window.map);
+
       polyLines.push(line);
+        animateCircle(x);
+
+          function animateCircle(id) {
+            var count = 0;
+            offsetId = window.setInterval(function () {
+            count = (count + 1) % 200;
+
+          var icons = polyLines[id].get('icons');
+        icons[0].offset = (count / 2) + '%';
+        polyLines[id].set('icons', icons);
+    }, 20);
+    };
     };
 
-    };
+
+}
 
 function initialize() {
     window.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
