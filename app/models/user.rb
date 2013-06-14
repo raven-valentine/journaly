@@ -1,16 +1,17 @@
 # == Schema Information
 #
-# Table name: trips
+# Table name: users
 #
 #  id         :integer          not null, primary key
 #  name       :string(255)
+#  password   :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  start_date :date
-#  end_date   :date
 #
 
-class Trip < ActiveRecord::Base
-  attr_accessible :name, :start_date, :end_date
-  has_many :places
+class User < ActiveRecord::Base
+  attr_accessible :name, :password_digest
+  has_secure_password
+
+  validates :name, presence: true, uniqueness: true
 end

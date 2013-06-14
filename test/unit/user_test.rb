@@ -1,19 +1,18 @@
 # == Schema Information
 #
-# Table name: trips
+# Table name: users
 #
 #  id         :integer          not null, primary key
 #  name       :string(255)
+#  password   :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  start_date :date
-#  end_date   :date
 #
 
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+require 'test_helper'
 
-one:
-  name: MyString
-
-two:
-  name: MyString
+class UserTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
+end
