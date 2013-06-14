@@ -73,7 +73,7 @@ var polyLines = [];
     console.log(startPoints)
 
 
-    for (var i = (startPoints.length - 1); i >= 0; i--) {
+    for (var i = 0 ; i <= (startPoints.length - 1); i++) {
         var arrayConnectedPlaces =[];
         var place = startPoints[i];
         console.log(place);
@@ -88,6 +88,7 @@ var polyLines = [];
                   {
                   arrayConnectedPlaces.push(new google.maps.LatLng(currentPlace.latitude, currentPlace.longitude));
                   place = currentPlace;
+                  var j = 0
                   console.log(currentPlace);
                   };
               };
@@ -111,9 +112,9 @@ var polyLines = [];
 
     polyLines = []
     var color = "#0027F0"
-    for (var i = group.length - 1; i >= 0; i--) {
+    for (var x = group.length - 1; x >= 0; x--) {
       var line = new google.maps.Polyline({
-      path: group[i],
+      path: group[x],
       strokeColor: color,
       strokeOpacity: 1.0,
       strokeWeight: 1.5,
@@ -134,11 +135,26 @@ var polyLines = [];
                color = "#000000";
                break;
         case "#000000":
+               color = "#F5FF37";
+               break;
+        case "#F5FF37":
                color = "#0027F0";
                break;
         };
       line.setMap(window.map);
       polyLines.push(line);
+      animateCircle(x);
+
+      function animateCircle(id) {
+            var count = 0;
+            offsetId = window.setInterval(function () {
+            count = (count + 1) % 200;
+
+            var icons = polyLines[id].get('icons');
+            icons[0].offset = (count / 10) + '%';
+            polyLines[id].set('icons', icons);
+          }, 50);
+      };
     };
 
     };
