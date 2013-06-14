@@ -74,7 +74,11 @@ var polyLines = [];
     console.log(startPoints)
 
 
+<<<<<<< HEAD
     for (var k = (startPoints.length - 1); k >= 0; k--) {
+=======
+    for (var i = 0 ; i <= (startPoints.length - 1); i++) {
+>>>>>>> current_master
         var arrayConnectedPlaces =[];
         var place = startPoints[k];
         console.log(place);
@@ -83,12 +87,13 @@ var polyLines = [];
 
           if (place.next_place_id !== null)
             {
-              for (var j = connectedPoints.length-1; j >= 0; j--) {
+              for (var j = 0 ; j <= connectedPoints.length-1; j++) {
                 currentPlace = connectedPoints[j];
                 if(currentPlace.placeId == place.next_place_id)
                   {
                   arrayConnectedPlaces.push(new google.maps.LatLng(currentPlace.latitude, currentPlace.longitude));
                   place = currentPlace;
+                  var j = 0
                   console.log(currentPlace);
                   };
               };
@@ -136,12 +141,28 @@ var polyLines = [];
                color = "#000000";
                break;
         case "#000000":
+               color = "#F5FF37";
+               break;
+        case "#F5FF37":
                color = "#0027F0";
                break;
         };
 
       polyLines.push(line);
-        animateCircle(x);
+
+      animateCircle(x);
+
+      function animateCircle(id) {
+            var count = 0;
+            offsetId = window.setInterval(function () {
+            count = (count + 1) % 200;
+
+            var icons = polyLines[id].get('icons');
+            icons[0].offset = (count / 10) + '%';
+            polyLines[id].set('icons', icons);
+          }, 50);
+      };
+    };
 
           function animateCircle(id) {
             var count = 0;
