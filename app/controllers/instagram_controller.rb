@@ -6,10 +6,6 @@ class InstagramController < ApplicationController
   end # end of def show
 
 
-
-
-
-
   def link
     code = params['code']
     begin
@@ -20,9 +16,6 @@ class InstagramController < ApplicationController
     end
   end
 end
-
-
-# class Instagram
 
 #   def recent_instagram_media(user)
 #     RestClient.get "https://api.instagram.com/v1/users/#{user.instagram_id}/media/recent/?access_token=#{user.instagramm_access_token}"
