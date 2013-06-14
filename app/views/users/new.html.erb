@@ -1,0 +1,13 @@
+  <article class="base-modal user-modal">
+    <section class="clear-fix trip-bar">
+      <header>
+        <h2>Sign Up</h2>
+      </header>
+        <%= form_for @user do |form| %>
+        <%= form.text_field :name, :placeholder => 'what is your first name?' %>
+        <%= form.password_field :password, :placeholder => 'choose a password' %>
+        <%= form.password_field :password_confirmation, :placeholder => 'please confirm your password' %>
+        <%= form.submit "sign up", :class => 'btn btn-block btn-info' %>
+      <% end %>
+    </section>
+  </article>
