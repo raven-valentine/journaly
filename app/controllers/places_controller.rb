@@ -11,7 +11,13 @@ class PlacesController < ApplicationController
 	def create
 		@trip = Trip.find(params[:trip_id])
 		@place = @trip.places.create(params[:place])
-		redirect_to map_path(@trip)
+		if @place.save
+		   redirect_to map_path(@trip)
+		else
+			flash[:error] = 'You must give your place a name'
+			redirect_to new_trip_place_path
+			end
+	
 	end
 
 	def show

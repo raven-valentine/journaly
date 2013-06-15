@@ -1,13 +1,18 @@
+  
+  
   <article class="base-modal trip-modal">
     <section class="clear-fix trip-bar">
       <header>
         <h2>Create a Trip</h2>
       </header>
-        <%= form_for @trip do |form| %>
+        <%= form_for (@trip) do |form| %>
+        <%= form.error_messages :header_message => nil,
+          :message => "Please fix the following fields:",
+          :header_tag => :h3 %>
         <%= form.text_field :name, :placeholder => '...create a trip' %>
 				<%= form.date_select :start_date %>
 				<%= form.date_select :end_date %>
-        <%= form.submit "create", :class => 'btn btn-block btn-info' %>
+        <%= form.submit "create", :class => 'btn btn-block btn-info' %><p class="notice"><%= flash[:error] %></p>
       <% end %>
     </section>
   </article>

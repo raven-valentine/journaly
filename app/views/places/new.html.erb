@@ -19,11 +19,12 @@
         
         <%= form.label :place, 'Travelling to' %>
         <%= form.text_field :place, :placeholder => 'Travelling to', :id => id='searchTextField' %>
+         <%= form.submit "add", :class => 'btn btn-block btn-primary', :id => 'add'%>
+        <p class="notice"><%= flash[:error] %></p>
         <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
         <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
         <%= form.hidden_field :start_date %>
         <%= form.hidden_field :end_date %>
-        <%= form.submit "add", :class => 'btn btn-block btn-primary', :id => 'add'%>
       <% end %>
         <section class="clear-fix ">
           <label for="from">Arrival date:</label>
@@ -46,6 +47,10 @@ var end_date= "<%=raw @trip.end_date  %>";
 var end_year=end_date.slice(0,4);
 var end_month=end_date.slice(5,7);
 var end_day=end_date.slice(8,10);
+
+var hello = start_date.datepicker
+
+
 </script>
 
 
@@ -76,8 +81,9 @@ var end_day=end_date.slice(8,10);
             $( "#from" ).datepicker( "option", "maxDate", selectedDate );
             var edate = $("#to" ).datepicker("getDate");
             $('#place_end_date').val(edate);
+            var hello = $('#place_end_date').val();
+          console.log(hello);
           }
-
         });
       });
   </script>
