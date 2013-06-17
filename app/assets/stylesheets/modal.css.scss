@@ -73,7 +73,7 @@ section.journal_entry {
 }
 
 #journal_entry_title:hover {
-  border:2px solid #2fe2bf
+  border:2px solid #2fe2bf;
 }
 
 #journal_entry_post {
@@ -86,7 +86,7 @@ section.journal_entry {
 } 
 
 #journal_entry_post:hover {
-  border:2px solid #2fe2bf
+  border:2px solid #2fe2bf;
 }
 
 #new_journal_entry input[type="submit"] {
@@ -103,16 +103,16 @@ section.journal_entry {
   border: 4px solid rgba(255, 255, 255, 0.9);
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.9);
-  h2 {
-    text-align: center;
-    background-color: #5dade2;
-    padding: 10px;
-    border-radius: 4px 4px 0 0;
-    margin: 0;
-    
-  }
-  section {
-    border: none;
+    h2 {
+      text-align: center;
+      background-color: #5dade2;
+      padding: 10px;
+      border-radius: 4px 4px 0 0;
+      margin: 0;
+      
+    }
+    section {
+      border: none;
   }
 }
 
@@ -148,3 +148,18 @@ section.journal_post_content {
   }
 }
 
+/* error messgages */
+
+p.notice {
+  color: #ff0000;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.errorExplanation {
+  padding: 10px;
+}
+
+div.field_with_errors {
+  background-color: none;
+}
