@@ -8,7 +8,7 @@ Journaly::Application.routes.draw do
     end
   end
 
-
+  resources :instagram
 
   resources :map do
     match 'map' => 'map#index'

@@ -6,8 +6,12 @@ class TripsController < ApplicationController
 
   def create
     @trip = Trip.new(params[:trip])
-    @trip.save
-    redirect_to map_path(@trip)
+    if @trip.save
+      redirect_to map_path(@trip)
+    else
+      #flash[:error] = 'You must give your trip a name and valid dates'
+      render :new
+    end
   end
 
   def show
