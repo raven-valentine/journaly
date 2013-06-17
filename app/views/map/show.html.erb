@@ -74,11 +74,7 @@ var polyLines = [];
     console.log(startPoints)
 
 
-<<<<<<< HEAD
     for (var k = (startPoints.length - 1); k >= 0; k--) {
-=======
-    for (var i = 0 ; i <= (startPoints.length - 1); i++) {
->>>>>>> current_master
         var arrayConnectedPlaces =[];
         var place = startPoints[k];
         console.log(place);
@@ -174,10 +170,8 @@ var polyLines = [];
         polyLines[id].set('icons', icons);
     }, 20);
     };
-    };
+  };
 
-
-}
 
 function initialize() {
     window.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

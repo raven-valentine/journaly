@@ -1,0 +1,3 @@
+oauth:
+    consumer_key: ENV["M9ahgZ1Ywun4zBNFpMaKQ"]
+    consumer_secret: ENV["QklD3jIr8dulF9zAAj5djTQOTmGivPHkIYkzPxlqsyo"]
