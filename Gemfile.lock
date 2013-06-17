@@ -182,7 +182,7 @@ DEPENDENCIES
   rails (= 3.2.13)
   rspec
   sass-rails (~> 3.2.3)
-  twitter
   timeliness
+  twitter
   uglifier (>= 1.0.3)
   validates_timeliness

@@ -52,30 +52,23 @@ var polyLines = [];
 
 
  $('#add-lines').click(function(){
-    addLinesToMap(window.map);
+
+  var grouped = _.groupBy(markerData, function(place) {
+    if(place.previous_place_id == null) {
+      return 'start'
+    } else {
+      return 'connected'
+    }
+  });
+  addLinesToMap(window.map,grouped.start, grouped.connected);
   });
 
-   addLinesToMap = function(map) {
+   addLinesToMap = function(map,startPoints,connectedPoints) {
     var lineCoordinates = [];
-    var startPoints = [];
-    var connectedPoints = [];
     var group=[];
-
-    for (var i = markerData.length - 1; i >= 0; i--) {
-      var place = markerData[i];
-        if(place.previous_place_id == null)
-          startPoints.push(place);
-        else
-          connectedPoints.push(place);
-      var placeLatLong = new google.maps.LatLng(place.latitude, place.longitude);
-      lineCoordinates.push(placeLatLong);
-    };
-    console.log(connectedPoints)
-    console.log(startPoints)
-
+    var arrayConnectedPlaces =[]
 
     for (var k = (startPoints.length - 1); k >= 0; k--) {
-        var arrayConnectedPlaces =[];
         var place = startPoints[k];
         console.log(place);
 
@@ -89,17 +82,20 @@ var polyLines = [];
                   {
                   arrayConnectedPlaces.push(new google.maps.LatLng(currentPlace.latitude, currentPlace.longitude));
                   place = currentPlace;
-                  var j = 0
+                  var j = -1
                   console.log(currentPlace);
                   };
               };
+
+              if (place.next_place_id == null){
+                j = connectedPoints.length
+              }
             };
 
         group.push(arrayConnectedPlaces.slice(0));
+        var arrayConnectedPlaces =[];
     };
 
-
-  lineCoordinates.push(placeLatLong);
 
       var lineSymbol = {
       path: 'M 0,-1 0,1',
@@ -160,16 +156,6 @@ var polyLines = [];
       };
     };
 
-          function animateCircle(id) {
-            var count = 0;
-            offsetId = window.setInterval(function () {
-            count = (count + 1) % 200;
-
-          var icons = polyLines[id].get('icons');
-        icons[0].offset = (count / 2) + '%';
-        polyLines[id].set('icons', icons);
-    }, 20);
-    };
   };
 
 
