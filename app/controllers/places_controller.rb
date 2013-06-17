@@ -17,9 +17,6 @@ class PlacesController < ApplicationController
 	def show
 		@trip = Trip.find(params[:trip_id])
 		@place = Place.find(params[:id])
-		@places = Place.all
-		@journal_entries = @place.journal_entries.build
-		@journal_entry = JournalEntry.find(params[:id])
 	end
 
 end

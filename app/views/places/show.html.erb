@@ -16,7 +16,16 @@
       <%= render :template => "journal_entries/new" %>
     </article>
     <article class="journal-entries-template">
-      <%= render :template => "journal_entries/show" %>
+      <%- @place.journal_entries.each do |entry| %>
+        <section class="journal_post">
+          <section class="journal_post_title">
+            <%= entry.title %>
+          </section>
+          <section class="journal_post_content">
+            <%= entry.post %>
+          </section>
+        </section>
+      <% end %>
     </article>
   </section>
 </section>

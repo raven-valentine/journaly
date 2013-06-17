@@ -25,9 +25,12 @@
 
 .journal_post {
     float: left;
-    width: 46%;
+    width: 48%;
     margin: 1%;
     border-radius: 5px;
+    height: 253px;
+    background: url("journal-entry-background.png") center center;
+    background-size: cover;
 
     border: dashed white 2px;
 
