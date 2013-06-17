@@ -21,7 +21,7 @@ class PlacesController < ApplicationController
 		if @place.save
 		   redirect_to map_path(@trip)
 		else
-			flash[:error] = 'You must give your place a name'
+			flash[:error] = 'You must select a real place'
 			redirect_to new_trip_place_path
     end
 	end
