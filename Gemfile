@@ -6,6 +6,8 @@ source 'https://rubygems.org'
   gem 'pg'
   gem 'oauth'
   gem 'twitter'
+  gem 'grackle'
+
 
 
 
@@ -49,4 +51,5 @@ group :test do
   gem 'launchy'
   gem 'poltergeist'
   gem 'rspec'
+  gem 'jasmine'
 end
