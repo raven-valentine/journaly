@@ -48,14 +48,12 @@ gem 'validates_timeliness'
 
 # To use debugger
 # gem 'debugger'
-<<<<<<< HEAD
-=======
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
 end
 
->>>>>>> keirs/master
 group :test do
   gem 'capybara'
   gem 'cucumber-rails', :require => false
