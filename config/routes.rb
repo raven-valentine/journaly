@@ -1,6 +1,6 @@
 Journaly::Application.routes.draw do
 
-  root :to => "map#show", :id => 1
+  root :to => "users#new"
 
   resources :trips do #gives the 7 restful routes #see rake routes
     resources :places do
@@ -8,12 +8,21 @@ Journaly::Application.routes.draw do
     end
   end
 
-  resources :instagram
+  resources :users do
+    match 'user' => 'users#show'
+  end
+
 
   resources :map do
     match 'map' => 'map#index'
   end
 
+    match 'twitter/logined' => 'twitter#logined'
+
+  resources :twitter do
+    match 'twitter' => 'twitter#index'
+
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,24 @@
+<h1>TEST</h1>
+
+<p><%= link_to "Add your twitter app", "/twitter/login" %></p>
+
+
+<p>I'm tweeting with @gem!</p>
+<a class = "btn btn-alert" id="tweet">tweet</a>
+
+<p>authorise site</p>
+<a class = "btn btn-alert" id="authorise">authorise</a>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+	    $('#tweet').click(function(){
+	    	Twitter.update("I'm tweeting with @gem!");
+	    });
+
+	    $('#authorise').click(function(){
+	    	document.location.href='https://api.twitter.com/oauth/authorize?oauth_token=802065139-FxOfZow4bFblYNABInibT9WdMsTsv0jA02yPr3Wu';
+	    });
+	});
+
+</script>

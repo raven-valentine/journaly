@@ -25,9 +25,18 @@
               $('#place_previous_place_id').val($('#prev_place').val());
             });
         </script>
+        <script type="text/javascript">
+          $('html').bind('keypress', function(e)
+              {
+               if(e.keyCode == 13)
+               {
+                  return false;
+               }
+            });
+        </script>
         <%= form.label :place, 'Travelling to' %>
         <%= form.text_field :place, :placeholder => 'Travelling to', :id => id='searchTextField' %>
-        <%= form.submit "add", :class => 'btn btn-block btn-primary', :id => 'add'%>
+        <%= form.submit "add", :class => 'btn btn-block btn-primary', :id => 'add' %>
         <p class="notice"><%= flash[:error] %></p>
         <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
         <%= form.hidden_field :longitude, :placeholder => 'we need the longitude too' %>
