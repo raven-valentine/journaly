@@ -9,11 +9,13 @@
       </header>
         <%= form_for @trip do |form| %>
         <%= form.text_field :name, :placeholder => 'now...create a trip' %>
-        <p>Choose a start date</p>
+        <h3>Choose a start date</h3 >
         <%= form.date_select :start_date %>
-        <p>Choose an end date</p>
+        <br class="clear-fix"><br>
+        <h3>Choose an end date</h3>
         <%= form.date_select :end_date %>
-        <%= form.submit "create", :class => 'btn btn-block btn-info' %>
+        <br class="clear-fix"><br>
+        <%= form.submit "create", :class => 'btn btn-large btn-block btn-info' %>
       <% end %>
     </section>
 </section>

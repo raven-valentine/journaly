@@ -1,10 +1,20 @@
-<h1>TRANSPORT</h1>
+<style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+<!-- Be sure to place the above styles (i.e. everything between the <style></style> tags) into the document 'head' (i.e. between the <head></head> tags. Everything below goes inside the <body></body> tags) -->
 
-<hr>
-
-<table border="2" bgcolor="white">
+<table class="curvedEdges" border="2" width="500px" bgcolor="#5dade2" align="center" style= "text-align: center">
 			<tr>
-				<td><b>Destinations</b></td>
+				<td class="route-header	"><h1>Route Details</h1></td>
+			</tr>
+</table>
+
+<br>
+
+<table class="curvedEdges"  border="2" bgcolor="#5dade2" align="center">
+			<tr>
+				<td width="800px"><h2>Destinations</h2></td>
 			</tr>
 	<% @linked_places.each do|place| %>
 			<tr>
@@ -13,20 +23,23 @@
 	<% end %>
 </table>
 
-
-<h3></h3>
-<hr>
+<br>
 
 <%- link = "" %>
 <%- @linked_places.each do|place| %>
 <%- link = link + place + '/'%>
 <%- end %>
-<hr>
-<a class="btn btn-info" href="http://www.rome2rio.com/s/<%= link %>" target="myIframe">click here to search for transport routes!</a>
-<hr>
 
-<div style="width: 95%px; height: 850px; overflow: hidden">
-<iframe name="myIframe" style="position: relative; left: 0px; top: -100px" height="850" width="95%" hspace="10" vspace="10" align="middle">
+
+<table width="500px" bgcolor="transparent" align="center" style= "text-align: center">
+			<tr>
+				<td class="route-header	"><a class="btn btn-alert" href="http://www.rome2rio.com/s/<%= link %>" target="myIframe"	>click here to search for transport routes!</a></td>
+			</tr>
+</table>
+
+
+<div style="width: 95%px; height: 850px; overflow: hidden;">
+<iframe name="myIframe" style="position: relative; left: 0px; top: -100px" height="850" width="100%" hspace="10" vspace="10" align="middle">
 
 </iframe>
 
