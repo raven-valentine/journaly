@@ -22,13 +22,7 @@
       border: none;
       background: none;
     }
-    .btn {
-      float: right;
-      padding: 16px;
-      font-size: 20px;
-      line-height: 28px;
-      margin: 0;
-    }
+
   }
 }
 
@@ -63,6 +57,17 @@
   section {
     border: none;
   }
+  select {
+    width: 210px;
+    float: left;
+  }
+  .btn {
+        float: left;
+        padding: 16px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-left: 10px;
+      }
 }
 
 /* error messgages */
@@ -75,8 +80,9 @@ p.notice {
 
 .errorExplanation {
   padding: 10px;
+  color: #ff0000;
 }
 
 div.field_with_errors {
-  background-color: none;
+  background-color: #ffffff;
 }
