@@ -58,12 +58,12 @@
 <script>
 var start_date= "<%=raw @trip.start_date  %>";
 var start_year=start_date.slice(0,4);
-var start_month=start_date.slice(5,7);
+var start_month=start_date.slice(5,7)-1;
 var start_day=start_date.slice(8,10);
 
 var end_date= "<%=raw @trip.end_date  %>";
 var end_year=end_date.slice(0,4);
-var end_month=end_date.slice(5,7);
+var end_month=end_date.slice(5,7)-1;
 var end_day=end_date.slice(8,10);
 
 var hello = start_date.datepicker
@@ -73,6 +73,7 @@ var hello = start_date.datepicker
 
 
 <script>
+alert("<%= @trip.available_dates available %>")
       $(function() {
         $( "#from" ).datepicker({
           defaultDate: "+1w",

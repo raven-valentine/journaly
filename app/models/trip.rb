@@ -23,20 +23,23 @@ class Trip < ActiveRecord::Base
   		places.each do |place|
   			place_dates = (place.start_date...place.end_date)
   	 	available = reject_dates_from(available, place_dates)
-  	 	puts available.inspect
-  		end
+  end
   		return available
+
   	else
   		return (start_date...end_date).to_a
   	end
   end
 
+  def available
+   return "hello"
+  end
+
   def reject_dates_from(dates, dates_to_reject)
-  	return dates.to_a.reject do |date|
-  			dates_to_reject.include? date
+    return dates.to_a.reject do |date|
+  			dates_to_reject.include? date 
   	end
   end
 end
 
-end
 
