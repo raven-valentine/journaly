@@ -1,41 +1,32 @@
 class InstagramController < ApplicationController
 
+  # All methods require authentication (either by client ID or access token).
+# To get your Instagram OAuth credentials, register an app at http://instagr.am/oauth/client/register/
+  def show
+  end # end of def show
 
-  # require "sinatra"
-  # require "instagram"
 
-  # enable :sessions
+  def link
+    code = params['code']
+    begin
+      @response = RestClient.post 'https://api.instagram.com/oauth/access_token', { :code => code, :client_id => 'f3c6d901c4964e6097d14d208fa01a96', :client_secret => '9f2e75a6dde749cbadf4cddc5260ea63', :grant_type => 'authorization_code', :redirect_uri => 'http://localhost:3000/instagram/link'}
 
-  # CALLBACK_URL = "http://localhost:4567/oauth/callback"
-
-  # Instagram.configure do |config|
-  #   config.client_id = "YOUR_CLIENT_ID"
-  #   config.client_secret = "YOUR_CLIENT_SECRET"
-  # end
-
-  # get "/" do
-  #   '<a href="/oauth/connect">Connect with Instagram</a>'
-  # end
-
-  # get "/oauth/connect" do
-  #   redirect Instagram.authorize_url(:redirect_uri => CALLBACK_URL)
-  # end
-
-  # get "/oauth/callback" do
-  #   response = Instagram.get_access_token(params[:code], :redirect_uri => CALLBACK_URL)
-  #   session[:access_token] = response.access_token
-  #   redirect "/feed"
-  # end
-
-  # get "/feed" do
-  #   client = Instagram.client(:access_token => session[:access_token])
-  #   user = client.user
-
-  #   html = "<h1>#{user.username}'s recent photos</h1>"
-  #   for media_item in client.user_recent_media
-  #     html << "<img src='#{media_item.images.thumbnail.url}'>"
-  #   end
-  #   html
-  # end
-
+      rescue Exception => e
+        puts e.message
+    end
+  end
 end
+
+#   def recent_instagram_media(user)
+#     RestClient.get "https://api.instagram.com/v1/users/#{user.instagram_id}/media/recent/?access_token=#{user.instagramm_access_token}"
+
+#   end
+
+# end
+# Step One: Direct your user to our authorization URL
+# https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
+
+# Step Two: Receive the redirect from Instagram
+# http://your-redirect-uri?code=CODE
+
+# Step Three: Request the access_token
