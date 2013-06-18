@@ -1,32 +1,27 @@
 class TransportController < ApplicationController
 
-def show
-	@my_trip = params[:id]
-	@trip = Trip.find(params[:id])
-	@places = @trip.places
-	@start = @trip.places.where(:previous_place_id => nil)
+	def show
+		@my_trip = params[:id]
+		@trip = Trip.find(params[:id])
+		@places = @trip.places
+		@linked_places = @trip.linked_places
 
-	@start.each {|start|
 
-	@place_array = @places.group_by { |place| place.previous_place_id == nil }
-
-end
-
-def find_next_places(place,place_array)
-	linked_places << {"start" => @place.place, "next_place" => @place.next_place_id}
-	place
+		#@places_array = @start.each{|place| @array << place.places_array}
 
 
 
-		@place.each_index do |placeId|
-			@markerData << {"name"=> @place[placeId].place, "longitude"=> @place[placeId].longitude, "latitude"=> @place[placeId].latitude, "tripId"=> @tripId, "placeId"=> @place[placeId].id, "previous_place_id"=> @place[placeId].previous_place_id, "next_place_id"=> @place[placeId].next_place_id}
-		end
+	end
 
-end
-
+=begin
+	def to_h(start_place,all_places)
+		linked_places = []
+		if start_place.next_place_id != nil
+			linked_places << {"place" => start_place, "next_place" =>all_places.find(start_place.next_place_id)}
+	end
+		return linked_places
+	end
+=end
 
 
 end
-
-
-

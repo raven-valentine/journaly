@@ -16,4 +16,8 @@ class Trip < ActiveRecord::Base
 
   validates :name, :presence => true
   validates_date :end_date, :on_or_after => :start_date
+
+  def linked_places
+  	places.map(&:next_places).flatten.uniq.compact
+  end
 end
