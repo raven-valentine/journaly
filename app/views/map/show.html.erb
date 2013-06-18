@@ -2,7 +2,7 @@
 
 <section class="trip-title">
   <header>
-    <h1><%= @trip.name %></h1>
+    <h1><%= @trip.name %><%= @trip %></h1>
     <%= link_to "+trip", new_trip_path(@trip), :class => "btn btn-info btn-map" %>
     <a class = "btn btn-primary btn-map show_hide_place"> +place</a>
   </header>
@@ -86,7 +86,7 @@ var polyLines = [];
                 currentPlace = connectedPoints[j];
                 if(currentPlace.placeId == place.next_place_id)
                   {
-                  arrayConnectedPlaces.push(new google.maps.LatLng(currentPlace.latitude, currentPlace.longitude));
+                  arrayConnectedPlaces.push(new google.maps.LatLng(0, currentPlace.longitude));
                   place = currentPlace;
                   var j = 0
                   console.log(currentPlace);
