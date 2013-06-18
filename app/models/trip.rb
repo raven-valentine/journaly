@@ -22,17 +22,16 @@ class Trip < ActiveRecord::Base
   		available = (start_date...end_date)
   		places.each do |place|
   			place_dates = (place.start_date...place.end_date)
-  	 	available = reject_dates_from(available, place_dates)
-  end
+  	 	  available = reject_dates_from(available, place_dates)
+      end
   		return available
-
-  	else
+    else
   		return (start_date...end_date).to_a
   	end
   end
 
-  def available
-   return "hello"
+  def taken_dates
+    places.map{|place| (place.start_date...place.end_date).to_a}.flatten.compact.uniq
   end
 
   def reject_dates_from(dates, dates_to_reject)
