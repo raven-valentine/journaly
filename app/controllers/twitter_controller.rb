@@ -1,5 +1,5 @@
 class TwitterController < ApplicationController
-
+=begin
   def show
 
   end
@@ -30,6 +30,7 @@ def new
 
  client.update('I am authorized')
 end
+
 =begin
       client = Grackle::Client.new(:auth=>{
         :type=>:oauth,
@@ -38,10 +39,10 @@ end
       })
     t = Twitter.new
     t = t.getJsonData
-=end
+bend
 
   end
-
+=end
 end
 
 
