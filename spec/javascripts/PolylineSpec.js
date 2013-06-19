@@ -28,6 +28,15 @@ it("creates an array of connected places which have a previous_place_id - testin
 			expect(start_array).toEqual([{"name":"Paris, France","longitude":"2.3522219000000177","latitude":"48.856614","tripId":"42","placeId":187,"previous_place_id":186,"next_place_id":null}]);
 });
 
+it("creates an array of connected places which have a previous_place_id - testing array with two connected points", function(){
+
+	JsonData = [{"name":"Paris, France, home","longitude":"2.3522219000000177","latitude":"48.856614","tripId":"42","placeId":199,"previous_place_id":187,"next_place_id":null},{"name":"Paris, France","longitude":"2.3522219000000177","latitude":"48.856614","tripId":"42","placeId":187,"previous_place_id":186,"next_place_id":199},{"name":"London, United Kingdom","longitude":"-0.11982439999997041","latitude":"51.51121389999999","tripId":"42","placeId":186,"previous_place_id":null,"next_place_id":187}];
+
+			var grouping = grouped(JsonData);
+			start_array = grouping.connected;
+			expect(start_array).toEqual([{"name":"Paris, France, home","longitude":"2.3522219000000177","latitude":"48.856614","tripId":"42","placeId":199,"previous_place_id":187,"next_place_id":null},{"name":"Paris, France","longitude":"2.3522219000000177","latitude":"48.856614","tripId":"42","placeId":187,"previous_place_id":186,"next_place_id":199}]);
+});
+
 });
 
 
