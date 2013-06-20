@@ -24,7 +24,7 @@ class PlacesController < ApplicationController
 		else
 			flash[:error] = 'You must select a real place'
 			redirect_to new_trip_place_path
-    end
+    	end
 	end
 
 	def show
