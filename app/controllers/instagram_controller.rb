@@ -3,16 +3,62 @@ class InstagramController < ApplicationController
   # All methods require authentication (either by client ID or access token).
 # To get your Instagram OAuth credentials, register an app at http://instagr.am/oauth/client/register/
   def show
+
   end # end of def show
 
 
   def link
+    trip_id, place_id = params['trip_place_id'].split('@')
+    @trip = Trip.find(trip_id)
+    @place = @trip.places.find(place_id)
+
     code = params['code']
+    user =  User.find(session[:user])
     begin
-      @response = RestClient.post 'https://api.instagram.com/oauth/access_token', { :code => code, :client_id => 'f3c6d901c4964e6097d14d208fa01a96', :client_secret => '9f2e75a6dde749cbadf4cddc5260ea63', :grant_type => 'authorization_code', :redirect_uri => 'http://localhost:3000/instagram/link'}
+       #@response = RestClient.post 'https://api.instagram.com/oauth/access_token', { :code => code, :client_id => 'f3c6d901c4964e6097d14d208fa01a96', :client_secret => '9f2e75a6dde749cbadf4cddc5260ea63', :grant_type => 'authorization_code', :redirect_uri => 'http://localhost:3000/instagram/link'}
+
+      @response = RestClient.get 'https://api.instagram.com/v1/users/24480272/media/recent/?access_token=24480272.f3c6d90.7eada26532fc4d8aa4ae408a904d5216'
+
+      instagram = JSON.parse(@response)
+
+      user.create_instagram_account(uid: instagram['user']['id'], token: instagram['access_token'])
 
       rescue Exception => e
+        puts 'boom'
         puts e.message
+        puts e.inspect
+
+
+
+      puts @response
+      puts '*************************'
+      data = JSON.parse(@response)
+
+      puts data.inspect
+      puts '*************************'
+      puts '*************************'
+      data1 = data.fetch("data")
+      puts data1
+      puts '*************************'
+      puts '*************************'
+      puts '*************************'
+      @url = data1[0].fetch("images").fetch("low_resolution").fetch("url")
+      puts data1
+
+      @geolat = data1[0].fetch("location").fetch("latitude")
+      @geolng = data1[0].fetch("location").fetch("longitude")
+      @comment = data1[0].fetch("caption").fetch("text")
+      puts data1
+
+      @url1 = data1[1].fetch("images").fetch("low_resolution").fetch("url")
+      @url2 = data1[2].fetch("images").fetch("low_resolution").fetch("url")
+      @url3 = data1[3].fetch("images").fetch("low_resolution").fetch("url")
+      @url4 = data1[4].fetch("images").fetch("low_resolution").fetch("url")
+
+      puts '*************************'
+      puts '*************************'
+      puts '*************************'
+      puts '*************************'
     end
   end
 end
