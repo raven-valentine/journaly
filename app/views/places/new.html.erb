@@ -36,6 +36,9 @@
         </script>
         <%= form.label :place, 'Travelling to' %>
         <%= form.text_field :place, :placeholder => 'Travelling to', :id => id='searchTextField' %>
+        <%= form.text_field :start_date, :placeholder => 'Arrival date:', :id => id='from' %>
+        <%= form.text_field :end_date, :placeholder => 'Departure date:', :id => id='to' %>
+        <div id="datepicker"></div>
         <%= form.submit "add", :class => 'btn btn-block btn-primary', :id => 'add' %>
         <p class="notice"><%= flash[:error] %></p>
         <%= form.hidden_field :latitude, :placeholder => 'enter the latitude' %>
@@ -44,13 +47,13 @@
         <%= form.hidden_field :end_date %>
         <%= form.hidden_field :previous_place_id %>
       <% end %>
-        <section class="clear-fix ">
+        <!--<section class="clear-fix ">
           <label for="from">Arrival date:</label>
           <input type="text" id="from" name="from" placeholder="Arrival date"/>
           <label for="to">Departure date:</label>
           <input type="text" id="to" name="to" placeholder="Departure date"/>
-          <div id="datepicker"></div>
-        </section>
+          
+        </section>-->
     </section>
   </article>
 
